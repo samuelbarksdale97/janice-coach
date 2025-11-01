@@ -62,8 +62,8 @@ export default function Home() {
                 Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
               </p>
               <Button asChild size="lg" className="mt-8 font-bold">
-                <Link href="/contact">
-                  Begin Your Journey <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/services">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
