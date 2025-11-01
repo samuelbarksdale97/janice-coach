@@ -62,7 +62,7 @@ export function Header() {
                 ))}
             </nav>
             <Button asChild size="sm">
-                <Link href="/contact">Book a Call</Link>
+                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
         </div>
 
@@ -98,7 +98,7 @@ export function Header() {
                         ))}
                     </nav>
                     <Button asChild className="mt-6 w-full">
-                        <Link href="/contact" onClick={() => setIsOpen(false)}>Book a Call</Link>
+                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Book a Call</a>
                     </Button>
                 </SheetContent>
             </Sheet>
