@@ -1,7 +1,7 @@
 
 'use client';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Brain, Zap, Target, Quote } from "lucide-react";
+import { ArrowRight, Heart, Brain, Zap, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/shared/header";
@@ -133,7 +133,6 @@ export default function Home() {
           <section id="quote" className="py-16 md:py-24 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
-                <Quote className="w-12 h-12 text-secondary mx-auto mb-4" />
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                   "The only impossible journey is the one you never begin."
                 </blockquote>
