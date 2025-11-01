@@ -2,19 +2,18 @@
 
 import React from 'react';
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
-import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { Logo } from "@/components/icons";
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
-
 const navItems = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -37,15 +36,7 @@ const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const element = document.querySelector(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false); // Close sheet on navigation
-  };
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -58,14 +49,16 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
-              <a 
+              <Link 
                 key={item.href}
-                href={item.href} 
-                onClick={(e) => handleScroll(e, item.href)}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                href={item.href}
+                className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    pathname === item.href ? "text-primary" : "text-muted-foreground"
+                )}
               >
                   {item.label}
-              </a>
+              </Link>
             ))}
         </nav>
 
@@ -87,14 +80,17 @@ export function Header() {
                     </SheetDescription>
                     <nav className="flex flex-col space-y-4 mt-8">
                         {navItems.map((item) => (
-                           <a
+                           <Link
                               key={item.href}
                               href={item.href}
-                              onClick={(e) => handleScroll(e, item.href)}
-                              className="text-lg font-medium"
+                              onClick={() => setIsOpen(false)}
+                              className={cn(
+                                "text-lg font-medium",
+                                pathname === item.href ? "text-primary" : "text-foreground"
+                              )}
                             >
                               {item.label}
-                            </a>
+                            </Link>
                         ))}
                     </nav>
                 </SheetContent>
