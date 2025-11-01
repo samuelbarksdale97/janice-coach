@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { GitFork, CalendarCheck, Waypoints, Rocket } from 'lucide-react';
 
 const servicesCards = [
     {
@@ -28,6 +29,33 @@ const servicesCards = [
       cta: 'View Workshops'
     }
   ];
+
+const howItWorksSteps = [
+    {
+        icon: <GitFork className="w-12 h-12 text-primary" />,
+        step: "Step 1",
+        title: "Explore Your Options",
+        description: "Browse the offerings and reflect on what's calling to you."
+    },
+    {
+        icon: <CalendarCheck className="w-12 h-12 text-primary" />,
+        step: "Step 2",
+        title: "Book a Free Discovery Call",
+        description: "Let's talk about your goals, questions, and what kind of support would serve you best."
+    },
+    {
+        icon: <Waypoints className="w-12 h-12 text-primary" />,
+        step: "Step 3",
+        title: "Choose Your Path",
+        description: "Whether it's a short reset or a full transformation – we'll tailor a path that fits."
+    },
+    {
+        icon: <Rocket className="w-12 h-12 text-primary" />,
+        step: "Step 4",
+        title: "Begin Your Journey",
+        description: "Start your coaching sessions, access resources, and stay supported every step of the way."
+    },
+]
 
 export default function ServicesPage() {
     return (
@@ -75,6 +103,32 @@ export default function ServicesPage() {
                                         </Button>
                                     </CardFooter>
                                 </Card>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                    <div className="container px-4 md:px-6">
+                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                            <div className="space-y-2">
+                                <h2 className="text-3xl font-headline font-bold tracking-tighter text-primary sm:text-5xl">How It Works</h2>
+                                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                    I offer coaching and leadership development grounded in authenticity, resilience, and clarity.
+                                    <br />
+                                    <span className="text-secondary font-semibold">I meet you where you are – and help you grow into what's next with purpose.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-4">
+                            {howItWorksSteps.map((step) => (
+                                <div key={step.step} className="flex flex-col items-center space-y-3 text-center">
+                                    {step.icon}
+                                    <div className="space-y-1">
+                                        <p className="text-sm font-bold uppercase tracking-wider text-secondary">{step.step}</p>
+                                        <h3 className="text-xl font-bold font-headline text-primary">{step.title}</h3>
+                                        <p className="text-muted-foreground text-sm">{step.description}</p>
+                                    </div>
+                                </div>
                             ))}
                         </div>
                     </div>
