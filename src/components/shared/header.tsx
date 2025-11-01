@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from 
 import { cn } from '@/lib/utils';
 import { Logo } from "@/components/icons";
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+import { Button } from '@/components/ui/button';
 
 const navItems = [
   { href: "/about", label: "About" },
@@ -45,20 +46,25 @@ export function Header() {
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
-              <Link 
-                key={item.href}
-                href={item.href}
-                className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    pathname === item.href ? "text-primary" : "text-muted-foreground"
-                )}
-              >
-                  {item.label}
-              </Link>
-            ))}
-        </nav>
+        <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center space-x-6">
+                {navItems.map((item) => (
+                <Link 
+                    key={item.href}
+                    href={item.href}
+                    className={cn(
+                        "text-sm font-medium transition-colors hover:text-primary",
+                        pathname === item.href ? "text-primary" : "text-muted-foreground"
+                    )}
+                >
+                    {item.label}
+                </Link>
+                ))}
+            </nav>
+            <Button asChild size="sm">
+                <Link href="/contact">Book a Call</Link>
+            </Button>
+        </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden">
@@ -91,6 +97,9 @@ export function Header() {
                             </Link>
                         ))}
                     </nav>
+                    <Button asChild className="mt-6 w-full">
+                        <Link href="/contact" onClick={() => setIsOpen(false)}>Book a Call</Link>
+                    </Button>
                 </SheetContent>
             </Sheet>
         </div>
