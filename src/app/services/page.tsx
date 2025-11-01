@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { GitFork, CalendarCheck, Waypoints, Rocket } from 'lucide-react';
+import { GitFork, CalendarCheck, Waypoints, Rocket, CheckCircle2, ArrowRight } from 'lucide-react';
 
 const servicesCards = [
     {
@@ -56,6 +56,12 @@ const howItWorksSteps = [
         description: "Begin your coaching journey with consistent support and actionable steps toward your goals."
     },
 ]
+
+const whoIsThisForPoints = [
+    "A high-performing leader who's quietly questioning what comes next",
+    "Ready to reconnect with your voice, purpose, and pace",
+    "Done performing – and ready to lead more like you"
+];
 
 const contactImage = PlaceHolderImages.find(img => img.id === 'contact');
 
@@ -116,13 +122,39 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="py-16 md:py-24 bg-background">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+                    <div className="container px-4 md:px-6">
+                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                            <div className="space-y-6">
+                                <h2 className="text-3xl font-headline font-bold text-primary">Is This For Me? Are you...</h2>
+                                <ul className="space-y-4">
+                                    {whoIsThisForPoints.map((point, index) => (
+                                        <li key={index} className="flex items-start">
+                                            <CheckCircle2 className="h-6 w-6 text-secondary mr-3 mt-1 flex-shrink-0" />
+                                            <span className="text-muted-foreground text-lg">{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="flex flex-col items-center justify-center text-center">
+                                <ArrowRight className="h-12 w-12 text-primary rotate-90 md:rotate-0 mb-4 md:hidden" />
+                                <p className="text-xl text-muted-foreground max-w-md mb-6">
+                                    If that resonates, you don't have to figure it all out before we talk.
+                                </p>
+                                <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
+                                    <Link href="/contact">Start a Conversation</Link>
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="py-16 md:py-24 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                             {servicesCards.map((service) => (
                                 <Card 
                                     key={service.title} 
-                                    className="flex flex-col bg-muted overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                                    className="flex flex-col bg-background overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
                                 >
                                     {service.image && (
                                         <div className="aspect-h-2 aspect-w-3 relative">
@@ -142,7 +174,7 @@ export default function ServicesPage() {
                                     <CardContent className="flex-grow p-6 pt-0">
                                         <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
                                     </CardContent>
-                                    <CardFooter className="p-6 bg-background">
+                                    <CardFooter className="p-6 bg-muted/50">
                                         <Button asChild className="w-full font-bold" variant="secondary">
                                             <Link href="/contact">Learn More</Link>
                                         </Button>
