@@ -2,10 +2,12 @@
 
 import React from 'react';
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { Logo } from "@/components/icons";
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+
 
 const navItems = [
   { href: "#home", label: "Home" },
@@ -59,6 +61,9 @@ export function Header() {
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="right">
+                    <SheetTitle>
+                        <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
+                    </SheetTitle>
                     <nav className="flex flex-col space-y-4 mt-8">
                         {navItems.map((item) => (
                            <a
