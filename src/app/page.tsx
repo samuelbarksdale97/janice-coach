@@ -62,7 +62,7 @@ export default function Home() {
                 Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button asChild size="lg" className="font-bold">
+                <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
                   <Link href="/services">
                     Learn More <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
