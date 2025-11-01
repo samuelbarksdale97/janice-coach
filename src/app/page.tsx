@@ -27,8 +27,6 @@ const servicesCards = [
   {
     title: 'Individual Coaching',
     icon: <User className="h-10 w-10 text-primary" />,
-    price: '$150',
-    frequency: 'per session',
     description: 'One-on-one sessions tailored to your unique goals, challenges, and aspirations.',
     features: [
       'Personalized goal-setting',
@@ -41,8 +39,6 @@ const servicesCards = [
   {
     title: 'Career Transition Package',
     icon: <Briefcase className="h-10 w-10 text-primary" />,
-    price: '$550',
-    frequency: '4-session pack',
     description: 'A focused program to navigate career changes, from exploration to landing your dream job.',
     features: [
       'Resume & LinkedIn review',
@@ -56,8 +52,6 @@ const servicesCards = [
   {
     title: 'Group Workshops',
     icon: <Users className="h-10 w-10 text-primary" />,
-    price: '$75',
-    frequency: 'per workshop',
     description: 'Join a community of like-minded individuals in our themed monthly workshops.',
     features: [
       'Topics like "Mindfulness" & "Goal Setting"',
@@ -193,7 +187,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-20 md:mt-28">
-                    <Card className="bg-muted border-none">
+                    <Card className="bg-muted border">
                       <CardContent className="p-8 md:p-12">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                           <div>
@@ -207,7 +201,7 @@ export default function Home() {
                             <ul className="space-y-3">
                               {philosophyPoints.map((point, index) => (
                                 <li key={index} className="flex items-start">
-                                  <CheckCircle2 className="h-5 w-5 text-secondary-foreground mr-3 mt-1 flex-shrink-0" />
+                                  <CheckCircle2 className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
                                   <span className="text-muted-foreground">{point}</span>
                                 </li>
                               ))}
@@ -243,11 +237,7 @@ export default function Home() {
                         <CardHeader className="items-center text-center p-6">
                         {service.icon}
                         <CardTitle className="mt-4 font-headline text-2xl">{service.title}</CardTitle>
-                        <div className="mt-2">
-                            <span className="text-4xl font-bold">{service.price}</span>
-                            <span className="text-muted-foreground text-sm">/{service.frequency}</span>
-                        </div>
-                        <CardDescription className="mt-2 h-12">{service.description}</CardDescription>
+                        <CardDescription className="mt-2 h-16">{service.description}</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow p-6">
                         <ul className="space-y-4">
@@ -296,7 +286,7 @@ export default function Home() {
                             </Link>
                             )}
                             <CardHeader>
-                            <p className="text-sm text-secondary-foreground font-semibold">{post.category.toUpperCase()}</p>
+                            <p className="text-sm text-secondary font-semibold">{post.category.toUpperCase()}</p>
                             <CardTitle className="font-headline text-2xl leading-tight">
                                 <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">
                                 {post.title}
@@ -331,7 +321,7 @@ export default function Home() {
                     </p>
                   </div>
                     <div className="grid md:grid-cols-2 gap-16 items-start">
-                        <div className="bg-background rounded-lg p-8 md:p-12">
+                        <div className="bg-background rounded-lg p-8 md:p-12 border">
                         <h2 className="text-3xl font-headline text-primary mb-6">Send a Message</h2>
                         <ContactForm />
                         </div>
