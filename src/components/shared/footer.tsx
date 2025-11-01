@@ -1,39 +1,71 @@
+
 import { Instagram, Linkedin, Facebook } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/icons";
+
+const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Contact" },
+];
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <Logo className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">Evolving Door</span>
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+          <div className="md:col-span-2 space-y-4">
+            <div className="flex items-center justify-center md:justify-start space-x-2">
+                <Logo className="h-6 w-6 text-primary" />
+                <span className="font-bold font-headline text-lg">Evolving Door</span>
+            </div>
+            <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
+                Guiding you through life's transitions with professional coaching and support.
+            </p>
           </div>
-          <div className="text-center md:text-left text-sm text-muted-foreground">
-            &copy; {currentYear} Evolving Door. All Rights Reserved.
+          
+          <div>
+            <h4 className="font-headline text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+                {navItems.map((item) => (
+                    <li key={item.href}>
+                        <Link href={item.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                            {item.label}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
           </div>
-          <div className="flex items-center space-x-2 mt-4 md:mt-0">
-            <Button asChild variant="ghost" size="icon">
-              <Link href="#" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-              </Link>
-            </Button>
-            <Button asChild variant="ghost" size="icon">
-              <Link href="#" aria-label="Instagram">
-                <Instagram className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-              </Link>
-            </Button>
-            <Button asChild variant="ghost" size="icon">
-              <Link href="#" aria-label="Facebook">
-                <Facebook className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-              </Link>
-            </Button>
+
+          <div>
+             <h4 className="font-headline text-lg font-semibold mb-4">Connect</h4>
+             <div className="flex items-center justify-center md:justify-start space-x-2">
+                <Button asChild variant="ghost" size="icon">
+                  <Link href="#" aria-label="LinkedIn">
+                    <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                  </Link>
+                </Button>
+                <Button asChild variant="ghost" size="icon">
+                  <Link href="#" aria-label="Instagram">
+                    <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                  </Link>
+                </Button>
+                <Button asChild variant="ghost" size="icon">
+                  <Link href="#" aria-label="Facebook">
+                    <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                  </Link>
+                </Button>
+            </div>
           </div>
+        </div>
+        
+        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+          &copy; {currentYear} Evolving Door. All Rights Reserved.
         </div>
       </div>
     </footer>
