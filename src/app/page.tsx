@@ -137,9 +137,9 @@ export default function Home() {
                     Don't wait another day to start living the life you've imagined. A complimentary discovery call is the first step.
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
-                    <Link href="/contact">
+                    <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
                         Schedule Your Free Call <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                    </a>
                 </Button>
             </div>
           </section>
