@@ -58,9 +58,9 @@ const howItWorksSteps = [
 ]
 
 const whoIsThisForPoints = [
-    "A high-performing leader who's quietly questioning what comes next",
-    "Ready to reconnect with your voice, purpose, and pace",
-    "Done performing – and ready to lead more like you"
+    "A successful professional wondering, 'What’s next for me?'",
+    "Feeling the pull to align your career with your true purpose.",
+    "Ready to stop just 'doing' and start truly 'being' in your work and life."
 ];
 
 const contactImage = PlaceHolderImages.find(img => img.id === 'contact');
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="space-y-6">
-                                <h2 className="text-3xl font-headline font-bold text-primary">Is This For Me? Are you...</h2>
+                                <h2 className="text-3xl font-headline font-bold text-primary">Is This For You?</h2>
                                 <ul className="space-y-4">
                                     {whoIsThisForPoints.map((point, index) => (
                                         <li key={index} className="flex items-start">
@@ -139,10 +139,10 @@ export default function ServicesPage() {
                             <div className="flex flex-col items-center justify-center text-center">
                                 <ArrowRight className="h-12 w-12 text-primary rotate-90 md:rotate-0 mb-4 md:hidden" />
                                 <p className="text-xl text-muted-foreground max-w-md mb-6">
-                                    If that resonates, you don't have to figure it all out before we talk.
+                                    If this sounds like you, let's connect. You don't need to have it all figured out.
                                 </p>
                                 <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
-                                    <Link href="/contact">Start a Conversation</Link>
+                                    <Link href="/contact">Start the Conversation</Link>
                                 </Button>
                             </div>
                         </div>
