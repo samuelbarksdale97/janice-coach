@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Washington D.C. at sunset, with the Capitol Building and Washington Monument.",
-      "imageUrl": "https://images.unsplash.com/photo-1600022221838-8a2b979512d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxXYXNoaW5ndG9uJTIwRUMlMjBzdW5zZXR8ZW58MHx8fHwxNzYyODU0MDUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Washington DC"
+      "description": "A person walking on a path in a misty forest.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/66DE1BF3-BDE0-4914-8627-C4042EA7389A_1_105_c.jpeg?alt=media&token=49ec01e9-696d-4b6c-9ba2-517913ca8f91",
+      "imageHint": "misty forest path"
     },
     {
       "id": "about",
