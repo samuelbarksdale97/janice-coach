@@ -57,20 +57,36 @@ const howItWorksSteps = [
     },
 ]
 
+const contactImage = PlaceHolderImages.find(img => img.id === 'contact');
+
 export default function ServicesPage() {
     return (
         <>
             <Header />
             <main className="flex-1">
-                <section className="py-16 md:py-24 bg-background">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center mb-12 md:mb-16">
-                            <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+                    <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
+                        <div className="space-y-4">
+                            <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tighter">
                                 Coaching Services
                             </h1>
-                            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                            <p className="mt-4 text-lg md:text-xl max-w-xl text-muted-foreground">
                                 Invest in yourself with programs designed to bring clarity, purpose, and momentum to your life and career.
                             </p>
+                        </div>
+                        <div className="flex justify-center">
+                            {contactImage && (
+                                <div className="aspect-video relative rounded-lg overflow-hidden shadow-2xl w-full">
+                                    <Image
+                                        src={contactImage.imageUrl}
+                                        alt={contactImage.description}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                        data-ai-hint={contactImage.imageHint}
+                                    />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </section>
