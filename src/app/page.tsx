@@ -90,7 +90,11 @@ const blogPosts = [
   }
 ];
 
-export default function Home() {
+export default function Home(props:any) {
+  // Prevent Next.js from complaining about enumerating params
+  if (props.params) {
+    return null;
+  }
   
   return (
     <>
