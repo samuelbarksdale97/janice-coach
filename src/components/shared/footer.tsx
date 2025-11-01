@@ -1,7 +1,5 @@
 
-import { Instagram, Linkedin, Facebook } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/icons";
 
 const navItems = [
@@ -18,7 +16,7 @@ export function Footer() {
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
                 <Logo className="h-6 w-6 text-primary" />
@@ -42,26 +40,6 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
-             <h4 className="font-headline text-lg font-semibold mb-4">Connect</h4>
-             <div className="flex items-center justify-center md:justify-start space-x-2">
-                <Button asChild variant="ghost" size="icon">
-                  <Link href="#" aria-label="LinkedIn">
-                    <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
-                  </Link>
-                </Button>
-                <Button asChild variant="ghost" size="icon">
-                  <Link href="#" aria-label="Instagram">
-                    <Instagram className="h-5 w-5 text-muted-foreground hover:text-primary" />
-                  </Link>
-                </Button>
-                <Button asChild variant="ghost" size="icon">
-                  <Link href="#" aria-label="Facebook">
-                    <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" />
-                  </Link>
-                </Button>
-            </div>
-          </div>
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
