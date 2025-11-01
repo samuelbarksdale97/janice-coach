@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A serene, open door leading to a beautiful sunlit path, symbolizing new beginnings.",
-      "imageUrl": "https://images.unsplash.com/photo-1512168203104-3910bc2bcd54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvcGVuJTIwZG9vcnxlbnwwfHx8fDE3NjIwMTU5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "open door"
+      "description": "Washington D.C. at sunset, with the Capitol Building and Washington Monument.",
+      "imageUrl": "https://images.unsplash.com/photo-1600022221838-8a2b979512d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxXYXNoaW5ndG9uJTIwRUMlMjBzdW5zZXR8ZW58MHx8fHwxNzYyODU0MDUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Washington DC"
     },
     {
       "id": "about",
