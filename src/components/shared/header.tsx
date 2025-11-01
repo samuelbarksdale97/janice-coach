@@ -9,7 +9,6 @@ import { Logo } from "@/components/icons";
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const navItems = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
