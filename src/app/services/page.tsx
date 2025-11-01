@@ -34,26 +34,26 @@ const howItWorksSteps = [
     {
         icon: <GitFork className="w-12 h-12 text-primary" />,
         step: "Step 1",
-        title: "Explore Your Options",
-        description: "Browse the offerings and reflect on what's calling to you."
+        title: "Explore Services",
+        description: "Discover the coaching package that best aligns with your personal or professional goals."
     },
     {
         icon: <CalendarCheck className="w-12 h-12 text-primary" />,
         step: "Step 2",
-        title: "Book a Free Discovery Call",
-        description: "Let's talk about your goals, questions, and what kind of support would serve you best."
+        title: "Book a Discovery Call",
+        description: "Schedule a complimentary call to discuss your aspirations and see if we're a good fit."
     },
     {
         icon: <Waypoints className="w-12 h-12 text-primary" />,
         step: "Step 3",
-        title: "Choose Your Path",
-        description: "Whether it's a short reset or a full transformation – we'll tailor a path that fits."
+        title: "Create Your Plan",
+        description: "Together, we'll create a customized coaching plan tailored to your unique path."
     },
     {
         icon: <Rocket className="w-12 h-12 text-primary" />,
         step: "Step 4",
-        title: "Begin Your Journey",
-        description: "Start your coaching sessions, access resources, and stay supported every step of the way."
+        title: "Start Your Transformation",
+        description: "Begin your coaching journey with consistent support and actionable steps toward your goals."
     },
 ]
 
@@ -113,9 +113,9 @@ export default function ServicesPage() {
                             <div className="space-y-2">
                                 <h2 className="text-3xl font-headline font-bold tracking-tighter text-primary sm:text-5xl">How It Works</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    I offer coaching and leadership development grounded in authenticity, resilience, and clarity.
+                                My coaching process is designed to be clear, supportive, and transformative.
                                     <br />
-                                    <span className="text-secondary font-semibold">I meet you where you are – and help you grow into what's next with purpose.</span>
+                                    <span className="text-secondary font-semibold">Here’s how we can begin our journey together.</span>
                                 </p>
                             </div>
                         </div>
