@@ -1,8 +1,14 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { ContactForm } from "./contact-form";
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+
+const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
 
 export default function ContactPage() {
     return (
@@ -70,6 +76,34 @@ export default function ContactPage() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section id="cta-contact" className="relative w-full py-20 md:py-32 flex items-center justify-center text-center text-white">
+                    {heroImage && (
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                    )}
+                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="relative z-10 p-4 max-w-4xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
+                        Ready to Start Now?
+                    </h2>
+                    <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
+                        If you're ready to explore coaching options or book a free consultation with me, you can skip the form and go straight to my secure portal.
+                    </p>
+                    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                            <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                        </Button>
+                        <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                            <Link href="/services">Explore Coaching Packages</Link>
+                        </Button>
+                    </div>
                     </div>
                 </section>
             </main>
