@@ -61,11 +61,16 @@ export default function Home() {
               <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow">
                 Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
               </p>
-              <Button asChild size="lg" className="mt-8 font-bold">
-                <Link href="/services">
-                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button asChild size="lg" className="font-bold">
+                  <Link href="/services">
+                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="font-bold border-white text-white hover:bg-white/10 hover:text-white">
+                    <Link href="/contact">Schedule a Call</Link>
+                </Button>
+              </div>
             </div>
           </section>
 
