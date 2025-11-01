@@ -53,7 +53,7 @@ export default function Home() {
                 data-ai-hint={heroImage.imageHint}
               />
             )}
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/40" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-shadow-lg">
                 Open the Door to Your Future
