@@ -35,14 +35,7 @@ const philosophyPoints = [
     }
 ];
 
-export default function Home(props:any) {
-  if (props.params) {
-    const keys = Object.keys(props.params);
-    if (keys.length > 0) {
-      return null;
-    }
-  }
-  
+export default function Home() {
   return (
     <>
       <Header />
@@ -130,6 +123,20 @@ export default function Home(props:any) {
                       ))}
                   </div>
               </div>
+          </section>
+
+          <section id="cta" className="py-16 md:py-24 bg-primary text-primary-foreground">
+            <div className="container mx-auto px-4 text-center">
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Begin Your Transformation?</h2>
+                <p className="mt-4 text-lg max-w-2xl mx-auto">
+                    Don't wait another day to start living the life you've imagined. A complimentary discovery call is the first step.
+                </p>
+                <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
+                    <Link href="/contact">
+                        Schedule Your Free Call <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                </Button>
+            </div>
           </section>
 
         </main>
