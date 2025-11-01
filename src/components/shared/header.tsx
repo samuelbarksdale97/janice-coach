@@ -17,6 +17,24 @@ const navItems = [
   { href: "#contact", label: "Contact" },
 ];
 
+const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  );
+
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -55,15 +73,18 @@ export function Header() {
         <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                        <Menu />
+                    <button className="p-2">
+                        <CustomMenuIcon className="h-6 w-6"/>
                         <span className="sr-only">Open menu</span>
-                    </Button>
+                    </button>
                 </SheetTrigger>
                 <SheetContent side="right">
                     <SheetTitle>
                         <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
                     </SheetTitle>
+                    <SheetDescription>
+                      <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
+                    </SheetDescription>
                     <nav className="flex flex-col space-y-4 mt-8">
                         {navItems.map((item) => (
                            <a
