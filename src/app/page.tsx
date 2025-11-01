@@ -93,7 +93,10 @@ const blogPosts = [
 export default function Home(props:any) {
   // Prevent Next.js from complaining about enumerating params
   if (props.params) {
-    return null;
+    const keys = Object.keys(props.params);
+    if (keys.length > 0) {
+      return null;
+    }
   }
   
   return (
@@ -284,7 +287,7 @@ export default function Home(props:any) {
           <section id="contact" className="py-16 md:py-24 bg-muted">
               <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                  <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
+                  <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
                       Get In Touch
                   </h1>
                   <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
