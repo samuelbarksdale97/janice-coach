@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A serene, open door leading to a beautiful sunlit path, symbolizing new beginnings.",
+      "imageUrl": "https://images.unsplash.com/photo-1512168203104-3910bc2bcd54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvcGVuJTIwZG9vcnxlbnwwfHx8fDE3NjIwMTU5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "open door"
+    },
+    {
+      "id": "about",
+      "description": "A warm and professional headshot of a female life coach.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjIwMDczOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "blog1",
+      "description": "A person writing in a journal with a cup of coffee.",
+      "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journal writing"
+    },
+    {
+      "id": "blog2",
+      "description": "A person meditating at sunrise.",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunrise meditation"
+    },
+    {
+      "id": "blog3",
+      "description": "A path winding through a lush green forest.",
+      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "path forest"
+    },
+    {
+      "id": "service1",
+      "description": "A compass pointing towards a direction, symbolizing guidance.",
+      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "compass direction"
+    },
+    {
+      "id": "service2",
+      "description": "A person standing on a mountain peak, symbolizing achievement.",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain peak"
+    },
+    {
+      "id": "service3",
+      "description": "Two people having a supportive conversation.",
+      "imageUrl": "https://images.unsplash.com/photo-1604882733856-b8f8ae4f80fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc2MjAwNjcyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "supportive conversation"
+    },
+    {
+      "id": "contact",
+      "description": "An elegant desk setup with a laptop and notebook.",
+      "imageUrl": "https://images.unsplash.com/photo-1614624532983-4ce03382d63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZXNrJTIwc2V0dXB8ZW58MHx8fHwxNzYxOTU1MjgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk setup"
+    }
+  ]
 }
