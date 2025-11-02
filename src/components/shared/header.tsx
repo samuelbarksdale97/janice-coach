@@ -4,10 +4,12 @@ import React from 'react';
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
+import { Dialog, DialogTrigger, DialogContent, DialogClose, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { cn } from '@/lib/utils';
 import { Logo } from "@/components/icons";
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Button } from '@/components/ui/button';
+import { X } from 'lucide-react';
 
 const navItems = [
   { href: "/about", label: "About" },
@@ -68,40 +70,59 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <div className="md:hidden">
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger asChild>
-                    <button className="p-2">
-                        <CustomMenuIcon className="h-6 w-6"/>
-                        <span className="sr-only">Open menu</span>
-                    </button>
-                </SheetTrigger>
-                <SheetContent side="right">
-                    <SheetTitle>
-                        <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
-                    </SheetTitle>
-                    <SheetDescription>
-                      <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
-                    </SheetDescription>
-                    <nav className="flex flex-col space-y-4 mt-8">
-                        {navItems.map((item) => (
-                           <Link
-                              key={item.href}
-                              href={item.href}
-                              onClick={() => setIsOpen(false)}
-                              className={cn(
-                                "text-lg font-medium",
-                                pathname === item.href ? "text-primary" : "text-foreground"
-                              )}
-                            >
-                              {item.label}
-                            </Link>
-                        ))}
-                    </nav>
-                    <Button asChild className="mt-6 w-full rounded-full">
-                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Let's Talk</a>
+          <Dialog open={isOpen} onOpenChange={setIsOpen}>
+            <DialogTrigger asChild>
+              <button className="p-2">
+                  <CustomMenuIcon className="h-6 w-6"/>
+                  <span className="sr-only">Open menu</span>
+              </button>
+            </DialogTrigger>
+            <DialogContent className="mobile-menu-overlay">
+               <DialogTitle>
+                  <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
+                </DialogTitle>
+                <DialogDescription>
+                  <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
+                </DialogDescription>
+                
+                <div className="flex justify-between items-center p-4 absolute top-0 left-0 right-0">
+                  <Link href="/" onClick={() => setIsOpen(false)}>
+                    <Logo className="h-8 w-8 text-primary" />
+                    <span className="sr-only">Evolving Door Home</span>
+                  </Link>
+                  <DialogClose asChild>
+                    <Button variant="ghost" size="icon">
+                      <X className="h-6 w-6" />
+                      <span className="sr-only">Close menu</span>
                     </Button>
-                </SheetContent>
-            </Sheet>
+                  </DialogClose>
+                </div>
+                
+                <div className="flex flex-col items-center justify-center flex-1">
+                  <nav className="flex flex-col items-center space-y-8">
+                      {navItems.map((item) => (
+                         <Link
+                            key={item.href}
+                            href={item.href}
+                            onClick={() => setIsOpen(false)}
+                            className={cn(
+                              "text-4xl font-headline transition-colors hover:text-primary",
+                              pathname === item.href ? "text-primary" : "text-foreground"
+                            )}
+                          >
+                            {item.label}
+                          </Link>
+                      ))}
+                  </nav>
+                </div>
+
+                <div className="p-4 pb-8">
+                  <Button asChild className="w-full rounded-full" size="lg">
+                      <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Let's Talk</a>
+                  </Button>
+                </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </header>
