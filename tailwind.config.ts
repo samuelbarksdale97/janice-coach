@@ -1,5 +1,7 @@
 import type {Config} from 'tailwindcss';
 
+const plugin = require('tailwindcss/plugin')
+
 export default {
   darkMode: ['class'],
   content: [
@@ -77,10 +79,15 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "glide-up": {
+            from: { transform: 'translateY(20px)', opacity: '0' },
+            to: { transform: 'translateY(0)', opacity: '1' },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glide-up": "glide-up 1s ease-out forwards",
       },
       textShadow: {
         DEFAULT: '0 2px 4px rgba(0, 0, 0, 0.1)',
@@ -88,5 +95,18 @@ export default {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('tailwindcss-textshadow')],
+  plugins: [
+    require('tailwindcss-animate'), 
+    require('tailwindcss-textshadow'),
+    plugin(function({ addUtilities }: { addUtilities: Function }) {
+      addUtilities({
+        '.animation-delay-300': {
+          'animation-delay': '300ms',
+        },
+        '.animation-delay-600': {
+            'animation-delay': '600ms',
+        },
+      })
+    })
+  ],
 } satisfies Config;
