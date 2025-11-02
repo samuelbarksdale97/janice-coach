@@ -76,7 +76,7 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay">
+            <DialogContent className="mobile-menu-overlay p-0">
                <DialogTitle>
                   <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
                 </DialogTitle>
