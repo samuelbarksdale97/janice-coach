@@ -133,7 +133,7 @@ export default function Home() {
                 <blockquote className="text-lg md:text-xl font-headline font-medium text-primary">
                   "The only impossible journey is the one you never begin."
                 </blockquote>
-                <p className="mt-4 text-lg text-muted-foreground font-semibold italic">— Tony Robbins</p>
+                <p className="mt-4 text-lg text-secondary font-semibold italic">— Tony Robbins</p>
               </div>
             </div>
           </section>
