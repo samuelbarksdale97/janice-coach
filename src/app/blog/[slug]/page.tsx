@@ -49,7 +49,8 @@ const blogPosts = [
 ];
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-    const post = blogPosts.find(p => p.slug === params.slug);
+    const { slug } = params;
+    const post = blogPosts.find(p => p.slug === slug);
 
     if (!post) {
         notFound();
