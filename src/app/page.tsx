@@ -50,7 +50,7 @@ export default function Home() {
                             What would change if you led more like <span className="text-secondary">you</span> - and less like who you're supposed to be?
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
-                            Executive coaching for seasoned leaders who want to lead with authenticity, clarity, and courage – especially in uncertain times.
+                            Guiding experienced leaders to harness their authentic voice, find clarity in complexity, and lead with courage through today's challenges.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
                             <Button asChild size="lg" className="font-bold">
