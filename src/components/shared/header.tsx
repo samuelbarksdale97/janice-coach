@@ -62,7 +62,7 @@ export function Header() {
                 </Link>
                 ))}
             </nav>
-            <Button asChild size="sm" className="rounded-full">
+            <Button asChild className="rounded-full">
                 <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
             </Button>
         </div>
