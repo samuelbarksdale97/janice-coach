@@ -94,7 +94,7 @@ export default function ContactPage() {
                         Ready to Start Now?
                     </h2>
                     <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
-                        If you're ready to explore coaching options or book a free consultation with me, you can skip the form and go straight to my secure portal.
+                        The simplest way to begin is by booking a complimentary discovery call or exploring the packages to see what's right for you.
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
