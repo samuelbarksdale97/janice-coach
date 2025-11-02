@@ -55,7 +55,7 @@ export default function Home() {
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
                     Open the Door to Your Future
                 </h1>
-                <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
+                <p className="mt-4 text-xl max-w-2xl mx-auto text-shadow">
                     Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
