@@ -42,42 +42,31 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="relative w-full py-20 md:py-32 bg-muted/30 overflow-hidden md:overflow-visible">
-            <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6 text-center md:text-left">
-                        <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tight">
-                            What would change if you led more like <span className="text-secondary">you</span> - and less like who you're supposed to be?
-                        </h1>
-                        <p className="text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
-                            Guiding experienced leaders to harness their authentic voice, find clarity in complexity, and lead with courage through today's challenges.
-                        </p>
-                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-                            <Button asChild size="lg" className="font-bold">
-                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
-                                <Link href="/services">
-                                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                                </Link>
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="flex justify-center md:static absolute right-[-100px] bottom-0 w-1/2 md:w-full">
-                        {heroImage && (
-                          <div className="relative w-full max-w-sm md:max-w-md aspect-square rounded-full overflow-hidden shadow-2xl md:shadow-none">
-                              <Image
-                                  src={heroImage.imageUrl}
-                                  alt={heroImage.description}
-                                  fill
-                                  className="object-cover"
-                                  priority
-                                  sizes="(max-width: 768px) 80vw, 450px"
-                                  data-ai-hint={heroImage.imageHint}
-                              />
-                          </div>
-                        )}
-                    </div>
+          <section id="home" className="relative w-full py-20 md:py-32 flex items-center justify-center text-center text-white">
+            <Image
+                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_c9mzkoc9mzkoc9mz.png?alt=media&token=a8baa9fd-7937-4746-b6d6-84a0243516b2"
+                alt="A person standing on a mountain peak looking out at the sunrise."
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="relative z-10 p-4 max-w-4xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
+                    How might your leadership change if you fully embraced who you are, instead of who you've been told to be?
+                </h1>
+                <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
+                    Guiding experienced leaders to harness their authentic voice, find clarity in complexity, and lead with courage through today's challenges.
+                </p>
+                <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <Button asChild size="lg" className="font-bold">
+                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                    </Button>
+                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                        <Link href="/services">
+                            Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                        </Link>
+                    </Button>
                 </div>
             </div>
           </section>
