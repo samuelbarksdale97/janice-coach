@@ -100,15 +100,6 @@ export default {
     require('tailwindcss-textshadow'),
     plugin(function({ addUtilities }: { addUtilities: Function }) {
       addUtilities({
-        '.animation-delay-300': {
-          'animation-delay': '300ms',
-        },
-        '.animation-delay-500': {
-          'animation-delay': '500ms',
-        },
-        '.animation-delay-600': {
-            'animation-delay': '600ms',
-        },
       })
     })
   ],
