@@ -15,7 +15,7 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="py-12 md:py-20 bg-muted">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-12">
                             <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
@@ -78,16 +78,13 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="relative w-full py-16 md:py-24 flex items-center justify-center text-center text-white">
-                    {heroImage && (
+                <section id="cta-contact" className="relative w-full py-12 md:py-16 flex items-center justify-center text-center text-white">
                     <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/66DE1BF3-BDE0-4914-8627-C4042EA7389A_1_201_a.jpeg?alt=media&token=85b33495-73c1-4311-979e-06a364978908"
+                        alt="A person standing on a mountain peak looking out at the sunrise."
                         fill
                         className="object-cover"
-                        data-ai-hint={heroImage.imageHint}
                     />
-                    )}
                     <div className="absolute inset-0 bg-black/40" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
