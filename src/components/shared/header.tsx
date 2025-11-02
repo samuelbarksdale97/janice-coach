@@ -41,7 +41,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-            <Logo className="h-6 w-6 text-primary" />
+            <Logo className="h-8 w-8 text-primary" />
             <span className="font-bold font-headline text-lg">Evolving Door</span>
         </Link>
         
@@ -61,8 +61,8 @@ export function Header() {
                 </Link>
                 ))}
             </nav>
-            <Button asChild size="sm">
-                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book a Call</a>
+            <Button asChild size="sm" className="rounded-full">
+                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
             </Button>
         </div>
 
@@ -97,8 +97,8 @@ export function Header() {
                             </Link>
                         ))}
                     </nav>
-                    <Button asChild className="mt-6 w-full">
-                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Book a Call</a>
+                    <Button asChild className="mt-6 w-full rounded-full">
+                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Let's Talk</a>
                     </Button>
                 </SheetContent>
             </Sheet>
