@@ -70,7 +70,7 @@ export default function ServicesPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
                         <div className="space-y-4">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tighter">
@@ -96,7 +96,7 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="space-y-6">
@@ -148,7 +148,7 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="py-16 md:py-24 bg-muted">
+                <section className="py-12 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                             {servicesCards.map((service) => (

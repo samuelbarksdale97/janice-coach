@@ -15,7 +15,7 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="py-16 md:py-24 bg-muted">
+                <section className="py-12 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-12">
                             <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
@@ -78,7 +78,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="relative w-full py-20 md:py-32 flex items-center justify-center text-center text-white">
+                <section id="cta-contact" className="relative w-full py-16 md:py-24 flex items-center justify-center text-center text-white">
                     {heroImage && (
                     <Image
                         src={heroImage.imageUrl}

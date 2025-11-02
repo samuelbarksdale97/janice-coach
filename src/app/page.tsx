@@ -42,7 +42,7 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="relative w-full py-20 md:py-32 flex items-center justify-center text-center text-white">
+          <section id="home" className="relative w-full py-16 md:py-24 flex items-center justify-center text-center text-white">
             <Image
                 src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_c9mzkoc9mzkoc9mz.png?alt=media&token=a8baa9fd-7937-4746-b6d6-84a0243516b2"
                 alt="A person standing on a mountain peak looking out at the sunrise."
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-16 md:py-24 bg-background">
+          <section id="about-intro" className="py-12 md:py-20 bg-background">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
@@ -103,7 +103,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-16 md:py-24 bg-muted">
+          <section id="philosophy" className="py-12 md:py-20 bg-muted">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
@@ -127,10 +127,10 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="quote" className="py-16 md:py-24 bg-background">
+          <section id="quote" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
-                <blockquote className="text-xl md:text-xl font-headline font-medium text-primary">
+                <blockquote className="text-lg md:text-xl font-headline font-medium text-primary">
                   "The only impossible journey is the one you never begin."
                 </blockquote>
                 <p className="mt-4 text-lg text-muted-foreground font-semibold italic">— Tony Robbins</p>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="cta" className="py-16 md:py-24 bg-primary text-primary-foreground">
+          <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Begin Your Transformation?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">

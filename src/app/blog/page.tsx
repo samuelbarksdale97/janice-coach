@@ -40,7 +40,7 @@ export default function BlogPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="py-16 md:py-24 bg-background">
+                <section className="py-12 md:py-20 bg-background">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-12">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">

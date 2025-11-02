@@ -37,7 +37,7 @@ export default function TestimonialsPage() {
     <>
       <Header />
       <main className="flex-1">
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
@@ -74,7 +74,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        <section id="cta" className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Write Your Own Success Story?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
