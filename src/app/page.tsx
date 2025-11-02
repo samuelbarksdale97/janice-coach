@@ -53,7 +53,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
-                    How might your leadership change if you fully embraced who you are, instead of who you've been told to be?
+                    How might your leadership change if you fully embraced who <span className="text-secondary">you are</span>, instead of who you've been told to be?
                 </h1>
                 <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
                     Guiding experienced leaders to harness their authentic voice, find clarity in complexity, and lead with courage through today's challenges.
