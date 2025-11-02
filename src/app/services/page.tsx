@@ -32,25 +32,25 @@ const servicesCards = [
 
 const howItWorksSteps = [
     {
-        icon: <GitFork className="w-12 h-12 text-primary" />,
+        icon: <GitFork className="w-16 h-16 text-primary" />,
         step: "Step 1",
         title: "Explore Services",
         description: "Discover the coaching package that best aligns with your personal or professional goals."
     },
     {
-        icon: <CalendarCheck className="w-12 h-12 text-primary" />,
+        icon: <CalendarCheck className="w-16 h-16 text-primary" />,
         step: "Step 2",
         title: "Book a Discovery Call",
         description: "Schedule a complimentary call to discuss your aspirations and see if we're a good fit."
     },
     {
-        icon: <Waypoints className="w-12 h-12 text-primary" />,
+        icon: <Waypoints className="w-16 h-16 text-primary" />,
         step: "Step 3",
         title: "Create Your Plan",
         description: "Together, we'll create a customized coaching plan tailored to your unique path."
     },
     {
-        icon: <Rocket className="w-12 h-12 text-primary" />,
+        icon: <Rocket className="w-16 h-16 text-primary" />,
         step: "Step 4",
         title: "Start Your Transformation",
         description: "Begin your coaching journey with consistent support and actionable steps toward your goals."
