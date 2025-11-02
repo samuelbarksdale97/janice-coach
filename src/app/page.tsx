@@ -89,7 +89,7 @@ export default function Home() {
                           )}
                       </div>
                       <div className="text-center md:text-left">
-                          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Guide for Your Journey</h2>
+                          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Guide for Your <span className="text-secondary">Journey</span></h2>
                           <p className="mt-4 text-lg text-muted-foreground">
                               I'm Jane Doe, a certified life coach dedicated to helping you find clarity and purpose. My mission is to provide a supportive space where you can explore your potential, overcome obstacles, and design a life that truly resonates with you.
                           </p>
