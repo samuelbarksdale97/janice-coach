@@ -42,7 +42,7 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="w-full py-20 md:py-32 bg-muted/30">
+          <section id="home" className="relative w-full py-20 md:py-32 bg-muted/30 overflow-hidden md:overflow-visible">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6 text-center md:text-left">
@@ -63,9 +63,9 @@ export default function Home() {
                             </Button>
                         </div>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="flex justify-center md:static absolute right-[-100px] bottom-0 w-1/2 md:w-full">
                         {heroImage && (
-                          <div className="relative w-full max-w-sm md:max-w-md aspect-square rounded-full overflow-hidden shadow-2xl">
+                          <div className="relative w-full max-w-sm md:max-w-md aspect-square rounded-full overflow-hidden shadow-2xl md:shadow-none">
                               <Image
                                   src={heroImage.imageUrl}
                                   alt={heroImage.description}
