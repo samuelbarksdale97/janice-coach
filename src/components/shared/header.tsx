@@ -85,7 +85,7 @@ export function Header() {
                   <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
                 </DialogDescription>
                 
-                <div className="flex justify-between items-center px-4 pt-6 pb-4 absolute top-0 left-0 right-0">
+                <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-4 pt-6 pb-4">
                   <Link href="/" onClick={() => setIsOpen(false)}>
                     <Logo className="h-8 w-8 text-primary" />
                     <span className="sr-only">Evolving Door Home</span>
