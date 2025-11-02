@@ -130,7 +130,7 @@ export default function Home() {
           <section id="quote" className="py-16 md:py-24 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
-                <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
+                <blockquote className="text-xl md:text-2xl font-headline font-medium text-primary">
                   "The only impossible journey is the one you never begin."
                 </blockquote>
                 <p className="mt-4 text-lg text-muted-foreground font-semibold">— Tony Robbins</p>
