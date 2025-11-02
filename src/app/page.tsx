@@ -42,35 +42,43 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="relative w-full h-[80vh] flex items-start md:items-center justify-center text-center text-white pt-20 md:pt-0">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover"
-                priority
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
-            <div className="absolute inset-0 bg-black/20" />
-            <div className="relative z-10 p-4 max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight text-shadow-lg animate-glide-up">
-                Open the Door to Your Future
-              </h1>
-              <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow animate-glide-up">
-                Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 animate-glide-up">
-                <Button asChild size="lg" className="font-bold text-white bg-primary hover:bg-primary/90 sm:bg-transparent sm:border sm:border-white sm:hover:bg-white/10">
-                  <Link href="/services">
-                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild size="lg" className="font-bold text-white bg-primary hover:bg-primary/90 sm:bg-transparent sm:border sm:border-white sm:hover:bg-white/10">
-                    <Link href="/contact">Schedule a Call</Link>
-                </Button>
-              </div>
+          <section id="home" className="w-full py-20 md:py-32 bg-muted/30">
+            <div className="container mx-auto px-4">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="space-y-6 text-center md:text-left">
+                        <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tight">
+                            What would change if you led more like <span className="text-secondary">you</span> - and less like who you're supposed to be?
+                        </h1>
+                        <p className="text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
+                            Executive coaching for seasoned leaders who want to lead with authenticity, clarity, and courage – especially in uncertain times.
+                        </p>
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                            <Button asChild size="lg" className="font-bold">
+                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                            </Button>
+                            <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
+                                <Link href="/services">
+                                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+                    <div className="flex justify-center">
+                        {heroImage && (
+                          <div className="relative w-full max-w-sm md:max-w-md aspect-square rounded-full overflow-hidden shadow-2xl">
+                              <Image
+                                  src={heroImage.imageUrl}
+                                  alt={heroImage.description}
+                                  fill
+                                  className="object-cover"
+                                  priority
+                                  sizes="(max-width: 768px) 80vw, 450px"
+                                  data-ai-hint={heroImage.imageHint}
+                              />
+                          </div>
+                        )}
+                    </div>
+                </div>
             </div>
           </section>
 
