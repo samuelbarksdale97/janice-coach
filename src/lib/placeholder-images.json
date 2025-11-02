@@ -53,6 +53,24 @@
       "description": "An elegant desk setup with a laptop and notebook.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm.png?alt=media&token=62a919a5-c64a-484f-b91f-d23982068cb1",
       "imageHint": "desk setup"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Headshot of a smiling man with glasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Headshot of a woman smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzYyMDA3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "testimonial3",
+      "description": "Headshot of a professional man.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man"
     }
   ]
 }
