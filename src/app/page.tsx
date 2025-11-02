@@ -62,7 +62,7 @@ export default function Home() {
                     <Button asChild size="lg" className="font-bold">
                         <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
                     </Button>
-                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
                         <Link href="/services">
                             Learn More <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
