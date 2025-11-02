@@ -42,7 +42,7 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="relative w-full h-[80vh] flex items-center justify-center text-center text-white">
+          <section id="home" className="relative w-full h-[80vh] flex items-start md:items-center justify-center text-center text-white pt-20 md:pt-0">
             {heroImage && (
               <Image
                 src={heroImage.imageUrl}
