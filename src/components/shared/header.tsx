@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Dialog, DialogTrigger, DialogContent, DialogClose, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { cn } from '@/lib/utils';
 import { Logo } from "@/components/icons";
