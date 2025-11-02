@@ -28,9 +28,8 @@ const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeLinejoin="round"
       {...props}
     >
-      <line x1="3" y1="12" x2="21" y2="12"></line>
-      <line x1="3" y1="6" x2="21" y2="6"></line>
-      <line x1="3" y1="18" x2="21" y2="18"></line>
+      <line x1="3" y1="9" x2="21" y2="9"></line>
+      <line x1="3" y1="15" x2="21" y2="15"></line>
     </svg>
   );
 
