@@ -55,9 +55,7 @@ export default function Home() {
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
                     How would things shift if you led from your core, rather than from the script you've been given?
                 </h1>
-                <p className="mt-4 text-xl max-w-2xl mx-auto text-shadow">
-                    Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
-                </p>
+                
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Button asChild size="lg" className="font-bold">
                         <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
