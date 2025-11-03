@@ -82,12 +82,17 @@ export default {
         "glide-up": {
             from: { transform: 'translateY(20px)', opacity: '0' },
             to: { transform: 'translateY(0)', opacity: '1' },
+        },
+        "glide-left": {
+            from: { transform: 'translateX(-20px)', opacity: '0' },
+            to: { transform: 'translateX(0)', opacity: '1' },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "glide-up": "glide-up 1s ease-out forwards",
+        "glide-left": "glide-left 1s ease-out forwards",
       },
       textShadow: {
         DEFAULT: '0 2px 4px rgba(0, 0, 0, 0.1)',
