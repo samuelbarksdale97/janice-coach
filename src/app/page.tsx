@@ -53,7 +53,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up">
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
-                    Open the Door to <span className="text-secondary">Your</span> Future
+                    How would things shift if you led from your core, rather than from the script you've been given?
                 </h1>
                 <p className="mt-4 text-xl max-w-2xl mx-auto text-shadow">
                     Professional life coaching to help you navigate change, discover your potential, and create the life you've always wanted.
@@ -130,7 +130,7 @@ export default function Home() {
           <section id="quote" className="py-8 md:py-12 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
-                <blockquote className="text-lg md:text-xl font-headline font-medium text-primary">
+                <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                   "The only impossible journey is the one you never begin."
                 </blockquote>
                 <p className="mt-4 text-lg text-secondary font-semibold italic">— Tony Robbins</p>
