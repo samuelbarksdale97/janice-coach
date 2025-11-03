@@ -76,7 +76,7 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay p-0">
+            <DialogContent className="mobile-menu-overlay p-0 pt-4">
                <DialogTitle>
                   <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
                 </DialogTitle>
@@ -84,7 +84,7 @@ export function Header() {
                   <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
                 </DialogDescription>
                 
-                <div className="flex justify-between items-center px-1">
+                <div className="flex justify-between items-center px-4">
                   <Link href="/" onClick={() => setIsOpen(false)}>
                     <Logo className="h-8 w-8 text-primary" />
                     <span className="sr-only">Evolving Door Home</span>
