@@ -53,7 +53,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up">
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
-                    What possibilities would open up if you led as yourself, and not as the version others expect?
+                    What possibilities would open up if you led as yourself - and not as the version others expect?
                 </h1>
                 
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
