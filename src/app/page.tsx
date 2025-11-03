@@ -1,7 +1,7 @@
 
 'use client';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Brain, Zap, Target } from "lucide-react";
+import { ArrowRight, Heart, Brain, Zap, Target, PlayCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/shared/header";
@@ -135,6 +135,31 @@ export default function Home() {
                 </blockquote>
                 <p className="mt-4 text-lg text-secondary font-semibold italic">— Tony Robbins</p>
               </div>
+            </div>
+          </section>
+          
+          <section id="video-feature" className="py-8 md:py-12 bg-muted">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>
+                    <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
+                        Watch this short video to understand my approach and how we can work together to achieve your goals.
+                    </p>
+                </div>
+                <div className="max-w-4xl mx-auto">
+                    <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-black group cursor-pointer">
+                        <Image
+                            src="https://picsum.photos/seed/video/1280/720"
+                            alt="Video placeholder"
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            data-ai-hint="coaching video"
+                        />
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                            <PlayCircle className="h-20 w-20 text-white/80 transform transition-transform duration-300 group-hover:scale-110" />
+                        </div>
+                    </div>
+                </div>
             </div>
           </section>
 
