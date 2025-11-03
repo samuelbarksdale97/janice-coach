@@ -72,11 +72,11 @@ export default function ServicesPage() {
             <main className="flex-1">
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
-                        <div className="space-y-4">
+                        <div className="space-y-4 text-center lg:text-left">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tighter">
                                 Coaching Services
                             </h1>
-                            <p className="mt-4 text-lg md:text-xl max-w-xl text-muted-foreground">
+                            <p className="mt-4 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 text-muted-foreground">
                                 <span className="text-secondary">Invest in yourself</span> with programs designed to bring clarity, purpose, and momentum to your life and career.
                             </p>
                         </div>
@@ -114,6 +114,7 @@ export default function ServicesPage() {
                                     {step.icon}
                                     <div className="space-y-1">
                                         <p className="text-sm font-bold uppercase tracking-wider text-secondary">{step.step}</p>
+
                                         <h3 className="text-xl font-bold font-headline text-primary">{step.title}</h3>
                                         <p className="text-muted-foreground text-sm">{step.description}</p>
                                     </div>
