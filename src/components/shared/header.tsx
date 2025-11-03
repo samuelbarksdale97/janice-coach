@@ -15,10 +15,11 @@ const navItems = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/testimonials", label: "Testimonials" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
-const desktopNavItems = navItems.filter(item => item.href !== "/");
+const desktopNavItems = navItems.filter(item => !["/", "/blog"].includes(item.href));
 
 
 const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -41,6 +42,8 @@ const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
+
+  const mobileNavItems = navItems.filter(item => item.href !== "/blog");
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -86,22 +89,17 @@ export function Header() {
                   <DialogDescription>A list of links to navigate the site.</DialogDescription>
                 </VisuallyHidden>
                 
-                <div className="flex justify-between items-center px-4 h-16">
+                <div className="flex h-16 items-center justify-between px-4">
                   <Link href="/" onClick={() => setIsOpen(false)}>
                     <Logo className="h-8 w-8 text-primary" />
                     <span className="sr-only">Evolving Door Home</span>
                   </Link>
-                  <DialogClose asChild>
-                    <Button variant="ghost" size="icon">
-                      <X className="h-6 w-6" />
-                      <span className="sr-only">Close menu</span>
-                    </Button>
-                  </DialogClose>
+                  {/* This DialogClose was creating the extra X button */}
                 </div>
                 
-                <div className="flex flex-col items-center justify-center flex-1">
+                <div className="flex flex-1 flex-col items-center justify-center">
                   <nav className="flex flex-col items-center space-y-8">
-                      {navItems.map((item) => (
+                      {mobileNavItems.map((item) => (
                          <Link
                             key={item.href}
                             href={item.href}
