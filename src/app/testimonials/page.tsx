@@ -40,7 +40,7 @@ export default function TestimonialsPage() {
         <section className="py-12 md:py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary animate-glide-left md:animate-none">
                 What My Clients Say
               </h1>
               <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
