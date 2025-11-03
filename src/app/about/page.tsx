@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-                            <div className="space-y-4">
+                            <div className="space-y-4 animate-glide-up">
                                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary font-headline">
                                     Meet Your Coach
                                 </h1>
