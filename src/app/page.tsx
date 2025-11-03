@@ -51,7 +51,7 @@ export default function Home() {
                 priority
             />
             <div className="absolute inset-0 bg-black/50" />
-            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up" style={{ animationDelay: '0.3s' }}>
+            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up">
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
                     Open the Door to <span className="text-secondary">Your</span> Future
                 </h1>
