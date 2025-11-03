@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import { Logo } from "@/components/icons";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const navItems = [
     { href: "/", label: "Home" },
@@ -26,6 +27,20 @@ export function Footer() {
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
                 Guiding you through life's transitions with professional coaching and support.
             </p>
+            <div className="flex justify-center md:justify-start space-x-4 mt-4">
+              <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+            </div>
           </div>
           
           <div>
