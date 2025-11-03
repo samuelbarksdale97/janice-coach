@@ -77,7 +77,7 @@ export default function ServicesPage() {
                                 Coaching Services
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-xl text-muted-foreground">
-                                Invest in yourself with programs designed to bring clarity, purpose, and momentum to your life and career.
+                                <span className="text-secondary">Invest in yourself</span> with programs designed to bring clarity, purpose, and momentum to your life and career.
                             </p>
                         </div>
                         <div className="flex justify-center">
