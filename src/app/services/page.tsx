@@ -73,7 +73,7 @@ export default function ServicesPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
                         <div className="space-y-4 text-center lg:text-left animate-glide-up">
-                            <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tighter">
+                            <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-wide">
                                 Coaching Services
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 text-muted-foreground">
