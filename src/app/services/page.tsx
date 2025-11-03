@@ -155,7 +155,7 @@ export default function ServicesPage() {
                             {servicesCards.map((service) => (
                                 <Card 
                                     key={service.title} 
-                                    className="flex flex-col bg-background overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center md:text-left"
+                                    className="flex flex-col bg-background overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center"
                                 >
                                     {service.image && (
                                         <div className="aspect-h-2 aspect-w-3 relative">
