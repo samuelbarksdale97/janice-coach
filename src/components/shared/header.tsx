@@ -77,12 +77,10 @@ export function Header() {
               </button>
             </DialogTrigger>
             <DialogContent className="mobile-menu-overlay p-0">
-               <DialogTitle>
-                  <VisuallyHidden>Mobile Navigation Menu</VisuallyHidden>
-                </DialogTitle>
-                <DialogDescription>
-                  <VisuallyHidden>A list of links to navigate the site.</VisuallyHidden>
-                </DialogDescription>
+                <VisuallyHidden>
+                  <DialogTitle>Mobile Navigation Menu</DialogTitle>
+                  <DialogDescription>A list of links to navigate the site.</DialogDescription>
+                </VisuallyHidden>
                 
                 <div className="flex justify-between items-center px-4 h-16">
                   <Link href="/" onClick={() => setIsOpen(false)}>
