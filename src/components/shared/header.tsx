@@ -11,11 +11,15 @@ import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
 
 const navItems = [
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/contact", label: "Contact" },
 ];
+
+const desktopNavItems = navItems.filter(item => item.href !== "/");
+
 
 const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -49,7 +53,7 @@ export function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
             <nav className="flex items-center space-x-6">
-                {navItems.map((item) => (
+                {desktopNavItems.map((item) => (
                 <Link 
                     key={item.href}
                     href={item.href}
@@ -76,7 +80,7 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay p-0">
+            <DialogContent className="mobile-menu-overlay p-0 pt-0">
                 <VisuallyHidden>
                   <DialogTitle>Mobile Navigation Menu</DialogTitle>
                   <DialogDescription>A list of links to navigate the site.</DialogDescription>
