@@ -72,7 +72,7 @@ export default function ServicesPage() {
             <main className="flex-1">
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
-                        <div className="space-y-4 text-center lg:text-left">
+                        <div className="space-y-4 text-center lg:text-left animate-glide-up lg:animate-none">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tighter">
                                 Coaching Services
                             </h1>
