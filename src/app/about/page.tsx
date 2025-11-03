@@ -15,9 +15,9 @@ const philosophyPoints = [
 ];
 
 const bioImages = [
-    PlaceHolderImages.find(img => img.id === 'service1'),
-    PlaceHolderImages.find(img => img.id === 'service2'),
-    PlaceHolderImages.find(img => img.id === 'service3'),
+    PlaceHolderImages.find(img => img.id === 'blog1'),
+    PlaceHolderImages.find(img => img.id === 'blog2'),
+    PlaceHolderImages.find(img => img.id === 'blog3'),
 ]
 
 export default function AboutPage() {
