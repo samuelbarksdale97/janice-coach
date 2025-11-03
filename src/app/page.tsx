@@ -51,7 +51,7 @@ export default function Home() {
                 priority
             />
             <div className="absolute inset-0 bg-black/50" />
-            <div className="relative z-10 p-4 max-w-4xl mx-auto">
+            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up" style={{ animationDelay: '0.3s' }}>
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
                     Open the Door to <span className="text-secondary">Your</span> Future
                 </h1>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-12 md:py-20 bg-background">
+          <section id="about-intro" className="py-8 md:py-12 bg-background">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
@@ -103,7 +103,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-12 md:py-20 bg-muted">
+          <section id="philosophy" className="py-8 md:py-12 bg-muted">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="quote" className="py-12 md:py-20 bg-background">
+          <section id="quote" className="py-8 md:py-12 bg-background">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-lg md:text-xl font-headline font-medium text-primary">
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
+          <section id="cta" className="py-8 md:py-12 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Begin Your Transformation?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
