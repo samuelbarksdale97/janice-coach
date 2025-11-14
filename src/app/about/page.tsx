@@ -84,7 +84,7 @@ export default function AboutPage() {
                         </Card>
                     </div>
                 </section>
-                <section id="logo-display" className="bg-background">
+                <section id="logo-display" className="bg-background lg:hidden">
                     <div className="container mx-auto px-4">
                         <div className="flex justify-center">
                             <Image
