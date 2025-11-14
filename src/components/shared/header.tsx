@@ -50,7 +50,10 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             <Logo className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline text-lg">Evolving Door</span>
+            <div className='flex flex-col'>
+              <span className="font-bold font-headline text-lg text-primary">Taylor</span>
+              <span className="text-xs font-bold tracking-widest text-secondary">LEADERSHIP COACHING</span>
+            </div>
         </Link>
         
         {/* Desktop Navigation */}
@@ -83,23 +86,30 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay p-0 pt-0">
-                <VisuallyHidden>
-                  <DialogTitle>Mobile Navigation Menu</DialogTitle>
-                  <DialogDescription>A list of links to navigate the site.</DialogDescription>
-                </VisuallyHidden>
-                
-                <div className="flex h-16 items-center justify-between px-4">
-                  <Link href="/" onClick={() => setIsOpen(false)}>
+            <DialogContent className="mobile-menu-overlay p-0">
+                <div className="flex h-16 items-center justify-between px-4 border-b">
+                  <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center space-x-2">
                     <Logo className="h-8 w-8 text-primary" />
-                    <span className="sr-only">Evolving Door Home</span>
+                     <div className='flex flex-col'>
+                        <span className="font-bold font-headline text-lg text-primary">Taylor</span>
+                        <span className="text-xs font-bold tracking-widest text-secondary">LEADERSHIP COACHING</span>
+                    </div>
                   </Link>
-                  {/* This DialogClose was creating the extra X button */}
+                  <DialogClose asChild>
+                    <button className="p-2">
+                      <X className="h-6 w-6" />
+                      <span className="sr-only">Close menu</span>
+                    </button>
+                  </DialogClose>
                 </div>
                 
                 <div className="flex flex-1 flex-col items-center justify-center">
+                   <VisuallyHidden>
+                    <DialogTitle>Mobile Navigation Menu</DialogTitle>
+                    <DialogDescription>A list of links to navigate the site.</DialogDescription>
+                  </VisuallyHidden>
                   <nav className="flex flex-col items-center space-y-8">
-                      {mobileNavItems.map((item) => (
+                      {navItems.map((item) => (
                          <Link
                             key={item.href}
                             href={item.href}
@@ -115,7 +125,7 @@ export function Header() {
                   </nav>
                 </div>
 
-                <div className="p-4 pb-8">
+                <div className="p-4 pb-8 border-t">
                   <Button asChild className="w-full rounded-full" size="lg">
                       <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Let's Talk</a>
                   </Button>

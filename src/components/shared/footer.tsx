@@ -28,7 +28,7 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
                 <Logo className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline text-lg">Evolving Door</span>
+                <span className="font-bold font-headline text-lg text-primary">Taylor Leadership Coaching</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
                 Guiding you through life's transitions with professional coaching and support.
@@ -65,7 +65,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {currentYear} Evolving Door. All Rights Reserved.
+          &copy; {currentYear} Taylor Leadership Coaching. All Rights Reserved.
         </div>
       </div>
     </footer>

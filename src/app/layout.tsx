@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Evolving Door - Life Coaching',
+  title: 'Taylor Leadership Coaching',
   description: 'Guiding you through life\'s transitions with professional coaching and support.',
 };
 

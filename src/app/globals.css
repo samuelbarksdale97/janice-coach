@@ -10,21 +10,21 @@
     --card-foreground: 210 40% 9.8%;
     --popover: 0 0% 100%;
     --popover-foreground: 210 40% 9.8%;
-    --primary: 203 45% 37%; /* Denim Blue */
+    --primary: 215 39% 23%; /* Dark Blue from Logo */
     --primary-foreground: 0 0% 98%;
-    --secondary: 350 52% 77%; /* Rose Pink */
+    --secondary: 35 78% 57%; /* Gold from Logo */
     --secondary-foreground: 210 40% 9.8%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 350 52% 77%; /* Rose Pink */
+    --accent: 35 78% 57%; /* Gold from Logo */
     --accent-foreground: 210 40% 9.8%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 203 45% 37%;
-    --chart-1: 203 45% 37%;
-    --chart-2: 350 52% 77%;
+    --ring: 215 39% 23%;
+    --chart-1: 215 39% 23%;
+    --chart-2: 35 78% 57%;
     --chart-3: 343.8 91.4% 49.8%;
     --chart-4: 37.9 95.8% 51.8%;
     --chart-5: 291.2 46.5% 50.4%;
@@ -38,21 +38,21 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 203 45% 47%; /* Brighter Denim Blue */
+    --primary: 215 39% 33%; /* Brighter Dark Blue */
     --primary-foreground: 0 0% 98%;
-    --secondary: 350 52% 67%; /* Brighter Rose Pink */
+    --secondary: 35 78% 67%; /* Brighter Gold */
     --secondary-foreground: 0 0% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 350 52% 67%; /* Brighter Rose Pink */
+    --accent: 35 78% 67%; /* Brighter Gold */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 203 45% 47%;
-    --chart-1: 203 45% 47%;
-    --chart-2: 350 52% 67%;
+    --ring: 215 39% 33%;
+    --chart-1: 215 39% 33%;
+    --chart-2: 35 78% 67%;
     --chart-3: 343.8 91.4% 49.8%;
     --chart-4: 37.9 95.8% 51.8%;
     --chart-5: 291.2 46.5% 50.4%;
