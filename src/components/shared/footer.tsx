@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from "next/link";
 import Image from 'next/image';
 import { Facebook, Instagram, Linkedin } from "lucide-react";
@@ -16,11 +16,7 @@ const navItems = [
 ];
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t">
