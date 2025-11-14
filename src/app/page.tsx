@@ -50,11 +50,11 @@ export default function Home() {
                 className="object-cover"
                 priority
             />
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-black/30" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
-                <div className="mb-8 md:hidden">
+                <div className="mb-8">
                     <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
                         alt="Taylor Leadership Coaching Logo"
                         width={800}
                         height={200}
@@ -110,7 +110,21 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-8 md:py-12 bg-muted">
+          <section id="logo-display" className="py-8 md:py-12 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-center">
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                  alt="Taylor Leadership Coaching Horizontal Logo"
+                  width={1200}
+                  height={300}
+                  className="w-full max-w-4xl h-auto"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section id="philosophy" className="py-8 md:py-12 bg-background">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
@@ -120,7 +134,7 @@ export default function Home() {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                       {philosophyPoints.map((point) => (
-                          <Card key={point.title} className="bg-background border-none shadow-lg text-center">
+                          <Card key={point.title} className="bg-muted border-none shadow-lg text-center">
                               <CardHeader className="items-center">
                                   {point.icon}
                                   <CardTitle className="mt-4 font-headline text-2xl text-primary">{point.title}</CardTitle>
@@ -134,7 +148,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="quote" className="py-8 md:py-12 bg-background">
+          <section id="quote" className="py-8 md:py-12 bg-muted">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
@@ -145,7 +159,7 @@ export default function Home() {
             </div>
           </section>
           
-          <section id="video-feature" className="py-8 md:py-12 bg-muted">
+          <section id="video-feature" className="py-8 md:py-12 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>
