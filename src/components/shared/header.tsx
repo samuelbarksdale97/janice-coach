@@ -3,7 +3,6 @@
 
 import React from 'react';
 import Link from "next/link";
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Dialog, DialogTrigger, DialogContent, DialogClose, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { cn } from '@/lib/utils';
@@ -44,7 +43,7 @@ export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
 
-  const mobileNavItems = navItems.filter(item => item.href !== "/blog");
+  const isHomePage = pathname === '/';
 
   return (
     <header className="absolute top-0 z-50 w-full">
@@ -79,7 +78,7 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className="p-2 text-white">
+              <button className={cn("p-2", isHomePage ? "text-white" : "text-primary")}>
                   <CustomMenuIcon className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
