@@ -27,7 +27,7 @@ export default function ContactPage() {
                                     className="w-auto h-auto max-w-sm"
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
+                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-0">
                                 Get In Touch
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
@@ -36,7 +36,7 @@ export default function ContactPage() {
                         </div>
                         <div className="grid md:grid-cols-2 gap-8 items-start mt-8">
                             <div className="bg-background rounded-lg p-8 md:p-12 border">
-                                <h2 className="text-3xl font-headline text-primary mb-6">Send a Message</h2>
+                                <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
                             </div>
 
