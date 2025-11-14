@@ -68,7 +68,7 @@ export default function AboutPage() {
                                             I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
                                         </p>
                                     </div>
-                                    <div>
+                                    <div className="pl-4">
                                         <h4 className="text-xl font-bold text-primary mb-4">Core Principles:</h4>
                                         <ul className="space-y-3">
                                             {philosophyPoints.map((point, index) => (
