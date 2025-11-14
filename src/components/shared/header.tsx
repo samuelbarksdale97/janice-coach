@@ -50,13 +50,7 @@ export function Header() {
     <header className="absolute top-0 z-50 w-full">
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-            <Image 
-                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=34929a84-cf53-49b9-858d-f9673e79cdda"
-                alt="Taylor Leadership Coaching Logo"
-                width={200}
-                height={53}
-                className="w-auto h-20"
-            />
+            
         </Link>
         
         {/* Desktop Navigation */}
@@ -92,13 +86,7 @@ export function Header() {
             <DialogContent className="mobile-menu-overlay p-0">
                 <div className="flex h-24 items-center justify-between px-4 border-b">
                   <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center space-x-2">
-                    <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=34929a84-cf53-49b9-858d-f9673e79cdda"
-                        alt="Taylor Leadership Coaching Logo"
-                        width={200}
-                        height={53}
-                        className="w-auto h-20"
-                    />
+                    
                   </Link>
                   <DialogClose asChild>
                     <button className="p-2">
