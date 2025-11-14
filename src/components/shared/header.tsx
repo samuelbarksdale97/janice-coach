@@ -61,8 +61,9 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                        "text-sm font-medium transition-colors hover:text-secondary",
-                        pathname === item.href ? "text-secondary" : "text-primary"
+                        "text-sm font-medium transition-colors",
+                        pathname === item.href ? "text-secondary" : "text-primary",
+                        "hover:text-secondary"
                     )}
                 >
                     {item.label}
@@ -105,8 +106,8 @@ export function Header() {
                             href={item.href}
                             onClick={() => setIsOpen(false)}
                             className={cn(
-                              "text-4xl font-headline transition-colors hover:text-primary",
-                              pathname === item.href ? "text-primary" : "text-foreground"
+                              "text-4xl font-headline transition-colors hover:text-secondary",
+                              pathname === item.href ? "text-secondary" : "text-primary"
                             )}
                           >
                             {item.label}
