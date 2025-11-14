@@ -57,7 +57,7 @@ export default function Home() {
                     What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
                 </h1>
                 
-                <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Button asChild size="lg" className="font-bold">
                         <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
                     </Button>
