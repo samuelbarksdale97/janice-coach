@@ -44,8 +44,8 @@ export default function Home() {
         <main className="flex-1">
           <section id="home" className="relative w-full py-16 md:py-24 flex items-center justify-center text-center text-white">
             <Image
-                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_c9mzkoc9mzkoc9mz.png?alt=media&token=a8baa9fd-7937-4746-b6d6-84a0243516b2"
-                alt="A person standing on a mountain peak looking out at the sunrise."
+                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=689a9ce8-3eb0-4d79-9aeb-f85adc814acf"
+                alt="A large library with rows of books."
                 fill
                 className="object-cover"
                 priority
