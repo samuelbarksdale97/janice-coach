@@ -75,9 +75,9 @@ export default function Home() {
                     <Image 
                         src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
                         alt="Taylor Leadership Coaching Logo"
-                        width={600}
-                        height={150}
-                        className="w-auto h-24 md:h-32"
+                        width={800}
+                        height={200}
+                        className="w-auto h-32 md:h-40"
                     />
                 </div>
             </div>
