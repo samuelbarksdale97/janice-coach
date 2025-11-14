@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -46,7 +47,7 @@ export function Header() {
   const mobileNavItems = navItems.filter(item => item.href !== "/blog");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="absolute top-0 z-50 w-full">
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             <Image 
@@ -67,7 +68,7 @@ export function Header() {
                     href={item.href}
                     className={cn(
                         "text-sm font-medium transition-colors hover:text-primary",
-                        pathname === item.href ? "text-primary" : "text-muted-foreground"
+                        pathname === item.href ? "text-primary" : "text-white"
                     )}
                 >
                     {item.label}
@@ -83,7 +84,7 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className="p-2">
+              <button className="p-2 text-white">
                   <CustomMenuIcon className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
