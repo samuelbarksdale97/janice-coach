@@ -15,10 +15,10 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 pb-12 md:py-16 lg:py-20 bg-muted">
+                <section className="w-full pt-0 md:pt-28 pb-12 md:py-16 lg:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center animate-glide-up">
-                            <div className="flex justify-center">
+                            <div className="flex justify-center pt-28 md:pt-0">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
                                     alt="Taylor Leadership Coaching Logo"
