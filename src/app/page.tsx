@@ -42,32 +42,36 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-          <section id="home" className="relative w-full py-16 md:py-24 flex items-center justify-center text-center text-white">
-            <Image
-                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=689a9ce8-3eb0-4d79-9aeb-f85adc814acf"
-                alt="A large library with rows of books."
-                fill
-                className="object-cover"
-                priority
-            />
-            <div className="absolute inset-0 bg-black/50" />
-            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
-                
-                <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg mt-8">
-                    What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
-                </h1>
-                
-                <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
-                    </Button>
-                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
-                        <Link href="/services">
-                            Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
-                    </Button>
-                </div>
-            </div>
+        <section id="home-container" className="w-full bg-background flex justify-center">
+            <div className="w-full max-w-7xl">
+                <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+                    <Image
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=689a9ce8-3eb0-4d79-9aeb-f85adc814acf"
+                        alt="A large library with rows of books."
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
+                        
+                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg mt-8">
+                            What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
+                        </h1>
+                        
+                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                            </Button>
+                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
+                                <Link href="/services">
+                                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+                </section>
+              </div>
           </section>
 
           <section id="logo-display" className="py-8 md:py-12 bg-muted">
