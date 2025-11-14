@@ -57,8 +57,8 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full pt-12 md:pt-16 lg:pt-20 bg-muted">
-                    <div className="container px-4 md:px-6 pb-0">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+                    <div className="container px-4 md:px-6">
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
                                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
@@ -84,7 +84,7 @@ export default function AboutPage() {
                         </Card>
                     </div>
                 </section>
-                <section id="logo-display" className="bg-muted">
+                <section id="logo-display" className="bg-muted py-12">
                     <div className="container mx-auto px-4">
                         <div className="flex justify-center">
                             <Image
