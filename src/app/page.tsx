@@ -50,7 +50,7 @@ export default function Home() {
                 className="object-cover"
                 priority
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                 <div className="mb-8">
                     <Image 
@@ -75,6 +75,20 @@ export default function Home() {
                         </Link>
                     </Button>
                 </div>
+            </div>
+          </section>
+
+          <section id="logo-display" className="py-8 md:py-12 bg-muted">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-center">
+                <Image
+                  src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                  alt="Taylor Leadership Coaching Horizontal Logo"
+                  width={1200}
+                  height={300}
+                  className="w-full max-w-4xl h-auto"
+                />
+              </div>
             </div>
           </section>
 
@@ -108,20 +122,6 @@ export default function Home() {
                       </div>
                   </div>
               </div>
-          </section>
-
-          <section id="logo-display" className="py-8 md:py-12 bg-muted">
-            <div className="container mx-auto px-4">
-              <div className="flex justify-center">
-                <Image
-                  src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
-                  alt="Taylor Leadership Coaching Horizontal Logo"
-                  width={1200}
-                  height={300}
-                  className="w-full max-w-4xl h-auto"
-                />
-              </div>
-            </div>
           </section>
 
           <section id="philosophy" className="py-8 md:py-12 bg-background">
