@@ -52,16 +52,8 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
-                <div className="mb-8">
-                    <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
-                        alt="Taylor Leadership Coaching Logo"
-                        width={800}
-                        height={200}
-                        className="w-auto h-32"
-                    />
-                </div>
-                <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
+                
+                <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg mt-8">
                     What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
                 </h1>
                 
