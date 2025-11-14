@@ -49,6 +49,7 @@ export default function AboutPage() {
                                             className="object-cover"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
                                             data-ai-hint={aboutImage.imageHint}
+                                            priority
                                         />
                                     </div>
                                 )}

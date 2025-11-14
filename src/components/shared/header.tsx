@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
+import Image from 'next/image';
 
 const navItems = [
   { href: "/", label: "Home" },

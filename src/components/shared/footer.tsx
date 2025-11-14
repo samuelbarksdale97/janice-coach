@@ -27,9 +27,9 @@ export function Footer() {
                 <Image 
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
                     alt="Taylor Leadership Coaching Logo"
-                    width={800}
-                    height={200}
-                    className="w-auto h-32 md:h-40"
+                    width={400}
+                    height={100}
+                    className="w-auto h-24 md:h-32"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
