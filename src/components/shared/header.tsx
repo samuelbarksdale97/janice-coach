@@ -51,7 +51,7 @@ export function Header() {
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             <Image 
-                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=34929a84-cf53-49b9-858d-f9673e79cdda"
                 alt="Taylor Leadership Coaching Logo"
                 width={200}
                 height={53}
@@ -93,7 +93,7 @@ export function Header() {
                 <div className="flex h-24 items-center justify-between px-4 border-b">
                   <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center space-x-2">
                     <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=34929a84-cf53-49b9-858d-f9673e79cdda"
                         alt="Taylor Leadership Coaching Logo"
                         width={200}
                         height={53}
