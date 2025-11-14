@@ -51,7 +51,16 @@ export default function Home() {
                 priority
             />
             <div className="absolute inset-0 bg-black/50" />
-            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up">
+            <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
+                <div className="mb-8">
+                    <Image 
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                        alt="Taylor Leadership Coaching Logo"
+                        width={800}
+                        height={200}
+                        className="w-auto h-32 md:h-40"
+                    />
+                </div>
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
                     What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
                 </h1>
@@ -65,20 +74,6 @@ export default function Home() {
                             Learn More <ArrowRight className="ml-2 h-5 w-5" />
                         </Link>
                     </Button>
-                </div>
-            </div>
-          </section>
-
-          <section id="logo" className="py-12 bg-background">
-            <div className="container mx-auto px-4">
-                <div className="flex justify-center">
-                    <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
-                        alt="Taylor Leadership Coaching Logo"
-                        width={800}
-                        height={200}
-                        className="w-auto h-32 md:h-40"
-                    />
                 </div>
             </div>
           </section>
