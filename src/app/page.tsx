@@ -58,7 +58,7 @@ export default function Home() {
                 </h1>
                 
                 <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Button asChild size="lg" className="font-bold">
+                    <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
                         <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
                     </Button>
                     <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
