@@ -55,7 +55,7 @@ export function Header() {
                 alt="Taylor Leadership Coaching Logo"
                 width={200}
                 height={53}
-                className="w-auto h-16"
+                className="w-auto h-20"
             />
         </Link>
         
@@ -97,7 +97,7 @@ export function Header() {
                         alt="Taylor Leadership Coaching Logo"
                         width={200}
                         height={53}
-                        className="w-auto h-16"
+                        className="w-auto h-20"
                     />
                   </Link>
                   <DialogClose asChild>
