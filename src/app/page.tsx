@@ -69,6 +69,20 @@ export default function Home() {
             </div>
           </section>
 
+          <section id="logo" className="py-12 bg-background">
+            <div className="container mx-auto px-4">
+                <div className="flex justify-center">
+                    <Image 
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                        alt="Taylor Leadership Coaching Logo"
+                        width={400}
+                        height={100}
+                        className="w-auto h-16 md:h-20"
+                    />
+                </div>
+            </div>
+          </section>
+
           <section id="about-intro" className="py-8 md:py-12 bg-background">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
