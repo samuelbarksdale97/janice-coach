@@ -49,8 +49,6 @@ export default function Home() {
                 fill
                 className="object-cover"
                 priority
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
             />
             <div className="absolute inset-0 bg-black/50" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
