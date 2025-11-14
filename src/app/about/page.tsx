@@ -58,7 +58,7 @@ export default function AboutPage() {
                 </section>
 
                 <section className="w-full pt-12 md:pt-16 lg:pt-20 bg-muted">
-                    <div className="container px-4 md:px-6">
+                    <div className="container px-4 md:px-6 pb-0">
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
                                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
