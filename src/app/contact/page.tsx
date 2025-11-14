@@ -94,8 +94,7 @@ export default function ContactPage() {
                         alt="A person standing on a mountain peak looking out at the sunrise."
                         fill
                         className="object-cover"
-                        placeholder="blur"
-                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
+                        priority
                     />
                     <div className="absolute inset-0 bg-black/40" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto">
