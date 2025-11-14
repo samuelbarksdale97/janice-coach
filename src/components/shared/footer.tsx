@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
-import { Logo } from "@/components/icons";
+import Image from 'next/image';
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const navItems = [
@@ -27,8 +27,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
-                <Logo className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline text-lg text-primary">Taylor Leadership Coaching</span>
+                <Image 
+                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                    alt="Taylor Leadership Coaching Logo"
+                    width={150}
+                    height={40}
+                    className="w-auto h-8"
+                />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
                 Guiding you through life's transitions with professional coaching and support.
