@@ -19,7 +19,7 @@ const navItems = [
   { href: "/contact", label: "Contact" },
 ];
 
-const desktopNavItems = navItems.filter(item => !["/", "/blog"].includes(item.href));
+const desktopNavItems = navItems.filter(item => !["/blog"].includes(item.href));
 
 
 const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
