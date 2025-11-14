@@ -52,13 +52,13 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-black/30" />
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
-                <div className="mb-8">
+                <div className="mb-8 md:hidden">
                     <Image 
                         src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
                         alt="Taylor Leadership Coaching Logo"
                         width={800}
                         height={200}
-                        className="w-auto h-32 md:h-40"
+                        className="w-auto h-32"
                     />
                 </div>
                 <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg">
