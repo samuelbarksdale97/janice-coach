@@ -54,7 +54,7 @@ export default function Home() {
             <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                 <div className="mb-8">
                     <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
                         alt="Taylor Leadership Coaching Logo"
                         width={800}
                         height={200}
