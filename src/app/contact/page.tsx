@@ -27,7 +27,7 @@ export default function ContactPage() {
                                     className="w-auto h-auto max-w-sm"
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-8">
+                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
                                 Get In Touch
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
