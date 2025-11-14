@@ -47,14 +47,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             <Image 
                 src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
                 alt="Taylor Leadership Coaching Logo"
-                width={150}
-                height={40}
-                className="w-auto h-12"
+                width={200}
+                height={53}
+                className="w-auto h-16"
             />
         </Link>
         
@@ -89,14 +89,14 @@ export function Header() {
               </button>
             </DialogTrigger>
             <DialogContent className="mobile-menu-overlay p-0">
-                <div className="flex h-20 items-center justify-between px-4 border-b">
+                <div className="flex h-24 items-center justify-between px-4 border-b">
                   <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center space-x-2">
                     <Image 
                         src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
                         alt="Taylor Leadership Coaching Logo"
-                        width={150}
-                        height={40}
-                        className="w-auto h-12"
+                        width={200}
+                        height={53}
+                        className="w-auto h-16"
                     />
                   </Link>
                   <DialogClose asChild>

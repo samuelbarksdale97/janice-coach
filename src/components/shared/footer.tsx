@@ -30,9 +30,9 @@ export function Footer() {
                 <Image 
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
                     alt="Taylor Leadership Coaching Logo"
-                    width={150}
-                    height={40}
-                    className="w-auto h-8"
+                    width={180}
+                    height={48}
+                    className="w-auto h-10"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
