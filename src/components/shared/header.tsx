@@ -91,7 +91,7 @@ export function Header() {
                         alt="Taylor Leadership Coaching Logo"
                         width={320}
                         height={80}
-                        className="w-full h-auto max-h-20 object-contain"
+                        className="w-full h-auto object-contain"
                     />
                   </Link>
                   <DialogClose asChild>
