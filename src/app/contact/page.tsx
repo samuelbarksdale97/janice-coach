@@ -17,7 +17,7 @@ export default function ContactPage() {
             <main className="flex-1">
                 <section className="w-full pt-28 pb-12 md:py-16 lg:py-20 bg-muted">
                     <div className="container mx-auto px-4">
-                        <div className="text-center mb-12 animate-glide-up">
+                        <div className="text-center mb-8 animate-glide-up">
                             <div className="flex justify-center">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
@@ -34,7 +34,7 @@ export default function ContactPage() {
                                 Ready to take the next step? I'd love to hear from you. Fill out the form or use the contact details below.
                             </p>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-16 items-start">
+                        <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="bg-background rounded-lg p-8 md:p-12 border">
                                 <h2 className="text-3xl font-headline text-primary mb-6">Send a Message</h2>
                                 <ContactForm />
