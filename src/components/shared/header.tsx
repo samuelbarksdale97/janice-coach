@@ -46,7 +46,7 @@ export function Header() {
   const isHomePage = pathname === '/';
 
   return (
-    <header className="absolute top-0 z-50 w-full">
+    <header className={cn("absolute top-0 z-50 w-full", isHomePage ? "" : "bg-white/80 backdrop-blur-sm shadow-sm")}>
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             
@@ -61,8 +61,9 @@ export function Header() {
                     href={item.href}
                     className={cn(
                         "text-sm font-medium transition-colors",
-                        pathname === item.href ? "text-secondary" : "text-primary",
-                        "hover:text-secondary"
+                        isHomePage 
+                          ? (pathname === item.href ? "text-secondary" : "text-white hover:text-secondary")
+                          : (pathname === item.href ? "text-secondary" : "text-primary hover:text-secondary")
                     )}
                 >
                     {item.label}
