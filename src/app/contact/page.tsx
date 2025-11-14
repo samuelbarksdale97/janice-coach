@@ -18,7 +18,7 @@ export default function ContactPage() {
                 <section className="w-full pt-28 pb-12 md:py-16 lg:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-12 animate-glide-up">
-                            <div className="flex justify-center mb-8">
+                            <div className="flex justify-center">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
                                     alt="Taylor Leadership Coaching Logo"
@@ -27,7 +27,7 @@ export default function ContactPage() {
                                     className="w-auto h-auto max-w-sm"
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary">
+                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-8">
                                 Get In Touch
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
