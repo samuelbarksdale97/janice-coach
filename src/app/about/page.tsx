@@ -25,7 +25,7 @@ export default function AboutPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 pb-12 md:py-16 lg:py-20 bg-background">
+                <section className="w-full pt-28 md:pt-36 pb-12 md:py-16 lg:py-20 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
                             <div className="space-y-4 animate-glide-up">
