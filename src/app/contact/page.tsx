@@ -40,7 +40,7 @@ export default function ContactPage() {
                                 <ContactForm />
                             </div>
 
-                            <div className="space-y-8">
+                            <div className="space-y-8 animate-glide-up">
                                 <div>
                                     <h3 className="text-2xl font-headline text-primary">Contact Information</h3>
                                     <p className="mt-2 text-muted-foreground">
