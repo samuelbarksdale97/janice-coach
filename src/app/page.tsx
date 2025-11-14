@@ -38,13 +38,13 @@ const philosophyPoints = [
 export default function Home() {
   return (
     <>
-      <Header />
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
         <section id="home-container" className="w-full bg-background flex justify-center">
             <div className="w-full max-w-7xl">
                 <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+                    <Header />
                     <Image
                         src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=689a9ce8-3eb0-4d79-9aeb-f85adc814acf"
                         alt="A large library with rows of books."
