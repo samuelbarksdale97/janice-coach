@@ -84,16 +84,7 @@ export function Header() {
               </button>
             </DialogTrigger>
             <DialogContent className="mobile-menu-overlay p-0">
-                <div className="flex h-24 items-center justify-between px-4 border-b">
-                  <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center space-x-2">
-                    <Image 
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
-                        alt="Taylor Leadership Coaching Logo"
-                        width={320}
-                        height={80}
-                        className="w-full h-auto object-contain"
-                    />
-                  </Link>
+                <div className="flex h-24 items-center justify-end px-4 border-b">
                   <DialogClose asChild>
                     <button className="p-2">
                       <X className="h-6 w-6" />
