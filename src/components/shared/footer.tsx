@@ -29,11 +29,11 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
                 <Image 
-                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=34929a84-cf53-49b9-858d-f9673e79cdda"
+                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=2be8a9a4-c498-41b3-9e8a-37af79d62dc8"
                     alt="Taylor Leadership Coaching Logo"
-                    width={180}
-                    height={48}
-                    className="w-auto h-10"
+                    width={800}
+                    height={200}
+                    className="w-auto h-32 md:h-40"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
