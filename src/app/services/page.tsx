@@ -32,26 +32,20 @@ const servicesCards = [
 
 const howItWorksSteps = [
     {
-        icon: <Search className="w-16 h-16 text-primary" />,
-        step: "Step 1",
-        title: "Explore Services",
-        description: "Discover the coaching package that best aligns with your personal or professional goals."
-    },
-    {
         icon: <CalendarCheck className="w-16 h-16 text-primary" />,
-        step: "Step 2",
+        step: "Step 1",
         title: "Book a Discovery Call",
         description: "Schedule a complimentary call to discuss your aspirations and see if we're a good fit."
     },
     {
         icon: <Waypoints className="w-16 h-16 text-primary" />,
-        step: "Step 3",
+        step: "Step 2",
         title: "Create Your Plan",
         description: "Together, we'll create a customized coaching plan tailored to your unique path."
     },
     {
         icon: <Rocket className="w-16 h-16 text-primary" />,
-        step: "Step 4",
+        step: "Step 3",
         title: "Start Your Transformation",
         description: "Begin your coaching journey with consistent support and actionable steps toward your goals."
     },
@@ -109,7 +103,7 @@ export default function ServicesPage() {
                                 </p>
                             </div>
                         </div>
-                        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-4">
+                        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-3 md:grid-cols-3">
                             {howItWorksSteps.map((step) => (
                                 <div key={step.step} className="flex flex-col items-center space-y-3 text-center">
                                     {step.icon}
