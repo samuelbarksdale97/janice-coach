@@ -33,7 +33,7 @@ export function Footer() {
                     alt="Taylor Leadership Coaching Logo"
                     width={400}
                     height={100}
-                    className="w-auto h-32 md:h-48"
+                    className="w-auto h-40 md:h-48"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
