@@ -82,7 +82,7 @@ export default function TestimonialsPage() {
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
-                        Schedule Your Free Call <ArrowRight className="ml-2 h-5 w-5" />
+                        Schedule A Call Today <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                 </Button>
             </div>
