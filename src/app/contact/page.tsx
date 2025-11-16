@@ -42,7 +42,7 @@ export default function ContactPage() {
                             </div>
 
                             <div className="space-y-8 animate-glide-up">
-                                <div>
+                                <div className="text-center">
                                     <h3 className="text-2xl font-headline text-primary">Contact Information</h3>
                                     <p className="mt-2 text-muted-foreground">
                                         For inquiries, bookings, or a friendly chat, here's how you can reach me.
