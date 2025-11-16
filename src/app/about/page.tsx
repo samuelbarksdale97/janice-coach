@@ -85,7 +85,7 @@ export default function AboutPage() {
                         </Card>
                     </div>
                 </section>
-                <section className="w-full py-8 md:py-12 bg-background relative z-10">
+                <section className="w-full pb-8 md:pb-12 bg-background relative z-10">
                     <div className="container mx-auto px-4 lg:hidden">
                         <div className="flex justify-center">
                             <Image
