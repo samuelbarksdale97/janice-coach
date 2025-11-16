@@ -187,7 +187,7 @@ export default function Home() {
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Begin Your Transformation?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
-                    Don't wait another day to start living the life you've imagined. A complimentary discovery call is the first step.
+                    Don't wait another day to start living the life you've imagined.
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
