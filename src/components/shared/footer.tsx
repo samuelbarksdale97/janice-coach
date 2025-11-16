@@ -24,9 +24,9 @@ export function Footer() {
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 pt-4 md:pt-8 pb-8 md:pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center justify-center md:justify-start space-x-2 -my-12">
+            <div className="flex items-center justify-center space-x-2 -my-12">
                 <Image 
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=48d51385-c610-491c-9523-b9e5fcc42edd"
                     alt="Taylor Leadership Coaching Logo"
@@ -35,10 +35,10 @@ export function Footer() {
                     className="w-auto h-48 md:h-48"
                 />
             </div>
-            <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
+            <p className="text-sm text-muted-foreground max-w-sm mx-auto">
                 Guiding you through life's transitions with professional coaching and support.
             </p>
-            <div className="flex justify-center md:justify-start space-x-4">
+            <div className="flex justify-center space-x-4">
               <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
@@ -54,7 +54,7 @@ export function Footer() {
             </div>
           </div>
           
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="font-headline text-lg font-semibold mb-4 text-primary">Quick Links</h4>
             <ul className="space-y-2">
                 {navItems.map((item) => (
