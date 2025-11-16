@@ -93,7 +93,7 @@ export default function AboutPage() {
                             alt="Taylor Leadership Coaching Gold Logo"
                             width={1200}
                             height={300}
-                            className="w-full max-w-4xl h-auto"
+                            className="w-full max-w-xl h-auto"
                             />
                         </div>
                     </div>
