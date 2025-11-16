@@ -102,7 +102,7 @@ export default function ContactPage() {
                         />
                     )}
                     <div className="absolute inset-0 bg-black/40" />
-                    <div className="relative z-10 p-4 container mx-auto">
+                    <div className="relative z-10 p-4 md:px-6">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
                         Ready to Start Now?
                     </h2>
