@@ -157,7 +157,7 @@ export default function ServicesPage() {
                                     className="flex flex-col bg-background overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center"
                                 >
                                     {service.image && (
-                                        <div className="aspect-h-2 aspect-w-3 relative">
+                                        <div className="aspect-[3/2] relative">
                                             <Image
                                                 src={service.image.imageUrl}
                                                 alt={service.image.description}
