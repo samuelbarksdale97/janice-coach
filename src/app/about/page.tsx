@@ -25,7 +25,7 @@ export default function AboutPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-48 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-background">
+                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
                             <div className="space-y-4 animate-glide-up text-center lg:text-left">
@@ -100,7 +100,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-8 md:py-12 bg-background">
+                <section className="w-full py-8 md:py-12 bg-background -mt-16 relative z-10">
                     <div className="container px-4 md:px-6">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
