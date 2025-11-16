@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </section>
                 <section className="w-full pb-8 md:pb-12 bg-background relative z-10">
                     <div className="container mx-auto px-4 lg:hidden">
-                        <div className="flex justify-center">
+                        <div className="flex justify-center -my-16">
                             <Image
                             src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
                             alt="Taylor Leadership Coaching Gold Logo"
