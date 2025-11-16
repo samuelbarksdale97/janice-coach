@@ -91,7 +91,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="pt-8 bg-background animate-glide-up relative -mt-8 md:-mt-12">
+          <section id="about-intro" className="pt-8 bg-background animate-glide-up relative md:-mt-12">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
@@ -203,6 +203,8 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
 
