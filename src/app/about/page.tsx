@@ -28,14 +28,14 @@ export default function AboutPage() {
                 <section className="w-full pt-48 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-background">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-                            <div className="space-y-4 animate-glide-up">
+                            <div className="space-y-4 animate-glide-up text-center lg:text-left">
                                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary font-headline">
                                     Meet Your Coach
                                 </h1>
-                                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto lg:mx-0">
                                     Hello! I'm Jane Doe, a certified life coach with a passion for helping individuals navigate the complexities of life with confidence and clarity. With over a decade of experience in personal development and corporate leadership, I blend proven coaching techniques with real-world wisdom.
                                 </p>
-                                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto lg:mx-0">
                                     My journey into coaching began after my own transformative experience with a coach during a pivotal career change. It was then I realized the profound impact of having a dedicated guide and supporter. My mission is to be that person for you—to listen, to challenge, and to celebrate your growth every step of the way.
                                 </p>
                             </div>
