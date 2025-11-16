@@ -77,7 +77,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-display" className="py-2 bg-muted">
+          <section id="logo-display" className="py-2 bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
               <div className="flex justify-center -my-8">
                 <Image
