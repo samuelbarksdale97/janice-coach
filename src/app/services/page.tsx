@@ -142,7 +142,7 @@ export default function ServicesPage() {
                                     If this sounds like you, let's connect. You don't need to have it all figured out.
                                 </p>
                                 <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
-                                    <Link href="/contact">Start the Conversation</Link>
+                                    <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                                 </Button>
                             </div>
                         </div>
