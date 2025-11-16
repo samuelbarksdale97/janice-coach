@@ -185,7 +185,7 @@ export default function Home() {
 
           <section id="cta" className="py-8 md:py-12 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Begin Your Transformation?</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Are You Ready to Begin Your Transformation?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
                     Don't wait another day to start living the life you've imagined.
                 </p>
