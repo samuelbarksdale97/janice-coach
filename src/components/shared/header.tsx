@@ -16,11 +16,17 @@ const navItems = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/testimonials", label: "Testimonials" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
-const desktopNavItems = navItems.filter(item => !["/blog"].includes(item.href));
+const desktopNavItems = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/testimonials", label: "Testimonials" },
+    { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Contact" },
+];
 
 
 const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
