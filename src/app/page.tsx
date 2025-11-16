@@ -43,7 +43,7 @@ export default function Home() {
         <main className="flex-1">
         <section id="home-container" className="w-full bg-background flex justify-center">
             <div className="w-full max-w-7xl">
-                <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+                <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-black">
                     <Header />
                     {heroImage && (
                         <Image
