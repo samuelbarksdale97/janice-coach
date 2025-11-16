@@ -104,8 +104,12 @@ export default function ServicesPage() {
                             </div>
                         </div>
                         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-3 md:grid-cols-3">
-                            {howItWorksSteps.map((step) => (
-                                <div key={step.step} className="flex flex-col items-center space-y-3 text-center">
+                            {howItWorksSteps.map((step, index) => (
+                                <div 
+                                    key={step.step} 
+                                    className="flex flex-col items-center space-y-3 text-center animate-glide-up"
+                                    style={{ animationDelay: `${index * 200}ms`, animationFillMode: 'backwards' }}
+                                >
                                     {step.icon}
                                     <div className="space-y-1">
                                         <p className="text-sm font-bold uppercase tracking-wider text-secondary">{step.step}</p>
