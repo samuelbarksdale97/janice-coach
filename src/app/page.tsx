@@ -77,9 +77,9 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-display" className="py-2 bg-muted animate-glide-up">
+          <section id="logo-display" className="py-8 md:py-12 bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center -my-8">
+              <div className="flex justify-center">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
                   alt="Taylor Leadership Coaching Horizontal Logo"
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="pt-8 bg-background animate-glide-up relative md:-mt-12">
+          <section id="about-intro" className="py-8 md:py-12 bg-background animate-glide-up">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
