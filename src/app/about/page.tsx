@@ -39,7 +39,7 @@ export default function AboutPage() {
                                     My journey into coaching began after my own transformative experience with a coach during a pivotal career change. It was then I realized the profound impact of having a dedicated guide and supporter. My mission is to be that person for you—to listen, to challenge, and to celebrate your growth every step of the way.
                                 </p>
                             </div>
-                             <div className="flex justify-center">
+                             <div className="flex justify-center animate-glide-up">
                                 {aboutImage && (
                                     <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
                                         <Image
