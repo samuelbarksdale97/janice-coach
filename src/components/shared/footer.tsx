@@ -23,7 +23,7 @@ export function Footer() {
 
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 pt-4 md:pt-8 pb-8 md:pb-12">
+      <div className="container mx-auto px-4 pt-4 md:pt-8 pb-4 md:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center space-x-2 -my-12">
