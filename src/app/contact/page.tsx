@@ -17,8 +17,8 @@ export default function ContactPage() {
             <main className="flex-1">
                 <section className="w-full pt-16 pb-12 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
-                        <div className="text-center animate-glide-up">
-                            <div className="flex justify-center">
+                        <div className="text-center">
+                            <div className="flex justify-center animate-glide-up">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
                                     alt="Taylor Leadership Coaching Logo"
@@ -28,20 +28,22 @@ export default function ContactPage() {
                                     priority
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary relative -mt-8 md:-mt-12 z-10">
-                                Get In Touch
-                            </h1>
-                            <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-                                Ready to take the next step? I'd love to hear from you. Fill out the form or use the contact details below.
-                            </p>
+                            <div className="animate-glide-up">
+                                <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary relative -mt-8 md:-mt-12 z-10">
+                                    Get In Touch
+                                </h1>
+                                <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+                                    Ready to take the next step? I'd love to hear from you. Fill out the form or use the contact details below.
+                                </p>
+                            </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12">
-                            <div className="bg-background rounded-lg p-8 md:p-12 border animate-glide-up">
+                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up">
+                            <div className="bg-background rounded-lg p-8 md:p-12 border">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
                             </div>
 
-                            <div className="space-y-8 animate-glide-up mt-8 md:mt-0">
+                            <div className="space-y-8 mt-8 md:mt-0">
                                 <div className="text-center">
                                     <h3 className="text-2xl font-headline text-primary">Contact Information</h3>
                                     <p className="mt-2 text-muted-foreground">
