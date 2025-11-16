@@ -56,7 +56,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="font-headline text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-headline text-lg font-semibold mb-4 text-primary">Quick Links</h4>
             <ul className="space-y-2">
                 {navItems.map((item) => (
                     <li key={item.href}>
