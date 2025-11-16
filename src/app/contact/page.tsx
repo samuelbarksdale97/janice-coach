@@ -90,33 +90,22 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="relative w-full py-16 md:py-20 flex items-center justify-center text-center text-white">
-                    {heroImage && (
-                        <Image
-                            src={heroImage.imageUrl}
-                            alt={heroImage.description}
-                            fill
-                            className="object-cover"
-                            priority
-                            data-ai-hint={heroImage.imageHint}
-                        />
-                    )}
-                    <div className="absolute inset-0 bg-black/40" />
-                    <div className="relative z-10 p-4 md:px-6">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
-                        Ready to Start Now?
-                    </h2>
-                    <p className="mt-4 text-lg max-w-2xl mx-auto text-shadow">
-                        The simplest way to begin is by booking a complimentary discovery call or exploring the packages to see what's right for you.
-                    </p>
-                    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                            <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
-                        </Button>
-                        <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                            <Link href="/services">Explore Coaching Packages</Link>
-                        </Button>
-                    </div>
+                <section id="cta-contact" className="w-full py-16 md:py-20 flex items-center justify-center text-center bg-primary text-primary-foreground">
+                    <div className="z-10 p-4 md:px-6">
+                        <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight">
+                            Ready to Start Now?
+                        </h2>
+                        <p className="mt-4 text-lg max-w-2xl mx-auto">
+                            The simplest way to begin is by booking a complimentary discovery call or exploring the packages to see what's right for you.
+                        </p>
+                        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <Button asChild size="lg" variant="outline" className="font-bold border-primary-foreground text-primary-foreground bg-transparent hover:bg-white/10 hover:text-white">
+                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                            </Button>
+                            <Button asChild size="lg" variant="outline" className="font-bold border-primary-foreground text-primary-foreground bg-transparent hover:bg-white/10 hover:text-white">
+                                <Link href="/services">Explore Coaching Packages</Link>
+                            </Button>
+                        </div>
                     </div>
                 </section>
             </main>
