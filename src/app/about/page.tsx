@@ -65,7 +65,7 @@ export default function AboutPage() {
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
                                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                                    <div>
+                                    <div className="text-center md:text-left">
                                         <h3 className="text-2xl md:text-3xl font-headline text-primary font-bold pl-4">My Coaching Philosophy</h3>
                                         <p className="mt-4 text-muted-foreground leading-relaxed pl-4">
                                             I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
