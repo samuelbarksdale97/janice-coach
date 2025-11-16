@@ -24,11 +24,11 @@ export default function ContactPage() {
                                     alt="Taylor Leadership Coaching Logo"
                                     width={400}
                                     height={200}
-                                    className="w-auto h-auto max-w-lg"
+                                    className="w-full h-auto max-w-[250px] md:max-w-sm"
                                     priority
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-4">
+                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-2">
                                 Get In Touch
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
