@@ -66,7 +66,7 @@ export default function Home() {
                             <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
                                 <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                             </Button>
-                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
+                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg.white/10 hover:text-white tracking-wider">
                                 <Link href="/services">
                                     Learn More <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
@@ -85,7 +85,7 @@ export default function Home() {
                   alt="Taylor Leadership Coaching Horizontal Logo"
                   width={1200}
                   height={300}
-                  className="w-full max-w-3xl h-auto min-h-[100px]"
+                  className="w-full max-w-3xl h-auto"
                 />
               </div>
             </div>
