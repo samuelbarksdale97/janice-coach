@@ -85,7 +85,7 @@ export default function Home() {
                   alt="Taylor Leadership Coaching Horizontal Logo"
                   width={1200}
                   height={300}
-                  className="w-full max-w-3xl h-auto"
+                  className="w-full max-w-3xl h-auto min-h-[100px]"
                 />
               </div>
             </div>
