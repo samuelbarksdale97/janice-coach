@@ -91,8 +91,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-8 md:py-12 bg-background">
-              <div className="container mx-auto px-4 animate-glide-up">
+          <section id="about-intro" className="py-8 md:py-12 bg-background animate-glide-up">
+              <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
                           {aboutImage && (
@@ -191,7 +191,7 @@ export default function Home() {
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
-                        Schedule Your Free Call <ArrowRight className="ml-2 h-5 w-5" />
+                        Book A Consultation <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                 </Button>
             </div>
