@@ -89,7 +89,7 @@ export default function AboutPage() {
                     <div className="container mx-auto px-4">
                         <div className="flex justify-center">
                             <Image
-                            src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=89f12a84-1a2c-4730-af18-ebd81279a0b7"
+                            src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
                             alt="Taylor Leadership Coaching Gold Logo"
                             width={1200}
                             height={300}
