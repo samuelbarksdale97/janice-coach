@@ -103,7 +103,7 @@ export default function ContactPage() {
                                 <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
                             </Button>
                             <Button asChild size="lg" variant="outline" className="font-bold border-primary-foreground text-primary-foreground bg-transparent hover:bg-white/10 hover:text-white">
-                                <Link href="/services">Explore Coaching Packages</Link>
+                                <Link href="/services">Learn More</Link>
                             </Button>
                         </div>
                     </div>
