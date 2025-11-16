@@ -79,7 +79,7 @@ export default function Home() {
 
           <section id="logo-display" className="py-8 md:py-12 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center -my-8 md:-my-12">
+              <div className="flex justify-center -my-8 md:-my-12 animate-glide-up">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG_680x680.png?alt=media&token=153de3c8-fa96-48cd-a574-6f7c3d9ad146"
                   alt="Taylor Leadership Coaching Horizontal Logo"
@@ -203,6 +203,8 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
 
