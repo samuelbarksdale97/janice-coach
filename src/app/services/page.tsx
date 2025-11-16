@@ -80,7 +80,7 @@ export default function ServicesPage() {
                                 <span className="text-secondary">Invest in yourself</span> with programs designed to bring clarity, purpose, and momentum to your life and career.
                             </p>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="flex justify-center animate-glide-up">
                             {contactImage && (
                                 <div className="aspect-video relative rounded-lg overflow-hidden shadow-2xl w-full">
                                     <Image
