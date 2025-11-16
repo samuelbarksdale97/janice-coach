@@ -1,7 +1,9 @@
+
 "use client";
 
-import { useEffect } from "react";
-import { useFormState, useForm } from "react-hook-form";
+import { useEffect, useRef } from "react";
+import { useFormState } from "react-dom";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
@@ -28,9 +30,17 @@ const contactSchema = z.object({
 
 type FormData = z.infer<typeof contactSchema>;
 
+const initialState: FormState = {
+  success: false,
+  message: "",
+  errors: null,
+};
+
 export function ContactForm() {
   const { toast } = useToast();
-  
+  const [state, formAction] = useFormState(submitContactForm, initialState);
+  const formRef = useRef<HTMLFormElement>(null);
+
   const form = useForm<FormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -40,43 +50,40 @@ export function ContactForm() {
     },
   });
 
-  const { formState, handleSubmit, reset } = form;
+  const { formState: { isSubmitting }, reset, setError } = form;
 
-  const onSubmit = async (data: FormData) => {
-    const formData = new FormData();
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("message", data.message);
-
-    // Dummy prev state
-    const prevState: FormState = { success: false, message: '', errors: null };
-
-    const result = await submitContactForm(prevState, formData);
-    
-    if (result.success) {
+  useEffect(() => {
+    if (state.success) {
       toast({
         title: "Success!",
-        description: result.message,
+        description: state.message,
       });
       reset();
-    } else {
+      formRef.current?.reset();
+    } else if (state.message && !state.success) {
       toast({
         variant: "destructive",
         title: "Error",
-        description: result.message,
+        description: state.message,
       });
-      // Set form errors manually if they exist
-      if (result.errors) {
-        if(result.errors.name) form.setError("name", { type: 'server', message: result.errors.name[0] });
-        if(result.errors.email) form.setError("email", { type: 'server', message: result.errors.email[0] });
-        if(result.errors.message) form.setError("message", { type: 'server', message: result.errors.message[0] });
+    }
+
+    if (state.errors) {
+      if (state.errors.name) {
+        setError("name", { type: 'server', message: state.errors.name[0] });
+      }
+      if (state.errors.email) {
+        setError("email", { type: 'server', message: state.errors.email[0] });
+      }
+      if (state.errors.message) {
+        setError("message", { type: 'server', message: state.errors.message[0] });
       }
     }
-  };
+  }, [state, toast, reset, setError]);
 
   return (
     <Form {...form}>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form ref={formRef} action={formAction} className="space-y-6">
         <FormField
           control={form.control}
           name="name"
@@ -120,8 +127,8 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={formState.isSubmitting} className="w-full">
-          {formState.isSubmitting ? (
+        <Button type="submit" disabled={isSubmitting} className="w-full">
+          {isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               Sending...

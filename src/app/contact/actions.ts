@@ -1,3 +1,4 @@
+
 "use server";
 
 import { z } from "zod";
@@ -40,15 +41,7 @@ export async function submitContactForm(
 
   try {
     // Here is where you would integrate with Firestore
-    // Example:
-    // import { db } from '@/lib/firebase';
-    // await db.collection('contacts').add({
-    //   name,
-    //   email,
-    //   message,
-    //   submittedAt: new Date(),
-    // });
-
+    // For now, we'll just log to the console
     console.log("Contact form submitted successfully:");
     console.log({ name, email, message });
     
@@ -58,10 +51,10 @@ export async function submitContactForm(
       errors: null,
     };
   } catch (error) {
-    console.error("Error saving to database:", error);
+    console.error("Error submitting form:", error);
     return {
       success: false,
-      message: "Something went wrong. Please try again later.",
+      message: "Something went wrong on our end. Please try again later.",
       errors: null,
     };
   }
