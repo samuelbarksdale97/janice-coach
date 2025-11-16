@@ -16,7 +16,7 @@ const navItems = [
 ];
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {currentYear} Taylor Leadership Coaching. All Rights Reserved.
+          &copy; {currentYear ? currentYear : new Date().getFullYear()} Taylor Leadership Coaching. All Rights Reserved.
         </div>
       </div>
     </footer>
