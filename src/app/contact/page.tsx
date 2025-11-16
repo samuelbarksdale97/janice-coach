@@ -20,7 +20,7 @@ export default function ContactPage() {
                         <div className="text-center">
                             <div className="flex justify-center animate-glide-up">
                                 <Image
-                                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=99c92684-e816-40f5-913c-68a85e686891"
+                                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
                                     alt="Taylor Leadership Coaching Logo"
                                     width={400}
                                     height={200}
