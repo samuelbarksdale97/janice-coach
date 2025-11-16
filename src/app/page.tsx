@@ -77,9 +77,9 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-display" className="py-8 md:py-12 bg-muted">
+          <section id="logo-display" className="py-4 md:py-6 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center -my-8 md:-my-12 animate-glide-up">
+              <div className="flex justify-center -my-4 md:-my-6 animate-glide-up">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
                   alt="Taylor Leadership Coaching Horizontal Logo"
