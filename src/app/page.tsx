@@ -77,9 +77,9 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-display" className="py-4 md:py-6 bg-muted">
+          <section id="logo-display" className="py-2 bg-muted">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center -my-4 md:-my-6 animate-glide-up">
+              <div className="flex justify-center -my-8 md:-my-10 animate-glide-up">
                 <Image
                   src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
                   alt="Taylor Leadership Coaching Horizontal Logo"
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-8 md:py-12 bg-background animate-glide-up">
+          <section id="about-intro" className="py-8 md:py-12 bg-background animate-glide-up relative -mt-12">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
@@ -160,7 +160,7 @@ export default function Home() {
           
           <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 animate-glide-up">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>
                     <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
                         Watch this short video to understand my approach and how we can work together to achieve your goals.
