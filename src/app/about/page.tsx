@@ -58,7 +58,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted relative z-10">
                     <div className="container px-4 md:px-6">
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
@@ -85,18 +85,20 @@ export default function AboutPage() {
                         </Card>
                     </div>
                 </section>
-                <section className="w-full pb-8 md:pb-12 bg-background relative z-10">
-                    <div className="container mx-auto px-4 lg:hidden">
-                        <div className="flex justify-center -my-16">
-                            <Image
-                            src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
-                            alt="Taylor Leadership Coaching Gold Logo"
-                            width={1200}
-                            height={300}
-                            className="w-full max-w-xl h-auto"
-                            />
-                        </div>
+
+                <div className="container mx-auto px-4 lg:hidden">
+                    <div className="flex justify-center -my-16">
+                        <Image
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
+                        alt="Taylor Leadership Coaching Gold Logo"
+                        width={1200}
+                        height={300}
+                        className="w-full max-w-xl h-auto"
+                        />
                     </div>
+                </div>
+
+                <section className="w-full pb-8 md:pb-12 bg-background pt-8">
                     <div className="container px-4 md:px-6">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
