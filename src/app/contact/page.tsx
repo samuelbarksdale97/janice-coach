@@ -88,7 +88,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="relative w-full py-20 md:py-24 flex items-center justify-center text-center text-white">
+                <section id="cta-contact" className="relative w-full py-16 md:py-20 flex items-center justify-center text-center text-white">
                     {heroImage && (
                         <Image
                             src={heroImage.imageUrl}
