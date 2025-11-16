@@ -87,18 +87,18 @@ export default function AboutPage() {
                 </section>
 
                 <div className="container mx-auto px-4 lg:hidden animate-glide-up">
-                    <div className="flex justify-center -my-16">
+                    <div className="flex justify-center -my-8">
                         <Image
                         src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
                         alt="Taylor Leadership Coaching Gold Logo"
                         width={1200}
                         height={300}
-                        className="w-full max-w-xl h-auto"
+                        className="w-full max-w-lg h-auto"
                         />
                     </div>
                 </div>
 
-                <section className="w-full bg-background pt-8 pb-12 md:pb-20 animate-glide-up">
+                <section className="w-full bg-background pt-8 pb-12 animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
