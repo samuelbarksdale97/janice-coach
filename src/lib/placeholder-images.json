@@ -3,13 +3,13 @@
     {
       "id": "hero",
       "description": "A grand library with rows of books and high ceilings.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=eca1ceb6-a100-401b-89ae-38ddc110b725",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/optimized%2Flibrary-of-congress-yNANhWCZG9c-unsplash_optimized.jpg?alt=media&token=40428f80-772f-488b-a5d6-84841b80582d",
       "imageHint": "library books"
     },
     {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/IMG_5398.jpeg?alt=media&token=7d7b0559-c888-4eac-b18c-720b53f4da3c",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/optimized%2FIMG_5398_optimized.jpg?alt=media&token=07c08979-45e0-4740-9a25-263a81237e10",
       "imageHint": "professional woman"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "contact",
       "description": "An elegant desk setup with a laptop and notebook.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm.png?alt=media&token=a7aa831a-8350-4917-bc17-56840dbf54c3",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/optimized%2FGemini_Generated_Image_n1xmuen1xmuen1xm_optimized.png?alt=media&token=b9d7a228-5690-48e0-a43b-48618e47087f",
       "imageHint": "desk setup"
     },
     {
