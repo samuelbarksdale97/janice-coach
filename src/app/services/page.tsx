@@ -126,7 +126,7 @@ export default function ServicesPage() {
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="space-y-6">
-                                <h2 className="text-3xl font-headline font-bold text-primary">Is This For You?</h2>
+                                <h2 className="text-3xl font-headline font-bold text-primary text-center md:text-left">Is This For You?</h2>
                                 <ul className="space-y-4">
                                     {whoIsThisForPoints.map((point, index) => (
                                         <li key={index} className="flex items-start">
