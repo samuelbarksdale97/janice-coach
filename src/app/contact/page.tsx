@@ -15,7 +15,7 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-16 pb-0 md:pt-36 lg:py-20 bg-muted">
+                <section className="w-full pt-16 pb-12 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center animate-glide-up">
                             <div className="flex justify-center">
@@ -35,13 +35,13 @@ export default function ContactPage() {
                                 Ready to take the next step? I'd love to hear from you. Fill out the form or use the contact details below.
                             </p>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 mb-12 md:mb-0">
+                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12">
                             <div className="bg-background rounded-lg p-8 md:p-12 border animate-glide-up">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
                             </div>
 
-                            <div className="space-y-8 animate-glide-up">
+                            <div className="space-y-8 animate-glide-up mt-8 md:mt-0">
                                 <div className="text-center">
                                     <h3 className="text-2xl font-headline text-primary">Contact Information</h3>
                                     <p className="mt-2 text-muted-foreground">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="relative w-full py-12 md:py-16 flex items-center justify-center text-center text-white">
+                <section id="cta-contact" className="relative w-full py-20 md:py-24 flex items-center justify-center text-center text-white">
                     {heroImage && (
                         <Image
                             src={heroImage.imageUrl}
@@ -102,7 +102,7 @@ export default function ContactPage() {
                         />
                     )}
                     <div className="absolute inset-0 bg-black/40" />
-                    <div className="relative z-10 p-4 max-w-4xl mx-auto">
+                    <div className="relative z-10 p-4 container mx-auto">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
                         Ready to Start Now?
                     </h2>
