@@ -9,7 +9,7 @@
     {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjIwMDczOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/IMG_5398.jpeg?alt=media&token=073dd831-276c-4bff-ada8-aff373c5ec66",
       "imageHint": "professional woman"
     },
     {
@@ -39,13 +39,13 @@
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
       "id": "service3",
       "description": "Two people having a supportive conversation.",
-      "imageUrl": "https://images.unsplash.com/photo-1604882733856-b8f8ae4f80fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc2MjAwNjcyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604882733856-b8f8ae4f80fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc2MjAwNjcyNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "supportive conversation"
     },
     {
@@ -57,19 +57,19 @@
     {
       "id": "testimonial1",
       "description": "Headshot of a smiling man with glasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
       "id": "testimonial2",
       "description": "Headshot of a woman smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzYyMDA3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzYyMDA3Mzk0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "professional woman"
     },
     {
       "id": "testimonial3",
       "description": "Headshot of a professional man.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     }
   ]
