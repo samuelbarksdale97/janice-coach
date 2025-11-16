@@ -91,8 +91,6 @@ export default function ServicesPage() {
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         data-ai-hint={contactImage.imageHint}
                                         priority
-                                        placeholder="blur"
-                                        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
                                     />
                                 </div>
                             )}

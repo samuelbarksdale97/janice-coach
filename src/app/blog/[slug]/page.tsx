@@ -77,8 +77,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 896px"
                                     priority
-                                    placeholder="blur"
-                                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
                                     data-ai-hint={post.image.imageHint}
                                 />
                             </div>

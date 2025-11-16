@@ -50,8 +50,6 @@ export default function AboutPage() {
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
                                             data-ai-hint={aboutImage.imageHint}
                                             priority
-                                            placeholder="blur"
-                                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
                                         />
                                     </div>
                                 )}
