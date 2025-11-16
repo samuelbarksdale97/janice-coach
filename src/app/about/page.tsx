@@ -98,7 +98,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <section className="w-full pb-8 md:pb-12 bg-background pt-8">
+                <section className="w-full pb-8 md:pb-12 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
