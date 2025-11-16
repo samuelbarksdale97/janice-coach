@@ -27,13 +27,13 @@
     {
       "id": "blog3",
       "description": "A path winding through a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "path forest"
     },
     {
       "id": "service1",
       "description": "A compass pointing towards a direction, symbolizing guidance.",
-      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "compass direction"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "contact",
       "description": "An elegant desk setup with a laptop and notebook.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm.png?alt=media&token=62a919a5-c64a-484f-b91f-d23982068cb1",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm.png?alt=media&token=a7aa831a-8350-4917-bc17-56840dbf54c3",
       "imageHint": "desk setup"
     },
     {
