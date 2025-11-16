@@ -29,13 +29,13 @@ export default function ContactPage() {
                                 />
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up">
-                            <div className="bg-background rounded-lg p-8 md:p-12 border">
+                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up relative z-10 -mb-16 md:-mb-8">
+                            <div className="bg-background rounded-lg p-8 md:p-12 border shadow-lg">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
                             </div>
 
-                            <div className="space-y-8 mt-8 md:mt-0">
+                            <div className="space-y-8 mt-8 md:mt-0 pt-16 md:pt-0">
                                 <div className="text-center">
                                     <h3 className="text-2xl font-headline text-primary">Contact Information</h3>
                                     <p className="mt-2 text-muted-foreground">
@@ -82,7 +82,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="w-full py-16 md:py-20 flex items-center justify-center text-center bg-primary text-primary-foreground">
+                <section id="cta-contact" className="w-full py-16 md:py-20 flex items-center justify-center text-center bg-primary text-primary-foreground pt-32 md:pt-28">
                     <div className="z-10 p-4 md:px-6">
                         <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight">
                             Ready to Start Now?
