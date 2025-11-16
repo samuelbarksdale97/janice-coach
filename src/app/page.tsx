@@ -64,7 +64,7 @@ export default function Home() {
                         
                         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                             </Button>
                             <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white tracking-wider">
                                 <Link href="/services">
