@@ -147,7 +147,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="quote" className="py-8 md:py-12 bg-muted">
+          <section id="quote" className="py-8 md:py-12 bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
