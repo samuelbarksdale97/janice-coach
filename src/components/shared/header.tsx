@@ -85,16 +85,7 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay p-0">
-                <div className="flex h-24 items-center justify-end px-4 border-b">
-                  <DialogClose asChild>
-                    <button className="p-2">
-                      <X className="h-6 w-6" />
-                      <span className="sr-only">Close menu</span>
-                    </button>
-                  </DialogClose>
-                </div>
-                
+            <DialogContent className="mobile-menu-overlay p-0 pt-16">
                 <div className="flex flex-1 flex-col items-center justify-center">
                    <VisuallyHidden>
                     <DialogTitle>Mobile Navigation Menu</DialogTitle>
