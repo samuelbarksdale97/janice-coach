@@ -36,7 +36,7 @@ export default function ContactPage() {
                             </p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8 items-start mt-12 mb-12 md:mb-0">
-                            <div className="bg-background rounded-lg p-8 md:p-12 border">
+                            <div className="bg-background rounded-lg p-8 md:p-12 border animate-glide-up">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
                             </div>
