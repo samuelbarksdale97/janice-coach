@@ -58,7 +58,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted relative z-10">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted relative z-10 animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
