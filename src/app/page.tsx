@@ -96,7 +96,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
                           {aboutImage && (
-                              <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl">
+                              <div className="relative w-80 h-80 rounded-full overflow-hidden">
                                 <Image
                                     src={aboutImage.imageUrl}
                                     alt={aboutImage.description}
