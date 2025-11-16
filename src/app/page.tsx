@@ -123,7 +123,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-8 md:py-12 bg-background">
+          <section id="philosophy" className="py-8 md:py-12 bg-background animate-glide-up">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
@@ -203,6 +203,8 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
 
