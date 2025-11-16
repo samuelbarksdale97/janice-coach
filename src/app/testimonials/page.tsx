@@ -47,7 +47,7 @@ export default function TestimonialsPage() {
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-glide-up">
               {testimonials.map((testimonial) => (
                 <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg">
                   <CardContent className="p-8 flex-grow">
