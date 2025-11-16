@@ -28,7 +28,7 @@ export default function ContactPage() {
                                     priority
                                 />
                             </div>
-                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary mt-2">
+                            <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary relative -mt-8 md:-mt-12 z-10">
                                 Get In Touch
                             </h1>
                             <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
