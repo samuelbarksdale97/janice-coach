@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -24,7 +23,7 @@ export function Footer() {
 
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 pt-8 pb-12 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-2">
@@ -33,7 +32,7 @@ export function Footer() {
                     alt="Taylor Leadership Coaching Logo"
                     width={400}
                     height={100}
-                    className="w-auto h-40 md:h-48"
+                    className="w-auto h-48"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
