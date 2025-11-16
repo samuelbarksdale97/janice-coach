@@ -37,7 +37,7 @@ export default function TestimonialsPage() {
     <>
       <Header />
       <main className="flex-1">
-        <section className="pt-36 md:pt-36 pb-12 md:pb-20 bg-background">
+        <section className="pt-48 md:pt-36 pb-12 md:pb-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 animate-glide-up">
               <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
