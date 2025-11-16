@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { GitFork, CalendarCheck, Waypoints, Rocket, CheckCircle2, ArrowRight } from 'lucide-react';
+import { GitFork, CalendarCheck, Waypoints, Rocket, CheckCircle2, ArrowRight, Search } from 'lucide-react';
 
 const servicesCards = [
     {
@@ -32,7 +32,7 @@ const servicesCards = [
 
 const howItWorksSteps = [
     {
-        icon: <Image src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=8d820be4-9e68-4e73-b80f-72a50fb16f00" alt="Explore Services" width={64} height={64} className="w-16 h-16" />,
+        icon: <Search className="w-16 h-16 text-primary" />,
         step: "Step 1",
         title: "Explore Services",
         description: "Discover the coaching package that best aligns with your personal or professional goals."
