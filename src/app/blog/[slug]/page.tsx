@@ -60,7 +60,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <>
             <Header />
             <main className="flex-1">
-                <article className="container mx-auto px-4 py-8 md:py-12 pt-36">
+                <article className="container mx-auto px-4 py-8 md:py-12 md:pt-36">
                     <div className="max-w-3xl mx-auto">
                         <header className="mb-8 text-center">
                             <p className="text-secondary font-semibold text-sm mb-2">{post.category.toUpperCase()}</p>

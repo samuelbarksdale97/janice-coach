@@ -15,7 +15,7 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-16 pb-0 md:py-16 lg:py-20 bg-muted">
+                <section className="w-full pt-16 pb-0 md:pt-36 lg:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center animate-glide-up">
                             <div className="flex justify-center">
