@@ -45,13 +45,18 @@ export default function Home() {
             <div className="w-full max-w-7xl">
                 <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
                     <Header />
-                    <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=689a9ce8-3eb0-4d79-9aeb-f85adc814acf"
-                        alt="A large library with rows of books."
-                        fill
-                        className="object-cover"
-                        priority
-                    />
+                    {heroImage && (
+                        <Image
+                            src={heroImage.imageUrl}
+                            alt={heroImage.description}
+                            fill
+                            className="object-cover"
+                            priority
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
+                            data-ai-hint={heroImage.imageHint}
+                        />
+                    )}
                     <div className="absolute inset-0 bg-black/50" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                         

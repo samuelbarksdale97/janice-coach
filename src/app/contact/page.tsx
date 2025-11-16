@@ -89,13 +89,18 @@ export default function ContactPage() {
                     </div>
                 </section>
                 <section id="cta-contact" className="relative w-full py-12 md:py-16 flex items-center justify-center text-center text-white">
-                    <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/66DE1BF3-BDE0-4914-8627-C4042EA7389A_1_201_a.jpeg?alt=media&token=85b33495-73c1-4311-979e-06a364978908"
-                        alt="A person standing on a mountain peak looking out at the sunrise."
-                        fill
-                        className="object-cover"
-                        priority
-                    />
+                    {heroImage && (
+                        <Image
+                            src={heroImage.imageUrl}
+                            alt={heroImage.description}
+                            fill
+                            className="object-cover"
+                            priority
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
+                            data-ai-hint={heroImage.imageHint}
+                        />
+                    )}
                     <div className="absolute inset-0 bg-black/40" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight text-shadow-lg">
