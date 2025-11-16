@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "A grand library with rows of books and high ceilings.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/optimized%2Flibrary-of-congress-yNANhWCZG9c-unsplash_optimized.jpg?alt=media&token=40428f80-772f-488b-a5d6-84841b80582d",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash_680x680.jpg?alt=media&token=70bb87f2-a95f-411f-bc2b-69c0c9850d3c",
       "imageHint": "library books"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
