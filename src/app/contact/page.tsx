@@ -28,14 +28,6 @@ export default function ContactPage() {
                                     priority
                                 />
                             </div>
-                            <div className="animate-glide-up">
-                                <h1 className="text-4xl md-text-5xl font-headline font-bold text-primary relative z-10">
-                                    Get In Touch
-                                </h1>
-                                <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-                                    Ready to take the next step? I'd love to hear from you. Fill out the form or use the contact details below.
-                                </p>
-                            </div>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up">
                             <div className="bg-background rounded-lg p-8 md:p-12 border">
