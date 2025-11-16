@@ -39,7 +39,7 @@
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "contact",
       "description": "An elegant desk setup with a laptop and notebook.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/optimized%2FGemini_Generated_Image_n1xmuen1xmuen1xm_optimized.png?alt=media&token=b9d7a228-5690-48e0-a43b-48618e47087f",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm_680x680.png?alt=media&token=35fc71f3-6f66-41b3-8b1f-5b77cfbd5961",
       "imageHint": "desk setup"
     },
     {
