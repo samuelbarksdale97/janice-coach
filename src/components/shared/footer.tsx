@@ -38,7 +38,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground max-w-sm mx-auto md:mx-0">
                 Guiding you through life's transitions with professional coaching and support.
             </p>
-            <div className="flex justify-center md:justify-start space-x-4 mt-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
