@@ -41,7 +41,7 @@ export default function Home() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-        <section id="home-container" className="w-full bg-background flex justify-center">
+        <section id="home-container" className="w-full bg-black flex justify-center">
             <div className="w-full max-w-7xl">
                 <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-black">
                     <Header />
@@ -85,7 +85,7 @@ export default function Home() {
                   alt="Taylor Leadership Coaching Horizontal Logo"
                   width={1200}
                   height={300}
-                  className="w-full max-w-4xl h-auto"
+                  className="w-full max-w-3xl h-auto"
                 />
               </div>
             </div>
@@ -203,5 +203,7 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
