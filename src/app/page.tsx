@@ -80,13 +80,13 @@ export default function Home() {
           <section id="logo-display" className="bg-muted py-8 md:py-12">
             <div className="container mx-auto px-4">
               <div className="flex justify-center animate-glide-up">
-                <div className="w-full max-w-3xl aspect-[3/1]">
+                <div className="w-full max-w-lg h-48">
                   <Image
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
                     alt="Taylor Leadership Coaching Horizontal Logo"
                     width={1200}
                     height={300}
-                    className="w-full h-full object-contain"
+                    className="w-auto h-full object-contain"
                   />
                 </div>
               </div>
