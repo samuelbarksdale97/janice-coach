@@ -93,7 +93,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-8 md:py-12 bg-background animate-glide-up">
+          <section id="about-intro" className="pb-8 md:py-12 bg-background animate-glide-up">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
