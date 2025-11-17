@@ -19,14 +19,16 @@ export default function ContactPage() {
                     <div className="container mx-auto px-4">
                         <div className="text-center">
                             <div className="flex justify-center animate-glide-up">
+                                <div className="w-full h-auto max-w-[250px] md:max-w-sm aspect-[3/1]">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
                                     alt="Taylor Leadership Coaching Logo"
                                     width={400}
                                     height={200}
-                                    className="w-full h-auto max-w-[250px] md:max-w-sm"
+                                    className="w-full h-full object-contain"
                                     priority
                                 />
+                                </div>
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up relative z-10 -mt-12">
