@@ -15,11 +15,11 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 pb-12 md:py-20 bg-muted">
+                <section className="w-full py-16 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
                         <div className="text-center">
                             <div className="flex justify-center animate-glide-up">
-                                <div className="w-full h-72 max-w-sm">
+                                <div className="w-full h-64 max-w-sm">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
                                     alt="Taylor Leadership Coaching Logo"
@@ -31,7 +31,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up relative z-10 -mt-12">
+                        <div className="grid md:grid-cols-2 gap-8 items-start mt-12 animate-glide-up relative z-10 -mt-[3.5rem]">
                             <div className="bg-background rounded-lg p-8 md:p-12 border shadow-lg">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
