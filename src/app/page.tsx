@@ -187,7 +187,7 @@ export default function Home() {
 
           <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">After 20 years coaching hundreds of leaders, I've seen the same pattern:</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold italic">After 20 years coaching hundreds of leaders, I've seen the same pattern:</h2>
                 <p className="mt-4 text-lg max-w-3xl mx-auto">
                 Brilliant professionals struggling with the transition from doing to leading. If you're feeling it too, let's talk.
                 </p>
