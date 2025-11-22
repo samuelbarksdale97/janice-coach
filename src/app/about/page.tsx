@@ -115,7 +115,7 @@ export default function AboutPage() {
                                 </div>
                             </div>
                             <div>
-                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center md:text-left">As a leadership coach,<br />I value</h2>
+                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center md:text-left">As a leadership coach,<br />I value:</h2>
                                 <ul className="space-y-4">
                                     {values.map((value) => (
                                         <li key={value.name}>
