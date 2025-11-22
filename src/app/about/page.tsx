@@ -32,6 +32,16 @@ const credentials = [
     "Project Management Professional (PMP), Project Management Institute"
 ];
 
+const decisionInfluences = [
+    "I engage in ongoing learning and development.",
+    "I am sensitive to my client's identity, environment, experiences, values and beliefs.",
+    "I partner with the client to establish an overall coaching plan and goals.",
+    "I seek to understand my client's identity, environment, experiences, values and beliefs. I show support, empathy and concern for the client.",
+    "I demonstrate openness and transparency to display vulnerability and build trust with the client.",
+    "I am fully conscious and present with the client, employing a style that is open, flexible, grounded and confident.",
+    "I partner with the client to transform learning and insight into action, and I promote client autonomy in the coaching process."
+];
+
 export default function AboutPage() {
     return (
         <>
@@ -125,6 +135,22 @@ export default function AboutPage() {
                                     ))}
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up">
+                    <div className="container px-4 md:px-6">
+                        <div className="max-w-4xl mx-auto">
+                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my values influence my decisions.</h2>
+                            <ul className="space-y-4">
+                                {decisionInfluences.map((item, index) => (
+                                    <li key={index} className="flex items-start">
+                                        <CheckCircle2 className="h-6 w-6 text-secondary mr-4 mt-1 flex-shrink-0" />
+                                        <span className="text-muted-foreground text-lg">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </section>
