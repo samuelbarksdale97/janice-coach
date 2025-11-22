@@ -86,7 +86,7 @@ export default function ContactPage() {
                 </section>
                 <section id="cta-contact" className="w-full py-16 flex items-center justify-center text-center bg-primary text-primary-foreground">
                     <div className="z-10 p-4 md:px-6">
-                        <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight">
+                        <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight italic">
                             Ready to Start Now?
                         </h2>
                         <p className="mt-4 text-lg max-w-2xl mx-auto">
