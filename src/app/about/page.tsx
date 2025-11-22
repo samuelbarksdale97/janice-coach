@@ -90,17 +90,6 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="py-8 md:py-12 bg-background animate-glide-up">
-                    <div className="container mx-auto px-4">
-                      <div className="max-w-3xl mx-auto text-center">
-                        <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
-                          "To lead people, walk beside them."
-                        </blockquote>
-                        <p className="mt-4 text-lg text-secondary font-semibold italic">— Lao Tzu</p>
-                      </div>
-                    </div>
-                  </section>
-
                 <div className="container mx-auto px-4 lg:hidden animate-glide-up">
                   <div className="flex justify-center">
                     <div className="w-full max-w-lg h-64">
@@ -135,6 +124,16 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
+                <section className="py-8 md:py-12 bg-background animate-glide-up">
+                    <div className="container mx-auto px-4">
+                      <div className="max-w-3xl mx-auto text-center">
+                        <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
+                          "To lead people, walk beside them."
+                        </blockquote>
+                        <p className="mt-4 text-lg text-secondary font-semibold italic">— Lao Tzu</p>
+                      </div>
+                    </div>
+                  </section>
             </main>
             <Footer />
         </>
