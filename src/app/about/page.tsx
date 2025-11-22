@@ -173,7 +173,7 @@ export default function AboutPage() {
 
                 <section className="w-full bg-muted pt-8 pb-12 animate-glide-up">
                     <div className="container px-4 md:px-6 text-center">
-                        <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8"><span className="italic">More</span> About Me</h2>
+                        <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-center">
                             <p>As a certified leadership coach specializing in organizational well-being, I bring a unique blend of executive experience and coaching mastery to my practice. My Level 2 coaching certificate in Leadership Coaching for Organizational Well-Being from George Mason University, combined with my certificate in Positive Leadership from Michigan’s Ross School of Business, positions me to guide leaders through transformational change that prioritizes both results and human flourishing.</p>
                             <p>With over 30 years of professional experience, I specialize in empowering leaders and teams to unlock their full potential. My coaching approach blends mindful leadership, emotional intelligence, and well-being strategies to create resilient and high-performing individuals and organizations.</p>
