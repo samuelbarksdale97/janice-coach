@@ -156,17 +156,19 @@ export default function AboutPage() {
                 </section>
 
                 <div className="container mx-auto px-4 animate-glide-up">
-                  <div className="flex justify-center">
-                    <div className="w-full max-w-lg h-64">
-                      <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
-                        alt="Taylor Leadership Coaching Logo"
-                        width={1200}
-                        height={300}
-                        className="w-auto h-full object-contain mx-auto"
-                      />
+                    <div className="flex flex-col md:flex-row justify-center md:space-x-4 items-center">
+                        {[...Array(3)].map((_, i) => (
+                            <div key={i} className="w-full max-w-sm h-48">
+                                <Image
+                                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
+                                    alt="Taylor Leadership Coaching Logo"
+                                    width={400}
+                                    height={100}
+                                    className="w-auto h-full object-contain mx-auto"
+                                />
+                            </div>
+                        ))}
                     </div>
-                  </div>
                 </div>
 
                 <section className="w-full bg-muted pt-8 pb-12 animate-glide-up">
@@ -204,5 +206,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
