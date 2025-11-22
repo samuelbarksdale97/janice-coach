@@ -39,7 +39,7 @@ export function Header() {
       "absolute top-0 z-50 w-full", 
       isHomePage 
         ? "" 
-        : "bg-primary md:bg-white/80 md:backdrop-blur-sm md:shadow-sm"
+        : "bg-white"
     )}>
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
@@ -73,8 +73,8 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className={cn("p-2", isHomePage ? "text-white" : "text-primary")}>
-                  <Menu className="h-6 w-6 text-secondary"/>
+              <button className={cn("p-2", isHomePage ? "text-white" : "text-secondary")}>
+                  <Menu className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
