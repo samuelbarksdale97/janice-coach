@@ -62,6 +62,17 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
+        <section className="py-12 md:py-20 bg-muted">
+            <div className="container mx-auto px-4">
+                <div className="max-w-3xl mx-auto text-center">
+                    <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
+                    "Deliberately seek the company of people who influence you to think and act on building the life you desire."
+                    </blockquote>
+                    <p className="mt-4 text-lg text-secondary font-semibold italic">— Napoleon Hill</p>
+                </div>
+            </div>
+        </section>
+
         <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Write Your Own Success Story?</h2>
