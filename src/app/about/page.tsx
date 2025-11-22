@@ -14,6 +14,14 @@ const philosophyPoints = [
     'Creating sustainable change'
 ];
 
+const values = [
+    { name: "Personal Development", description: "A commitment to continuous learning and self-improvement." },
+    { name: "Empathy", description: "Understanding and responding to the feelings and perspectives of others." },
+    { name: "Service", description: "A focus on helping others and contributing to a greater good." },
+    { name: "Authenticity", description: "Being genuine and transparent in one's communication and actions." },
+    { name: "Resilience", description: "Recovering from setbacks and learning from mistakes." }
+];
+
 const credentials = [
     "Former Senior Level Executive in Federal Government",
     "Deputy Chief of Benefits Administration, Pension Benefit Guaranty Corporation",
@@ -87,6 +95,37 @@ export default function AboutPage() {
                                 </div>
                             </CardContent>
                         </Card>
+                    </div>
+                </section>
+
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up">
+                    <div className="container px-4 md:px-6">
+                        <div className="grid gap-12 md:grid-cols-2">
+                            <div>
+                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center md:text-left">Mission & Vision</h2>
+                                <div className="space-y-6 text-muted-foreground">
+                                    <div>
+                                        <h3 className="text-xl font-bold text-secondary mb-2">Mission</h3>
+                                        <p>"We partner with clients to transform life's obstacles into opportunities for growth, self-discovery, and lasting resilience."</p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-secondary mb-2">Vision</h3>
+                                        <p>"We envision communities where personal transformation is celebrated - where people continually evolve, break through barriers, and live with intentional purpose."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center md:text-left">As a leadership coach, I value</h2>
+                                <ul className="space-y-4">
+                                    {values.map((value) => (
+                                        <li key={value.name}>
+                                            <p className="font-bold text-lg text-primary">{value.name}</p>
+                                            <p className="text-muted-foreground">{value.description}</p>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
