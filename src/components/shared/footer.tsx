@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from "next/link";
 import Image from 'next/image';
 import { Facebook, Instagram, Linkedin } from "lucide-react";
@@ -15,18 +15,14 @@ const navItems = [
 ];
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 pt-4 md:pt-8 pb-4 md:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-center">
-            <div className="flex items-center justify-center space-x-2 -my-12">
+            <div className="flex items-center justify-center space-x-2 -my-8 md:-my-12">
                 <Image 
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=8d820be4-9e68-4e73-b80f-72a50fb16f00"
                     alt="Taylor Leadership Coaching Logo"
@@ -70,7 +66,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {currentYear ? currentYear : new Date().getFullYear()} Janice Brown-Taylor Coaching. All Rights Reserved.
+          &copy; {currentYear} Janice Brown-Taylor Coaching. All Rights Reserved.
         </div>
       </div>
     </footer>
