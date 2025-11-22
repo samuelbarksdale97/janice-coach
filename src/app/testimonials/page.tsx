@@ -42,7 +42,7 @@ export default function TestimonialsPage() {
                     <blockquote className="text-muted-foreground italic">"{testimonial.quote}"</blockquote>
                   </CardContent>
                   <div className="p-6 pt-0">
-                    <p className="font-bold text-primary text-lg mt-4">{testimonial.name}</p>
+                    
                     <p className="text-sm text-secondary font-semibold">{testimonial.title}</p>
                   </div>
                 </Card>
