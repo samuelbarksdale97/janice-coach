@@ -52,7 +52,12 @@ export function Header() {
   const isHomePage = pathname === '/';
 
   return (
-    <header className={cn("absolute top-0 z-50 w-full", isHomePage ? "" : "bg-white/80 backdrop-blur-sm shadow-sm")}>
+    <header className={cn(
+      "absolute top-0 z-50 w-full", 
+      isHomePage 
+        ? "" 
+        : "bg-primary md:bg-white/80 md:backdrop-blur-sm md:shadow-sm"
+    )}>
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
             
@@ -85,7 +90,7 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className={cn("p-2", isHomePage ? "text-white" : "text-primary")}>
+              <button className={cn("p-2 text-white")}>
                   <CustomMenuIcon className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
