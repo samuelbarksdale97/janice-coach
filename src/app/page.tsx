@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
-                            What becomes possible when you stop performing,<br className="md:hidden" /> start leading and just be <span className="italic text-secondary">yourself</span><span className="ml-3">?</span>
+                            What becomes possible when you stop performing,<br /> start leading and just be <span className="italic text-secondary">yourself</span><span className="ml-3">?</span>
                         </h1>
                         
                         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -205,5 +205,7 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
