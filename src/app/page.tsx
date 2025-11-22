@@ -82,7 +82,7 @@ export default function Home() {
               <div className="flex justify-center animate-glide-up">
                 <div className="w-full max-w-2xl h-64 md:h-72">
                   <Image
-                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
+                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
                     alt="Taylor Leadership Coaching Horizontal Logo"
                     width={1200}
                     height={300}
@@ -205,3 +205,5 @@ export default function Home() {
     </>
   );
 }
+
+    
