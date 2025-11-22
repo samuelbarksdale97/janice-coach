@@ -55,7 +55,7 @@ export default function Home() {
                             data-ai-hint={heroImage.imageHint}
                         />
                     )}
-                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 bg-black/60" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
@@ -185,15 +185,15 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="cta" className="py-8 md:py-12 bg-primary text-primary-foreground">
+          <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">Are You Ready to Begin Your Transformation?</h2>
-                <p className="mt-4 text-lg max-w-2xl mx-auto">
-                    Don't wait another day to start living the life you've imagined.
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">20 years coaching leaders from first-time managers to C-suite executives.</h2>
+                <p className="mt-4 text-lg max-w-3xl mx-auto">
+                Let's unlock what's holding you back. Most leadership problems aren't about strategy - they're about people. Let's fix the real issue.
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
-                        Book A Consultation <ArrowRight className="ml-2 h-5 w-5" />
+                        Free 30-minute consultation <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                 </Button>
             </div>
@@ -205,7 +205,3 @@ export default function Home() {
     </>
   );
 }
-
-    
-
-    
