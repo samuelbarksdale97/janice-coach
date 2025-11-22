@@ -110,7 +110,7 @@ export default function AboutPage() {
 
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6">
-                        <div className="grid gap-12 md:grid-cols-2">
+                        <div className="grid gap-12 grid-cols-1">
                             <div className="text-center">
                                 <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center">Mission & Vision</h2>
                                 <div className="space-y-6 text-muted-foreground">
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my values influence my decisions.</h2>
+                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my <span className="text-secondary">values</span> influence my decisions.</h2>
                             <ul className="space-y-4">
                                 {decisionInfluences.map((item, index) => (
                                     <li key={index} className="flex items-start">
