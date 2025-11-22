@@ -184,6 +184,16 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
+                 <section className="py-12 md:py-20 bg-background">
+                    <div className="container mx-auto px-4">
+                        <div className="max-w-3xl mx-auto text-center">
+                            <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
+                            "Owning our story and loving ourselves through the process is the bravest thing that we’ll ever do."
+                            </blockquote>
+                            <p className="mt-4 text-lg text-secondary font-semibold italic">— Brené Brown</p>
+                        </div>
+                    </div>
+                </section>
             </main>
             <Footer />
         </>
