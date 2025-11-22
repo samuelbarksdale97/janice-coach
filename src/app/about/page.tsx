@@ -111,8 +111,8 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-12 md:grid-cols-2">
-                            <div>
-                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center md:text-left">Mission & Vision</h2>
+                            <div className="text-center">
+                                <h2 className="text-3xl font-headline font-bold text-primary mb-4 text-center">Mission & Vision</h2>
                                 <div className="space-y-6 text-muted-foreground">
                                     <div>
                                         <h3 className="text-xl font-bold text-secondary mb-2">Mission</h3>
