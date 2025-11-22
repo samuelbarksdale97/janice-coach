@@ -187,9 +187,9 @@ export default function Home() {
 
           <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold">20 years coaching leaders from first-time managers to C-suite executives.</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">After 20 years coaching hundreds of leaders, I've seen the same pattern:</h2>
                 <p className="mt-4 text-lg max-w-3xl mx-auto">
-                Let's unlock what's holding you back. Most leadership problems aren't about strategy - they're about people. Let's fix the real issue.
+                brilliant professionals struggling with the transition from doing to leading. If you're feeling it too, let's talk.
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
