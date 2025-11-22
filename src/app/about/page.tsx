@@ -14,11 +14,15 @@ const philosophyPoints = [
     'Creating sustainable change'
 ];
 
-const bioImages = [
-    PlaceHolderImages.find(img => img.id === 'blog1'),
-    PlaceHolderImages.find(img => img.id === 'blog2'),
-    PlaceHolderImages.find(img => img.id === 'blog3'),
-]
+const credentials = [
+    "Former Senior Level Executive in Federal Government",
+    "Deputy Chief of Benefits Administration, Pension Benefit Guaranty Corporation",
+    "BOA Institute for Women’s Entrepreneurship, eCornell University",
+    "Associate Certified Coach (ACC), International Coaching Federation",
+    "Executive Leadership Coach for Organizational Well-Being (Level 2), George Mason University",
+    "Positive Leadership Program, University of Michigan, Ross School of Business",
+    "Project Management Professional (PMP), Project Management Institute"
+];
 
 export default function AboutPage() {
     return (
@@ -33,15 +37,15 @@ export default function AboutPage() {
                                     Meet Your Coach
                                 </h1>
                                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto lg:mx-0">
-                                    Hello! I'm Jane Doe, a certified life coach with a passion for helping individuals navigate the complexities of life with confidence and clarity. With over a decade of experience in personal development and corporate leadership, I blend proven coaching techniques with real-world wisdom.
+                                    Hello! I'm Janice Brown-Taylor, a certified leadership coach with a passion for helping individuals navigate the complexities of life with confidence and clarity. With over two decades of experience in professional development and corporate leadership, I blend mindful leadership, emotional intelligence, and well-being strategies with coaching techniques with real-world experience.
                                 </p>
                                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto lg:mx-0">
-                                    My journey into coaching began after my own transformative experience with a coach during a pivotal career change. It was then I realized the profound impact of having a dedicated guide and supporter. My mission is to be that person for you—to listen, to challenge, and to celebrate your growth every step of the way.
+                                    I began my coaching career 25 years ago, marking a pivotal moment in my professional life. That experience taught me the immense value of having someone by your side while navigating change and overcoming challenges. My goal today is to be that person for you - listening to what matters to you, encouraging growth, and celebrating every step forward. The time we spend together gaining clarity, building confidence, and strengthening resilience will yield lasting benefits.
                                 </p>
                             </div>
                              <div className="flex justify-center animate-glide-up">
                                 {aboutImage && (
-                                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
+                                    <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]">
                                         <Image
                                             src={aboutImage.imageUrl}
                                             alt={aboutImage.description}
@@ -103,19 +107,20 @@ export default function AboutPage() {
                 <section className="w-full bg-background pt-8 pb-12 animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                            {bioImages.map((image, index) => (
-                                image && <div key={index} className="aspect-square relative rounded-lg overflow-hidden shadow-lg">
-                                    <Image
-                                        src={image.imageUrl}
-                                        alt={image.description}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                        data-ai-hint={image.imageHint}
-                                    />
-                                </div>
-                            ))}
+                        <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground">
+                            <p>As a certified leadership coach specializing in organizational well-being, I bring a unique blend of executive experience and coaching mastery to my practice. My Level 2 coaching certificate in Leadership Coaching for Organizational Well-Being from George Mason University, combined with my certificate in Positive Leadership from Michigan’s Ross School of Business, positions me to guide leaders through transformational change that prioritizes both results and human flourishing.</p>
+                            <p>With over 30 years of professional experience, I specialize in empowering leaders and teams to unlock their full potential. My coaching approach blends mindful leadership, emotional intelligence, and well-being strategies to create resilient and high-performing individuals and organizations.</p>
+                            <p>I am highly skilled at guiding professionals through transformative changes, leveraging my extensive background in organizational realignment, strategic problem-solving, and effective communication. My leadership coaching sessions are tailored to address unique challenges, helping clients navigate complex dynamics and build impactful solutions. Whether you're seeking to enhance your leadership style, foster team collaboration, or achieve personal growth, my coaching brings clarity, direction, and measurable results.</p>
+                            <p>As a certified member of the International Coaching Federation (ICF), I offer flexible coaching options, ensuring accessibility and convenience for clients with diverse needs. My commitment to fostering meaningful connections and actionable outcomes sets me apart in the field. With me as your leadership coach, you’re not just investing in your professional development, you’re embracing a transformative journey toward becoming the leader you aspire to be.</p>
+                        </div>
+
+                        <div className="max-w-4xl mx-auto mt-12">
+                            <h3 className="text-2xl font-headline font-bold text-primary text-center mb-6">Certifications and Credentials</h3>
+                            <ul className="space-y-3 text-center">
+                                {credentials.map((cred, index) => (
+                                    <li key={index} className="text-muted-foreground">{cred}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </section>

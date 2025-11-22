@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-tight text-shadow-lg mt-8">
-                            What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?
+                            What becomes possible when you stop performing, start leading and just be <span className="italic text-secondary">yourself</span>?
                         </h1>
                         
                         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -113,7 +113,7 @@ export default function Home() {
                       <div className="text-center md:text-left">
                           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Guide for Your <span className="text-secondary">Journey</span></h2>
                           <p className="mt-4 text-lg text-muted-foreground">
-                              I'm Jane Doe, a certified life coach dedicated to helping you find clarity and purpose. My mission is to provide a supportive space where you can explore your potential, overcome obstacles, and design a life that truly resonates with you.
+                              I'm Janice Brown-Taylor, a certified leadership coach dedicated to helping you find clarity, purpose, and reach your full potential as an authentic, resilient leader. My mission is to provide a safe, supportive environment where you can break free from your limiting beliefs, overcome obstacles and design a life that truly resonates with you.
                           </p>
                           <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0">
                               <Link href="/about">
@@ -153,9 +153,9 @@ export default function Home() {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
-                  "The only impossible journey is the one you never begin."
+                  "Progress is not achieved by luck or accident, but by working on yourself daily."
                 </blockquote>
-                <p className="mt-4 text-lg text-secondary font-semibold italic">— Tony Robbins</p>
+                <p className="mt-4 text-lg text-secondary font-semibold italic">— Epictetus</p>
               </div>
             </div>
           </section>
@@ -205,19 +205,3 @@ export default function Home() {
     </>
   );
 }
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    

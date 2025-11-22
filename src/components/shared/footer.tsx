@@ -70,7 +70,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {currentYear ? currentYear : new Date().getFullYear()} Taylor Leadership Coaching. All Rights Reserved.
+          &copy; {currentYear ? currentYear : new Date().getFullYear()} Janice Brown-Taylor Coaching. All Rights Reserved.
         </div>
       </div>
     </footer>
