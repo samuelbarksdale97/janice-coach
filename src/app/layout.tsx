@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, PT_Sans } from 'next/font/google';
+import { EB_Garamond, PT_Sans } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
@@ -10,9 +10,10 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-const playfairDisplay = Playfair_Display({
+const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  weight: '700',
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
   variable: '--font-playfair-display',
 });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-body antialiased", ptSans.variable, playfairDisplay.variable)}>
+      <body className={cn("min-h-screen bg-background font-body antialiased", ptSans.variable, ebGaramond.variable)}>
         {children}
         <Toaster />
       </body>
