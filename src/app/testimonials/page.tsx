@@ -62,7 +62,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-muted">
+        <section className="py-12 md:py-20 bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                     <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
