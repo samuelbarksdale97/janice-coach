@@ -14,18 +14,6 @@ const testimonials = [
         name: "Valued Client",
         title: "",
         image: PlaceHolderImages.find(img => img.id === 'testimonial1')
-    },
-    {
-        quote: "I was feeling stuck and uninspired. The coaching sessions helped me rediscover my passion and create an actionable plan for my personal and professional growth.",
-        name: "Samantha Lee",
-        title: "Founder, Creative Co.",
-        image: PlaceHolderImages.find(img => img.id === 'testimonial2')
-    },
-    {
-        quote: "The leadership coaching I received was transformative. I learned how to lead more authentically and effectively, which has had a huge impact on my team's morale and performance.",
-        name: "Michael Chen",
-        title: "Engineering Manager",
-        image: PlaceHolderImages.find(img => img.id === 'testimonial3')
     }
 ];
 
@@ -47,9 +35,9 @@ export default function TestimonialsPage() {
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-glide-up">
+            <div className="flex justify-center animate-glide-up">
               {testimonials.map((testimonial) => (
-                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg">
+                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg max-w-2xl">
                   <CardContent className="p-8 flex-grow">
                     <blockquote className="text-muted-foreground italic">"{testimonial.quote}"</blockquote>
                   </CardContent>
