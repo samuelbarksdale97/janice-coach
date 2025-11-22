@@ -90,7 +90,7 @@ export default function ContactPage() {
                             Ready to Start Now?
                         </h2>
                         <p className="mt-4 text-lg max-w-2xl mx-auto">
-                            The simplest way to begin is by booking a complimentary discovery call.
+                            The simplest way to begin is by booking a <span className="font-bold text-secondary">complimentary</span> discovery call.
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button asChild size="lg" variant="outline" className="font-bold border-primary-foreground text-primary-foreground bg-transparent hover:bg-white/10 hover:text-white">
