@@ -90,7 +90,7 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className={cn("p-2 text-white")}>
+              <button className={cn("p-2", isHomePage ? "text-white" : "text-secondary")}>
                   <CustomMenuIcon className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
