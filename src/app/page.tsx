@@ -190,7 +190,9 @@ export default function Home() {
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold italic">After 20 years coaching hundreds of leaders, I've seen the same pattern:</h2>
                 <p className="mt-4 text-lg max-w-3xl mx-auto">
-                <span className="font-bold text-secondary">Brilliant</span> professionals struggling with the transition from doing to leading. If you're feeling it too, let's talk.
+                Brilliant professionals struggling with the transition from doing to leading.
+                <br />
+                If you're feeling it too, let's talk.
                 </p>
                 <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
                     <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
