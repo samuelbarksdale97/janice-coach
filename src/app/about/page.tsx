@@ -105,8 +105,8 @@ export default function AboutPage() {
                   <div className="flex justify-center">
                     <div className="w-full max-w-lg h-64">
                       <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
-                        alt="Taylor Leadership Coaching Gold Logo"
+                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
+                        alt="Taylor Leadership Coaching Logo"
                         width={1200}
                         height={300}
                         className="w-auto h-full object-contain mx-auto"
