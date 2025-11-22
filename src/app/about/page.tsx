@@ -155,7 +155,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <div className="container mx-auto px-4 hidden lg:block animate-glide-up">
+                <div className="container mx-auto px-4 animate-glide-up">
                   <div className="flex justify-center">
                     <div className="w-full max-w-lg h-64">
                       <Image
