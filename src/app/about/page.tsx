@@ -90,6 +90,17 @@ export default function AboutPage() {
                     </div>
                 </section>
 
+                <section className="py-8 md:py-12 bg-background animate-glide-up">
+                    <div className="container mx-auto px-4">
+                      <div className="max-w-3xl mx-auto text-center">
+                        <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
+                          "To lead people, walk beside them."
+                        </blockquote>
+                        <p className="mt-4 text-lg text-secondary font-semibold italic">— Lao Tzu</p>
+                      </div>
+                    </div>
+                  </section>
+
                 <div className="container mx-auto px-4 lg:hidden animate-glide-up">
                   <div className="flex justify-center">
                     <div className="w-full max-w-lg h-64">
@@ -104,8 +115,8 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <section className="w-full bg-background pt-8 pb-12 animate-glide-up">
-                    <div className="container px-4 md:px-6">
+                <section className="w-full bg-muted pt-8 pb-12 animate-glide-up">
+                    <div className="container px-4 md:px-6 text-center">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-center">
                             <p>As a certified leadership coach specializing in organizational well-being, I bring a unique blend of executive experience and coaching mastery to my practice. My Level 2 coaching certificate in Leadership Coaching for Organizational Well-Being from George Mason University, combined with my certificate in Positive Leadership from Michigan’s Ross School of Business, positions me to guide leaders through transformational change that prioritizes both results and human flourishing.</p>
@@ -114,7 +125,7 @@ export default function AboutPage() {
                             <p>As a certified member of the International Coaching Federation (ICF), I offer flexible coaching options, ensuring accessibility and convenience for clients with diverse needs. My commitment to fostering meaningful connections and actionable outcomes sets me apart in the field. With me as your leadership coach, you’re not just investing in your professional development, you’re embracing a transformative journey toward becoming the leader you aspire to be.</p>
                         </div>
 
-                        <div className="max-w-4xl mx-auto mt-12">
+                        <div className="max-w-4xl mx-auto mt-12 text-center">
                             <h3 className="text-2xl font-headline font-bold text-primary text-center mb-6">Certifications and Credentials</h3>
                             <ul className="space-y-3 text-center">
                                 {credentials.map((cred, index) => (
