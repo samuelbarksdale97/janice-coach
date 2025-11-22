@@ -8,7 +8,7 @@ import { Dialog, DialogTrigger, DialogContent, DialogClose, DialogDescription, D
 import { cn } from '@/lib/utils';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Button } from '@/components/ui/button';
-import { X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import Image from 'next/image';
 
 const navItems = [
@@ -27,23 +27,6 @@ const desktopNavItems = [
     { href: "/contact", label: "Contact" },
 ];
 
-
-const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <line x1="3" y1="9" x2="21" y2="9"></line>
-      <line x1="3" y1="15" x2="21" y2="15"></line>
-    </svg>
-  );
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -90,8 +73,8 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className={cn("p-2", isHomePage ? "text-white" : "text-secondary")}>
-                  <CustomMenuIcon className="h-6 w-6"/>
+              <button className={cn("p-2", isHomePage ? "text-white" : "text-primary")}>
+                  <Menu className="h-6 w-6 text-secondary"/>
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
