@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my <span className="text-secondary">values</span> influence my decisions.</h2>
+                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my values influence my decisions.</h2>
                             <ul className="space-y-4">
                                 {decisionInfluences.map((item, index) => (
                                     <li key={index} className="flex items-start">
@@ -155,7 +155,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <div className="container mx-auto px-4 lg:hidden animate-glide-up">
+                <div className="container mx-auto px-4 hidden lg:block animate-glide-up">
                   <div className="flex justify-center">
                     <div className="w-full max-w-lg h-64">
                       <Image
@@ -204,3 +204,5 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
