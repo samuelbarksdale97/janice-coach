@@ -73,7 +73,7 @@ export default function TestimonialsPage() {
             </div>
         </section>
 
-        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground">
+        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Ready to Write Your Own Success Story?</h2>
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
