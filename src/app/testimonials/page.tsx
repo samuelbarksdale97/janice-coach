@@ -55,7 +55,7 @@ export default function TestimonialsPage() {
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                     <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
-                      "Deliberately seek the company of people who <span className="text-secondary font-bold">influence</span> you to think and act on building the life you desire."
+                      "Deliberately seek the company of people who <span className="text-secondary">influence</span> you to think and act on building the life you desire."
                     </blockquote>
                     <p className="mt-4 text-lg text-secondary font-semibold italic">— Napoleon Hill</p>
                 </div>
