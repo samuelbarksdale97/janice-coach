@@ -158,7 +158,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4 animate-glide-up">
                     <div className="flex flex-col md:flex-row justify-center md:space-x-4 items-center">
                         {[...Array(3)].map((_, i) => (
-                            <div key={i} className="w-full max-w-sm h-48">
+                            <div key={i} className={`w-full max-w-sm h-48 ${i > 0 ? 'hidden md:block' : ''}`}>
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
                                     alt="Taylor Leadership Coaching Logo"
