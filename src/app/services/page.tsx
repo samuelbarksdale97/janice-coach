@@ -124,7 +124,7 @@ export default function ServicesPage() {
                 </section>
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
                     <div className="container px-4 md:px-6">
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="grid md:grid-cols-2 gap-8 items-center animate-glide-up">
                             <div className="space-y-6">
                                 <h2 className="text-3xl font-headline font-bold text-primary text-center md:text-left">Is This For You?</h2>
                                 <ul className="space-y-4">
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                 </section>
                 <section className="py-12 md:py-20 bg-muted">
                     <div className="container mx-auto px-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 animate-glide-up">
                             {servicesCards.map((service) => (
                                 <Card 
                                     key={service.title} 
@@ -185,7 +185,7 @@ export default function ServicesPage() {
                     </div>
                 </section>
                  <section className="py-12 md:py-20 bg-background">
-                    <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 animate-glide-up">
                         <div className="max-w-3xl mx-auto text-center">
                             <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                             "Owning our story and loving ourselves through the process is the bravest thing that we’ll ever do."

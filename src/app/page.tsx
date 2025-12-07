@@ -163,7 +163,7 @@ export default function Home() {
           
           <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-12 animate-glide-up">
+                <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>
                     <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
                         Watch this short video to understand my approach and how we can work together to achieve your goals.
