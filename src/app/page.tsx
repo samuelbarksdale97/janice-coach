@@ -56,7 +56,7 @@ export default function Home() {
                         />
                     )}
                     <div className="absolute inset-0 bg-black/60" />
-                    <div className="relative z-10 p-4 max-w-4xl mx-auto animate-glide-up flex flex-col items-center">
+                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
                             What becomes possible when you stop performing, start leading, and just be <span className="italic text-secondary">yourself</span><span className="ml-2">?</span>
@@ -78,9 +78,9 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-display" className="bg-muted">
+          <section id="logo-display" className="bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center animate-glide-up">
+              <div className="flex justify-center">
                 <div className="w-full max-w-2xl h-64 md:h-72">
                   <Image
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about-intro" className="py-8 bg-background animate-glide-up">
+          <section id="about-intro" className="py-8 bg-background animate-glide-up [animation-delay:100ms]">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-8 md:py-12 bg-background animate-glide-up">
+          <section id="philosophy" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:200ms]">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
@@ -150,7 +150,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="quote" className="py-8 md:py-12 bg-muted animate-glide-up">
+          <section id="quote" className="py-8 md:py-12 bg-muted animate-glide-up [animation-delay:300ms]">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
           </section>
           
-          <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up">
+          <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:400ms]">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>
@@ -186,9 +186,9 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up">
+          <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up [animation-delay:500ms]">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold italic">After 20 years coaching hundreds of leaders, I've seen the same pattern:</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold italic">After 20 years coaching hundreds of leaders, I'veseen the same pattern:</h2>
                 <p className="mt-4 text-lg max-w-3xl mx-auto">
                 <span className="font-bold text-secondary">Brilliant</span> professionals struggling with the transition from doing to leading.<br />If you're feeling it too, let's talk.
                 </p>

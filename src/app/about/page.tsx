@@ -47,10 +47,10 @@ export default function AboutPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-background">
+                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-                            <div className="space-y-4 animate-glide-up text-center lg:text-left">
+                            <div className="space-y-4 text-center lg:text-left">
                                 <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline">
                                     Meet Your Coach
                                 </h1>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                                     I began my coaching career 25 years ago, marking a pivotal moment in my professional life. That experience taught me the immense value of having someone by your side while navigating change and overcoming challenges. My goal today is to be that person for you - listening to what matters to you, encouraging growth, and celebrating every step forward. The time we spend together gaining clarity, building confidence, and strengthening resilience will yield lasting benefits.
                                 </p>
                             </div>
-                             <div className="flex justify-center animate-glide-up">
+                             <div className="flex justify-center">
                                 {aboutImage && (
                                     <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]">
                                         <Image
@@ -80,7 +80,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted relative z-10 animate-glide-up">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted relative z-10 animate-glide-up [animation-delay:200ms]">
                     <div className="container px-4 md:px-6">
                         <Card className="bg-background border-none shadow-none">
                             <CardContent className="p-0">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:300ms]">
                     <div className="container px-4 md:px_6">
                         <div className="grid gap-12 grid-cols-1">
                             <div className="text-center">
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms]">
                     <div className="container px-4 md:px_6">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As a leadership coach my <span className="text-secondary">values</span> influence my decisions.</h2>
@@ -155,7 +155,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <div className="container mx-auto px-4 animate-glide-up">
+                <div className="container mx-auto px-4 animate-glide-up [animation-delay:500ms]">
                     <div className="flex flex-col md:flex-row justify-center md:space-x-4 items-center">
                         {[...Array(3)].map((_, i) => (
                             <div key={i} className={`w-full max-w-sm h-48 ${i > 0 ? 'hidden md:block' : ''}`}>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <section className="w-full bg-muted pt-8 pb-12 animate-glide-up">
+                <section className="w-full bg-muted pt-8 pb-12 animate-glide-up [animation-delay:600ms]">
                     <div className="container px-4 md:px_6 text-center">
                         <h2 className="text-3xl font-headline font-bold text-primary text-center mb-8">More About Me</h2>
                         <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-center">
@@ -191,7 +191,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
-                <section className="py-8 md:py-12 bg-background animate-glide-up">
+                <section className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:700ms]">
                     <div className="container mx-auto px-4">
                       <div className="max-w-3xl mx-auto text-center">
                         <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">

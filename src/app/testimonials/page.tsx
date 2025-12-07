@@ -25,9 +25,9 @@ export default function TestimonialsPage() {
     <>
       <Header />
       <main className="flex-1">
-        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background">
+        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background animate-glide-up">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12 animate-glide-up">
+            <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
                 What My Clients Say
               </h1>
@@ -35,7 +35,7 @@ export default function TestimonialsPage() {
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
-            <div className="flex justify-center animate-glide-up">
+            <div className="flex justify-center">
               {testimonials.map((testimonial) => (
                 <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg max-w-2xl">
                   <CardContent className="p-8 flex-grow">
@@ -51,7 +51,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-muted animate-glide-up">
+        <section className="py-12 md:py-20 bg-muted animate-glide-up [animation-delay:200ms]">
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                     <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
@@ -62,7 +62,7 @@ export default function TestimonialsPage() {
             </div>
         </section>
 
-        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up">
+        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up [animation-delay:300ms]">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold italic">20 years coaching leaders from first-time managers to C-suite executives.</h2>
                 <p className="mt-4 text-lg max-w-3xl mx-auto">

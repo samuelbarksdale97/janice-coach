@@ -64,9 +64,9 @@ export default function ServicesPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 md:pt-36 pb-12 bg-background">
+                <section className="w-full pt-28 md:pt-36 pb-12 bg-background animate-glide-up">
                     <div className="container grid gap-10 lg:grid-cols-2 lg:gap-16 items-center px-4 md:px-6">
-                        <div className="space-y-4 text-center lg:text-left animate-glide-up">
+                        <div className="space-y-4 text-center lg:text-left">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary tracking-wide">
                                 Coaching Services
                             </h1>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                                 <span className="text-secondary">Invest in yourself</span> with programs designed to bring clarity, purpose, and momentum to your life and career.
                             </p>
                         </div>
-                        <div className="flex justify-center animate-glide-up">
+                        <div className="flex justify-center">
                             {contactImage && (
                                 <div className="aspect-video relative rounded-lg overflow-hidden shadow-2xl w-full">
                                     <Image
@@ -91,9 +91,9 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:200ms]">
                     <div className="container px-4 md:px-6">
-                        <div className="flex flex-col items-center justify-center space-y-4 text-center animate-glide-up">
+                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <h2 className="text-3xl font-headline font-bold tracking-wide text-primary sm:text-5xl">Your Coaching Journey</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -107,7 +107,7 @@ export default function ServicesPage() {
                             {howItWorksSteps.map((step, index) => (
                                 <div 
                                     key={step.step} 
-                                    className="flex flex-col items-center space-y-3 text-center animate-glide-up"
+                                    className="flex flex-col items-center space-y-3 text-center"
                                     style={{ animationDelay: `${index * 200}ms`, animationFillMode: 'backwards' }}
                                 >
                                     {step.icon}
@@ -122,9 +122,9 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:300ms]">
                     <div className="container px-4 md:px-6">
-                        <div className="grid md:grid-cols-2 gap-8 items-center animate-glide-up">
+                        <div className="grid md:grid-cols-2 gap-8 items-center">
                             <div className="space-y-6">
                                 <h2 className="text-3xl font-headline font-bold text-primary text-center md:text-left">Is This For You?</h2>
                                 <ul className="space-y-4">
@@ -148,9 +148,9 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                <section className="py-12 md:py-20 bg-muted">
+                <section className="py-12 md:py-20 bg-muted animate-glide-up [animation-delay:400ms]">
                     <div className="container mx-auto px-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 animate-glide-up">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                             {servicesCards.map((service) => (
                                 <Card 
                                     key={service.title} 
@@ -184,8 +184,8 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
-                 <section className="py-12 md:py-20 bg-background">
-                    <div className="container mx-auto px-4 animate-glide-up">
+                 <section className="py-12 md:py-20 bg-background animate-glide-up [animation-delay:500ms]">
+                    <div className="container mx-auto px-4">
                         <div className="max-w-3xl mx-auto text-center">
                             <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                             "Owning our story and loving ourselves through the process is the bravest thing that we’ll ever do."

@@ -15,10 +15,10 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full py-16 md:py-20 bg-muted">
+                <section className="w-full py-16 md:py-20 bg-muted animate-glide-up">
                     <div className="container mx-auto px-4">
                         <div className="text-center">
-                            <div className="flex justify-center animate-glide-up">
+                            <div className="flex justify-center">
                                 <div className="w-full h-72 max-w-sm">
                                 <Image
                                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_OG.png?alt=media&token=3242b4c3-48cb-4a5d-8c9d-53a1736468a3"
@@ -31,7 +31,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-8 items-start animate-glide-up relative z-10 -mt-[3.25rem]">
+                        <div className="grid md:grid-cols-2 gap-8 items-start relative z-10 -mt-[3.25rem]">
                             <div className="bg-background rounded-lg p-8 md:p-12 border shadow-lg">
                                 <h2 className="text-3xl font-headline text-primary mb-6 text-center md:text-left">Send a Message</h2>
                                 <ContactForm />
@@ -84,8 +84,8 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="w-full py-16 flex items-center justify-center text-center bg-primary text-primary-foreground">
-                    <div className="z-10 p-4 md:px-6 animate-glide-up">
+                <section id="cta-contact" className="w-full py-16 flex items-center justify-center text-center bg-primary text-primary-foreground animate-glide-up [animation-delay:200ms]">
+                    <div className="z-10 p-4 md:px-6">
                         <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight italic">
                             Ready to Start Now?
                         </h2>
