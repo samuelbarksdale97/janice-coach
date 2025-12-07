@@ -56,7 +56,7 @@ export default function Home() {
                         />
                     )}
                     <div className="absolute inset-0 bg-black/60" />
-                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
+                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center animate-glide-up">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
                             What becomes possible when you stop performing, start leading, and just be <span className="italic text-secondary">yourself</span><span className="ml-2">?</span>
