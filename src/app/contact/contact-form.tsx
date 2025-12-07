@@ -38,7 +38,7 @@ const initialState: FormState = {
 
 export function ContactForm() {
   const { toast } = useToast();
-  const [state, formAction] = useFormState(submitContact-form, initialState);
+  const [state, formAction] = useFormState(submitContactForm, initialState);
   const formRef = useRef<HTMLFormElement>(null);
 
   const form = useForm<FormData>({
