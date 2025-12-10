@@ -1,143 +1,102 @@
 
-"use client";
+'use client';
 
-import { useEffect, useRef } from "react";
-import { useFormState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { useToast } from "@/hooks/use-toast";
-import { submitContactForm, type FormState } from "./actions";
-import { Loader2 } from "lucide-react";
-
-const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Please enter a valid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
-});
-
-type FormData = z.infer<typeof contactSchema>;
+import { useFormState, useFormStatus } from 'react-dom';
+import { useEffect, useRef } from 'react';
+import { useToast } from '@/hooks/use-toast';
+import { submitContactForm, type FormState } from './actions';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { Loader2 } from 'lucide-react';
 
 const initialState: FormState = {
-  success: false,
-  message: "",
+  message: '',
   errors: null,
+  success: false,
 };
 
+function SubmitButton() {
+  const { pending } = useFormStatus();
+
+  return (
+    <Button type="submit" disabled={pending} className="w-full">
+      {pending ? (
+        <>
+          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          Sending...
+        </>
+      ) : (
+        'Send Message'
+      )}
+    </Button>
+  );
+}
+
 export function ContactForm() {
-  const { toast } = useToast();
   const [state, formAction] = useFormState(submitContactForm, initialState);
+  const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
-
-  const form = useForm<FormData>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
-
-  const { reset, setError, formState: { isSubmitting } } = form;
 
   useEffect(() => {
     if (state.success) {
       toast({
-        title: "Success!",
+        title: 'Success!',
         description: state.message,
       });
-      reset();
       formRef.current?.reset();
-    } else if (state.message && !state.success) {
+    } else if (state.message && state.errors) {
+      // Don't show a toast for validation errors, they appear by the fields
+    } else if (state.message) {
       toast({
-        variant: "destructive",
-        title: "Error",
+        variant: 'destructive',
+        title: 'Error',
         description: state.message,
       });
     }
-
-    if (state.errors) {
-      if (state.errors.name) {
-        setError("name", { type: 'server', message: state.errors.name[0] });
-      }
-      if (state.errors.email) {
-        setError("email", { type: 'server', message: state.errors.email[0] });
-      }
-      if (state.errors.message) {
-        setError("message", { type: 'server', message: state.errors.message[0] });
-      }
-    }
-  }, [state, toast, reset, setError]);
+  }, [state, toast]);
 
   return (
-    <Form {...form}>
-      <form ref={formRef} action={formAction} className="space-y-6" onSubmit={form.handleSubmit(() => formRef.current?.requestSubmit())}>
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Full Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Jane Doe" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
+    <form ref={formRef} action={formAction} className="space-y-4">
+      <div className="space-y-2">
+        <Label htmlFor="name">Full Name</Label>
+        <Input id="name" name="name" placeholder="Jane Doe" />
+        {state.errors?.name && (
+          <p className="text-sm font-medium text-destructive">
+            {state.errors.name[0]}
+          </p>
+        )}
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="email">Email Address</Label>
+        <Input
+          id="email"
           name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email Address</FormLabel>
-              <FormControl>
-                <Input type="email" placeholder="jane.doe@example.com" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          type="email"
+          placeholder="jane.doe@example.com"
         />
-        <FormField
-          control={form.control}
+         {state.errors?.email && (
+          <p className="text-sm font-medium text-destructive">
+            {state.errors.email[0]}
+          </p>
+        )}
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="message">Message</Label>
+        <Textarea
+          id="message"
           name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea
-                  placeholder="Tell me a little bit about what you're looking to achieve..."
-                  className="min-h-[120px]"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          placeholder="Tell me a little bit about what you're looking to achieve..."
+          className="min-h-[120px]"
         />
-        <Button type="submit" disabled={isSubmitting} className="w-full">
-          {isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            "Send Message"
-          )}
-        </Button>
-      </form>
-    </Form>
+         {state.errors?.message && (
+          <p className="text-sm font-medium text-destructive">
+            {state.errors.message[0]}
+          </p>
+        )}
+      </div>
+      <SubmitButton />
+    </form>
   );
 }
