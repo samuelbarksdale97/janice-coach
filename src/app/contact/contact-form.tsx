@@ -1,8 +1,8 @@
 
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm, type FormState } from './actions';
 import { Button } from '@/components/ui/button';
@@ -35,7 +35,7 @@ function SubmitButton() {
 }
 
 export function ContactForm() {
-  const [state, formAction] = useFormState(submitContactForm, initialState);
+  const [state, formAction] = useActionState(submitContactForm, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -48,7 +48,7 @@ export function ContactForm() {
       formRef.current?.reset();
     } else if (state.message && state.errors) {
       // Don't show a toast for validation errors, they appear by the fields
-    } else if (state.message) {
+    } else if (state.message && !state.success && !state.errors) { // Only show for unexpected errors
       toast({
         variant: 'destructive',
         title: 'Error',
