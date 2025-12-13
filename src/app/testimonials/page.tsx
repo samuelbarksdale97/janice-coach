@@ -14,6 +14,12 @@ const testimonials = [
         name: "~ Laodecea Seay",
         title: "Assistant Director of Transfer Students",
         image: PlaceHolderImages.find(img => img.id === 'testimonial1')
+    },
+    {
+        quote: "Having Janice as my coach has truly been transformative. Her authenticity, wisdom, and genuine care show up in every session. She listens deeply, asks questions that matter, and guides you toward clarity in the most thoughtful and practical ways. Her experience shines through every insight, and her sincerity makes every interaction meaningful. I’m deeply grateful for the positive impact Janice has had on my life.",
+        name: "~ Olivia Rinaldi",
+        title: "Management/Program Analyst",
+        image: PlaceHolderImages.find(img => img.id === 'testimonial2')
     }
 ];
 
@@ -35,10 +41,10 @@ export default function TestimonialsPage() {
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial) => (
-                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg max-w-2xl">
-                  <CardContent className="p-8 flex-grow">
+                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg">
+                  <CardContent className="p-8 flex-grow flex items-center">
                     <blockquote className="text-muted-foreground italic">"{testimonial.quote}"</blockquote>
                   </CardContent>
                   <div className="p-6 pt-0">
