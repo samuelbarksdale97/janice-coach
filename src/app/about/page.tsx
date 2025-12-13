@@ -56,6 +56,38 @@ const teamMembers = [
                 listTitle: "Core Principles:"
             },
             {
+                title: "More About Me",
+                sections: [
+                    {
+                        subheading: "My Background",
+                        paragraphs: [
+                            "As a strategic executive with over two decades of federal sector leadership, specializing in large-scale benefits administration and IT program management. I served as Deputy Chief of Benefits Administration at the Pension Benefit Guaranty Corporation, overseeing a $126M program that delivered $6 billion in annual pension payments to 1.4 million retirees across 5,000+ plans. My career achievements include eliminating case processing backlogs, directing an $80M+ IT modernization, and contributing to PBGC's #1 ranking in Best Places to Work among small federal agencies for consecutive years.",
+                            "I previously led enterprise IT operations as Customer Success Program Manager at the Federal Trade Commission, managing a $22M budget and directing initiatives that earned the Chairman's Award for Distinguished Service.",
+                            "I hold a master’s Certificate in Project Management from George Washington University and a Bachelor of Science in Mathematics from Alcorn State University. I’m a certified Project Management Professional (PMP) and Associate Certified Coach (ACC), with expertise spanning strategic planning, regulatory compliance, and leadership development."
+                        ]
+                    },
+                    {
+                        subheading: "My Approach",
+                        paragraphs: [
+                            "I blend mindful leadership, emotional intelligence, and well-being strategies to develop resilient, high-performing leaders and teams. My coaching is practical and tailored—addressing your unique challenges while building sustainable solutions for organizational realignment, strategic problem-solving, and effective communication.",
+                            "My coaching expertise spans generations and settings. Whether guiding executives through organizational change or mentoring five young scouts to achieve Eagle rank, I apply the same proven approach: developing resilient leaders who create positive impact. My work with Delta Sigma Theta Sorority, Inc. and as a master-level Scout leader reinforces my belief that leadership development is about service, character, and empowering others to reach their highest potential."
+                        ]
+                    },
+                    {
+                        subheading: "What I Offer",
+                        paragraphs: [
+                            "Whether you're refining your leadership style, strengthening team collaboration, or navigating significant transition, my coaching brings clarity, direction, and measurable outcomes. As a certified International Coaching Federation (ICF) member, I offer flexible coaching options designed to fit your schedule and needs."
+                        ]
+                    },
+                    {
+                        subheading: "The Result",
+                        paragraphs: [
+                            "Working with me means more than professional development—it's a transformative partnership toward finding your purpose and becoming the leader you aspire to be."
+                        ]
+                    }
+                ]
+            },
+            {
                 title: "Certifications and Credentials",
                 list: credentials
             }
@@ -149,6 +181,18 @@ export default function AboutPage() {
                                                     </Card>
                                                 ))}
                                             </div>
+                                        </div>
+                                    ) : detail.title === "More About Me" ? (
+                                        <div className="max-w-4xl mx-auto">
+                                            <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
+                                            {detail.sections?.map(section => (
+                                                <div key={section.subheading} className="mb-8">
+                                                    <h4 className="text-2xl font-bold text-secondary mb-4">{section.subheading}</h4>
+                                                    {section.paragraphs.map((p, i) => (
+                                                        <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4">{p}</p>
+                                                    ))}
+                                                </div>
+                                            ))}
                                         </div>
                                     ) : (
                                          <Card className="bg-muted border-none shadow-none">
