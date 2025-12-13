@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck, Star, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
@@ -136,6 +136,21 @@ const values = [
     }
 ];
 
+const clientOutcomes = [
+    "Enhanced leadership effectiveness and confidence",
+    "Improved well-being and sustainable performance practices",
+    "Stronger stakeholder and team relationships",
+    "Measurable improvements in team performance and engagement",
+    "Alignment between values, purpose, and professional practice",
+];
+
+const whyWorkWithUs = [
+    { title: "Real Executive Experience", description: "Senior federal executive background" },
+    { title: "Proven Methodology", description: "Evidence-based coaching in organizational well-being" },
+    { title: "Results-Oriented", description: "Focus on actionable outcomes and measurable progress" },
+    { title: "Holistic Approach", description: "Integration of strategic thinking with human-centered leadership" },
+];
+
 export default function AboutPage() {
     return (
         <>
@@ -171,7 +186,7 @@ export default function AboutPage() {
                                                 src={member.image.imageUrl}
                                                 alt={member.image.description}
                                                 fill
-                                                className={cn("object-cover", member.name === 'Paul' ? 'object-[center_20%]' : 'object-top')}
+                                                className={cn("object-cover", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
                                                 data-ai-hint={member.image.imageHint}
                                                 priority={index === 0}
@@ -292,6 +307,33 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
+                
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:450ms]">
+                    <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-16 items-center">
+                        <div>
+                            <h2 className="text-3xl font-headline font-bold text-primary mb-6">Why Work With Us?</h2>
+                            <ul className="space-y-6">
+                                {whyWorkWithUs.map(reason => (
+                                    <li key={reason.title}>
+                                        <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
+                                        <p className="text-muted-foreground">{reason.description}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                             <h2 className="text-3xl font-headline font-bold text-primary mb-6">Client Outcomes</h2>
+                             <ul className="space-y-4">
+                                {clientOutcomes.map(outcome => (
+                                    <li key={outcome} className="flex items-start">
+                                        <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
+                                        <span className="text-muted-foreground">{outcome}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
                 <section className="py-12 md:py-20 bg-background animate-glide-up [animation-delay:500ms]">
                     <div className="container mx-auto px-4">
@@ -308,5 +350,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
