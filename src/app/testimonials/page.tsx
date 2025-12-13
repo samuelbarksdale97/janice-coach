@@ -7,19 +7,24 @@ import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight } from "lucide-react";
+import { ExpandableText } from "@/components/shared/expandable-text";
 
 const testimonials = [
     {
         quote: "I am so grateful to have Janice as my coach. Janice accepted me as a client at a time when I was stressed and overwhelmed and needed a calming voice to help me navigate the troubled waters and valley experiences in my life. Janice has been more than a coach. She has been the voice of reasoning when I needed strength and guidance. She helped me to find my voice and she helped me to realize everything I needed was already within me. I just needed to dig deeper to find the answers and to face new opportunities with courage and resilience.",
         name: "~ Laodecea Seay",
         title: "Assistant Director of Transfer Students",
-        image: PlaceHolderImages.find(img => img.id === 'testimonial1')
     },
     {
         quote: "Having Janice as my coach has truly been transformative. Her authenticity, wisdom, and genuine care show up in every session. She listens deeply, asks questions that matter, and guides you toward clarity in the most thoughtful and practical ways. Her experience shines through every insight, and her sincerity makes every interaction meaningful. I’m deeply grateful for the positive impact Janice has had on my life.",
         name: "~ Olivia Rinaldi",
         title: "Management/Program Analyst",
-        image: PlaceHolderImages.find(img => img.id === 'testimonial2')
+    },
+    {
+        quote: "“I have been coached by Janice Brown-Taylor for more than ten years, and her guidance has had a profound and lasting impact on both my professional growth and my personal well-being. Throughout this time, she has consistently helped me gain clarity during pivotal moments, sharpen my thinking, and make decisions that have genuinely shaped the direction of my career.”\n“Her coaching played a key role in helping me earn multiple promotions and step confidently into larger leadership roles. She supported me in strengthening my communication, developing a more strategic mindset, and building the presence needed to succeed in high-visibility situations. Many of the breakthroughs I’ve experienced leading to moments that expanded my confidence and helped me see my true capabilities were the direct result of our conversations.”\n“What sets Janice apart is her ability to understand challenges on both a professional and personal level. She listens deeply, asks thoughtful and perceptive questions, and helps me see patterns, options, and solutions that I often could not identify on my own. Her guidance has helped me navigate difficult decisions, challenging workplace dynamics, and periods of uncertainty with far greater clarity and confidence.”\n“Janice’s influence reaches beyond my career. Through her coaching, I’ve learned how to manage stress more intentionally, establish healthier boundaries, and cultivate habits that support a more balanced, sustainable life. These shifts have had a lasting impact and continue to shape how I approach each day.”\n“What I appreciate most is the combination of insight, honesty, and genuine care she brings to every conversation. She challenges me when I need it, supports me when it matters, and consistently helps me grow in ways that are both meaningful and practical. I strongly recommend her to anyone seeking a coach who can create real, measurable progress. Her ability to support both personal and professional transformation is exceptional, and the impact of her coaching stays with you long after each session ends.”",
+        name: "~ Shabbir Kundi",
+        title: "Supervisory Management Analyst",
+        long: true,
     }
 ];
 
@@ -41,11 +46,15 @@ export default function TestimonialsPage() {
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial) => (
                 <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg">
-                  <CardContent className="p-8 flex-grow flex items-center">
-                    <blockquote className="text-muted-foreground italic">"{testimonial.quote}"</blockquote>
+                  <CardContent className="p-8 flex-grow">
+                    {testimonial.long ? (
+                      <ExpandableText text={testimonial.quote} />
+                    ) : (
+                      <blockquote className="italic text-muted-foreground">"{testimonial.quote}"</blockquote>
+                    )}
                   </CardContent>
                   <div className="p-6 pt-0">
                     <p className="font-bold text-primary">{testimonial.name}</p>
