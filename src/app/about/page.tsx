@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { CheckCircle2, Award, Eye, Rocket } from "lucide-react";
+import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
@@ -26,16 +26,6 @@ const credentials = [
     "Executive Leadership Coach for Organizational Well-Being (Level 2), George Mason University",
     "Positive Leadership Program, University of Michigan, Ross School of Business",
     "Project Management Professional (PMP), Project Management Institute"
-];
-
-const decisionInfluences = [
-    "I engage in ongoing learning and development.",
-    "I am sensitive to my client's identity, environment, experiences, values and beliefs.",
-    "I partner with the client to establish an overall coaching plan and goals.",
-    "I seek to understand my client's identity, environment, experiences, values and beliefs. I show support, empathy and concern for the client.",
-    "I demonstrate openness and transparency to display vulnerability and build trust with the client.",
-    "I am fully conscious and present with the client, employing a style that is open, flexible, grounded and confident.",
-    "I partner with the client to transform learning and insight into action, and I promote client autonomy in the coaching process."
 ];
 
 const teamMembers = [
@@ -116,8 +106,35 @@ const teamMembers = [
         ],
         details: []
     }
-]
+];
 
+const values = [
+    {
+        icon: <UserRound className="h-8 w-8 text-secondary" />,
+        title: "Personal Development",
+        description: "A commitment to continuous learning and self-improvement."
+    },
+    {
+        icon: <HandHeart className="h-8 w-8 text-secondary" />,
+        title: "Empathy",
+        description: "Understanding and responding to the feelings and perspectives of others."
+    },
+    {
+        icon: <Award className="h-8 w-8 text-secondary" />,
+        title: "Service",
+        description: "A focus on helping others and contributing to a greater good."
+    },
+    {
+        icon: <Sparkles className="h-8 w-8 text-secondary" />,
+        title: "Authenticity",
+        description: "Being genuine and transparent in one’s communication and actions."
+    },
+    {
+        icon: <ShieldCheck className="h-8 w-8 text-secondary" />,
+        title: "Resilience",
+        description: "Recovering from setbacks and learning from mistakes."
+    }
+];
 
 export default function AboutPage() {
     return (
@@ -255,16 +272,21 @@ export default function AboutPage() {
 
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms] mt-20">
                     <div className="container px-4 md:px_6">
-                        <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">As leadership coaches our <span className="text-secondary">values</span> influence our decisions.</h2>
-                            <ul className="space-y-4">
-                                {decisionInfluences.map((item, index) => (
-                                    <li key={index} className="flex items-start">
-                                        <CheckCircle2 className="h-6 w-6 text-secondary mr-4 mt-1 flex-shrink-0" />
-                                        <span className="text-muted-foreground text-lg">{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="text-secondary">Values</span></h2>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                            {values.map((value) => (
+                                <Card key={value.title} className="bg-background border-none shadow-lg text-center">
+                                    <CardHeader className="items-center">
+                                        {value.icon}
+                                        <CardTitle className="mt-4 font-headline text-xl text-primary">{value.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <p className="text-sm text-muted-foreground">{value.description}</p>
+                                    </CardContent>
+                                </Card>
+                            ))}
                         </div>
                     </div>
                 </section>
