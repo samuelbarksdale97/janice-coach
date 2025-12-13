@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 
 const aboutImage = PlaceHolderImages.find(img => img.id === 'about');
 const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
+const jeylaImage = PlaceHolderImages.find(img => img.id === 'jeyla');
 
 const philosophyPoints = [
     'Empowerment through self-awareness',
@@ -69,6 +70,18 @@ const teamMembers = [
             "At the heart of Paul's professional identity is his role as a mentor and coach. For the past eight years, he has dedicated himself to guiding high school students from around the world, helping them develop critical leadership skills and cultivate innovative solutions to pressing global challenges. Through this mentorship work, Paul has honed his ability to inspire young minds, foster collaborative problem-solving, and empower the next generation to become environmental stewards. His coaching philosophy centers on building confidence, encouraging creative thinking, and developing the skills needed to address complex environmental issues.",
             "Paul applies this same mentorship mindset to his current role as a water resource engineer, where he designs water and sewer systems that improve quality of life for communities across the United States. His work—from designing floodwalls to mitigate coastal flooding risks to developing sustainable solutions in land development projects—demonstrates his commitment to both engineering innovation and knowledge transfer. Paul views each project as an opportunity to model best practices in environmental stewardship and to guide communities in adapting to the challenges posed by climate change and severe weather events.",
             "Whether he's coaching students, collaborating with colleagues, or engaging with communities, Paul brings the same enthusiasm for teamwork and shared growth that he finds in sports, both as a player and a fan."
+        ],
+        details: []
+    },
+    {
+        name: "Jeyla Brown",
+        title: "Mentor & Coach",
+        image: jeylaImage,
+        bio: [
+            "Jeyla Brown is a dedicated mentor and coach with over six years of experience empowering high school students to achieve academic excellence and reach their college and career goals. She graduated from the University of Maryland, College Park in 2021 with a bachelor's degree in economics, where she specialized in sales, marketing, and data analytics. As a proud Banneker-Key Scholar (2021) and alumna of the Ron Brown Scholar Program, Jeyla brings both personal experience and proven strategies to her mentorship work.",
+            "At the core of Jeyla's practice is her commitment to individualized student success. As a math teacher and SAT/ACT exam prep tutor, she creates personalized coaching strategies that help each student unlock their full potential. Her approach is particularly informed by her extensive experience supporting students with disabilities and diverse learning needs, ensuring that every student receives empathetic, tailored guidance that builds both competence and confidence.",
+            "Jeyla's mentorship extends beyond the classroom to comprehensive college readiness coaching. She guides students through every phase of the college journey—from test preparation and application strategy to scholarship navigation and the transition to college life. Her coaching in professional development helps students and young professionals build strong personal brands through resume writing, social media optimization, and strategic networking.",
+            "Drawing on her background in data analytics and digital marketing, Jeyla brings a research-driven approach to her coaching practice. She uses measurable insights to track student progress, celebrate growth, and continuously refine her strategies for optimal outcomes. Whether helping a student improve their math skills, achieve their target SAT score, craft a compelling college essay, or prepare for their professional future, Jeyla's coaching creates long-term success through personalized support, strategic guidance, and genuine investment in each student's journey."
         ],
         details: []
     }

@@ -19,6 +19,12 @@
       "imageHint": "professional man"
     },
     {
+      "id": "jeyla",
+      "description": "Headshot of Jeyla, a mentor and coach.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Jeyla%20Headshot.jpg?alt=media&token=17b9163e-b086-4381-ae9e-14640c651ace",
+      "imageHint": "professional woman"
+    },
+    {
       "id": "blog1",
       "description": "A person writing in a journal with a cup of coffee.",
       "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -27,7 +33,7 @@
     {
       "id": "blog2",
       "description": "A person meditating at sunrise.",
-      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sunrise meditation"
     },
     {
