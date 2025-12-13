@@ -6,6 +6,7 @@ import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const aboutImage = PlaceHolderImages.find(img => img.id === 'about');
 const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
@@ -185,5 +186,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
