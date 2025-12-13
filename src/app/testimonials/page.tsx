@@ -11,8 +11,8 @@ import { ArrowRight } from "lucide-react";
 const testimonials = [
     {
         quote: "I am so grateful to have Janice as my coach. Janice accepted me as a client at a time when I was stressed and overwhelmed and needed a calming voice to help me navigate the troubled waters and valley experiences in my life. Janice has been more than a coach. She has been the voice of reasoning when I needed strength and guidance. She helped me to find my voice and she helped me to realize everything I needed was already within me. I just needed to dig deeper to find the answers and to face new opportunities with courage and resilience.",
-        name: "Valued Client",
-        title: "",
+        name: "~ Laodecea Seay",
+        title: "Assistant Director of Transfer Students",
         image: PlaceHolderImages.find(img => img.id === 'testimonial1')
     }
 ];
