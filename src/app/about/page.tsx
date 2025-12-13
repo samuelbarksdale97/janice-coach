@@ -110,27 +110,27 @@ const teamMembers = [
 
 const values = [
     {
-        icon: <UserRound className="h-8 w-8 text-secondary" />,
+        icon: <UserRound className="h-6 w-6 text-secondary" />,
         title: "Personal Development",
         description: "A commitment to continuous learning and self-improvement."
     },
     {
-        icon: <HandHeart className="h-8 w-8 text-secondary" />,
+        icon: <HandHeart className="h-6 w-6 text-secondary" />,
         title: "Empathy",
         description: "Understanding and responding to the feelings and perspectives of others."
     },
     {
-        icon: <Award className="h-8 w-8 text-secondary" />,
+        icon: <Award className="h-6 w-6 text-secondary" />,
         title: "Service",
         description: "A focus on helping others and contributing to a greater good."
     },
     {
-        icon: <Sparkles className="h-8 w-8 text-secondary" />,
+        icon: <Sparkles className="h-6 w-6 text-secondary" />,
         title: "Authenticity",
         description: "Being genuine and transparent in one’s communication and actions."
     },
     {
-        icon: <ShieldCheck className="h-8 w-8 text-secondary" />,
+        icon: <ShieldCheck className="h-6 w-6 text-secondary" />,
         title: "Resilience",
         description: "Recovering from setbacks and learning from mistakes."
     }
@@ -271,22 +271,24 @@ export default function AboutPage() {
 
 
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms] mt-20">
-                    <div className="container px-4 md:px_6">
+                    <div className="container px-4 md:px-6">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="text-secondary">Values</span></h2>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                            {values.map((value) => (
-                                <Card key={value.title} className="bg-background border-none shadow-lg text-center">
-                                    <CardHeader className="items-center">
-                                        {value.icon}
-                                        <CardTitle className="mt-4 font-headline text-xl text-primary">{value.title}</CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <p className="text-sm text-muted-foreground">{value.description}</p>
-                                    </CardContent>
-                                </Card>
-                            ))}
+                        <div className="max-w-3xl mx-auto">
+                            <ul className="space-y-6">
+                                {values.map((value) => (
+                                    <li key={value.title} className="flex items-start gap-4">
+                                        <div className="flex-shrink-0 pt-1">
+                                            {value.icon}
+                                        </div>
+                                        <div>
+                                            <h4 className="font-headline text-xl text-primary font-semibold">{value.title}</h4>
+                                            <p className="text-muted-foreground">{value.description}</p>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -306,3 +308,5 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
