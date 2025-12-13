@@ -152,7 +152,7 @@ export default function ServicesPage() {
                                 <div className="grid md:grid-cols-2 gap-8">
                                     {leadershipPackages.map((pkg) => (
                                         <Card key={pkg.id} className="flex flex-col">
-                                            <CardHeader>
+                                            <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
                                                 <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
@@ -189,7 +189,7 @@ export default function ServicesPage() {
                                 <div className="grid md:grid-cols-2 gap-8">
                                     {careerPackages.map((pkg) => (
                                         <Card key={pkg.id} className="flex flex-col">
-                                            <CardHeader>
+                                            <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
                                                 <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
