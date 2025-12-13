@@ -109,7 +109,7 @@ export default function AboutPage() {
                                                 src={member.image.imageUrl}
                                                 alt={member.image.description}
                                                 fill
-                                                className="object-cover object-top"
+                                                className={cn("object-cover", member.name === 'Paul' ? 'object-[center_20%]' : 'object-top')}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
                                                 data-ai-hint={member.image.imageHint}
                                                 priority={index === 0}
