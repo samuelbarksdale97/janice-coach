@@ -6,58 +6,129 @@ import Image from 'next/image';
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { GitFork, CalendarCheck, Waypoints, Rocket, CheckCircle2, ArrowRight, Search } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const servicesCards = [
-    {
-      title: 'Individual Coaching',
-      description: 'One-on-one sessions tailored to your unique goals, challenges, and aspirations, helping you unlock your full potential.',
-      image: PlaceHolderImages.find(img => img.id === 'service1'),
-      cta: 'Book a Session'
-    },
-    {
-      title: 'Career Transition Package',
-      description: 'A focused program to navigate career changes, from exploration to landing your dream job with confidence and clarity.',
-      image: PlaceHolderImages.find(img => img.id === 'service2'),
-      cta: 'Start Your Transition',
-      popular: true
-    },
-    {
-      title: 'Group Workshops',
-      description: 'Join a community of like-minded individuals in our themed monthly workshops for collaborative growth and learning.',
-      image: PlaceHolderImages.find(img => img.id === 'service3'),
-      cta: 'View Workshops'
-    }
-  ];
+const servicesHeroImage = PlaceHolderImages.find(img => img.id === 'contact');
 
-const howItWorksSteps = [
+const leadershipPackages = [
     {
-        icon: <CalendarCheck className="w-16 h-16 text-primary" />,
-        step: "Step 1",
-        title: "Book a Discovery Call",
-        description: "Schedule a complimentary call to discuss your aspirations and see if we're a good fit."
+        id: "elevate",
+        title: "ELEVATE",
+        subtitle: "Executive/Leadership Presence & Strategic Impact",
+        duration: "3-Month Foundational Engagement",
+        idealFor: "Ideal for leaders seeking to enhance their leadership presence, strategic thinking, and decision-making capabilities in complex environments.",
+        whatsIncluded: [
+            "6 1:1 coaching sessions (60 minutes each, twice a month)",
+            "Personalized leadership assessment and goal-setting session",
+            "COACH framework integration for sustainable progress",
+            "Customized action plans between sessions",
+            "Email and text support between sessions",
+            "Mid-point progress review",
+            "Final integration session with forward momentum plan",
+        ],
+        clientOutcomes: [
+           "Enhanced executive presence and authentic leadership style",
+           "Improved strategic decision-making capabilities",
+           "Greater clarity in communication with stakeholders at all levels",
+           "Actionable strategies for immediate implementation",
+        ],
     },
     {
-        icon: <Waypoints className="w-16 h-16 text-primary" />,
-        step: "Step 2",
-        title: "Create Your Plan",
-        description: "Together, we'll create a customized coaching plan tailored to your unique path."
+        id: "transform",
+        title: "TRANSFORM",
+        subtitle: "Comprehensive Leadership Development",
+        duration: "6-Month Signature Program",
+        idealFor: "Ideal for leaders navigating significant organizational changes, stepping into new roles, or committed to deep leadership transformation.",
+        whatsIncluded: [
+            "12 1:1 coaching sessions (60 minutes each, twice a month)",
+            "Comprehensive leadership and emotional intelligence assessment",
+            "COACH and ACHIEVE framework integration",
+            "Customized leadership development roadmap",
+            "Quarterly stakeholder feedback integration (360-degree insights)",
+            "Email and text support throughout engagement",
+            "Monthly progress reviews and goal recalibration",
+            "Access to curated leadership resources and tools",
+            "Final capstone session with 12-month sustainability plan",
+        ],
+        clientOutcomes: [
+            "Transformational shift in leadership effectiveness and confidence",
+            "Measurable improvements in team performance and engagement",
+            "Enhanced emotional intelligence and relationship management",
+            "Sustainable well-being practices integrated into leadership approach",
+            "Alignment between personal values and professional practice",
+        ],
     },
-    {
-        icon: <Rocket className="w-16 h-16 text-primary" />,
-        step: "Step 3",
-        title: "Start Your Transformation",
-        description: "Begin your coaching journey with consistent support and actionable steps toward your goals."
-    },
-]
-
-const whoIsThisForPoints = [
-    "A successful professional wondering, 'What’s next for me?'",
-    "Feeling the pull to align your career with your true purpose.",
-    "Ready to stop just 'doing' and start truly 'being' in your work and life."
 ];
 
-const contactImage = PlaceHolderImages.find(img => img.id === 'contact');
+const careerPackages = [
+    {
+        id: "clarity",
+        title: "CLARITY",
+        subtitle: "Career Direction & Strategy",
+        duration: "2-Month Intensive Program",
+        idealFor: "Ideal for professionals seeking clarity on their next career move, whether within their organization or exploring new opportunities.",
+        whatsIncluded: [
+            "8 1:1 coaching sessions (60 minutes each, weekly)",
+            "Career assessment and values clarification exercises",
+            "Personal brand and unique value proposition development",
+            "Career vision and goal-setting session",
+            "Action planning with accountability checkpoints",
+            "Email and text support throughout the program",
+            "Resources for career exploration and decision-making",
+        ],
+        clientOutcomes: [
+            "Clear vision for career direction aligned with values and purpose",
+            "Confidence in career decision-making",
+            "Strategic action plan for next career steps",
+            "Enhanced understanding of personal brand and marketability",
+        ],
+    },
+    {
+        id: "transition",
+        title: "TRANSITION",
+        subtitle: "Career Change Navigation",
+        duration: "4-Month Comprehensive Program",
+        idealFor: "Ideal for those making significant career transitions, new roles, new organizations, retirement planning, or career pivots requiring strategic navigation.",
+        whatsIncluded: [
+            "16 1:1 coaching sessions (60 minutes each, weekly)",
+            "Career transition assessment and transition plan development",
+            "Personal brand positioning and narrative development",
+            "Strategic networking and relationship-building coaching",
+            "Interview preparation and negotiation strategies (as applicable)",
+            "Onboarding success planning for new roles",
+            "Resilience building and change management support",
+            "Email and text support throughout transition",
+            "30-day post-transition check-in session",
+        ],
+        clientOutcomes: [
+            "Successful navigation of career transition with confidence",
+            "Strong personal brand and compelling career narrative",
+            "Expanded professional network and relationships",
+            "Strategic approach to new role integration or career pivot",
+            "Reduced stress and enhanced well-being during transition",
+        ],
+    },
+];
+
+const addOnServices = [
+    {
+        title: "Workshop Facilitation",
+        description: "Custom half-day or full-day workshops on leadership topics, organizational well-being, change management, or team effectiveness."
+    },
+    {
+        title: "Speaking Engagements",
+        description: "Keynote presentations or breakout sessions for conferences, retreats, or organizational events."
+    },
+    {
+        title: "Leadership Assessment Debriefs",
+        description: "In-depth review and coaching around 360-degree feedback or other leadership assessments."
+    },
+    {
+        title: "Emergency Coaching Session",
+        description: "Single 60-minute session for urgent leadership challenges (available to current and former clients)."
+    }
+]
 
 export default function ServicesPage() {
     return (
@@ -75,15 +146,15 @@ export default function ServicesPage() {
                             </p>
                         </div>
                         <div className="flex justify-center">
-                            {contactImage && (
+                            {servicesHeroImage && (
                                 <div className="aspect-video relative rounded-lg overflow-hidden shadow-2xl w-full">
                                     <Image
-                                        src={contactImage.imageUrl}
-                                        alt={contactImage.description}
+                                        src={servicesHeroImage.imageUrl}
+                                        alt={servicesHeroImage.description}
                                         fill
                                         className="object-cover"
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                        data-ai-hint={contactImage.imageHint}
+                                        data-ai-hint={servicesHeroImage.imageHint}
                                         priority
                                     />
                                 </div>
@@ -91,99 +162,186 @@ export default function ServicesPage() {
                         </div>
                     </div>
                 </section>
+
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:200ms]">
                     <div className="container px-4 md:px-6">
-                        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                            <div className="space-y-2">
-                                <h2 className="text-3xl font-headline font-bold tracking-wide text-primary sm:text-5xl">Your Coaching Journey</h2>
-                                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                My coaching process is designed to be clear, supportive, and transformative.
-                                    <br />
-                                    <span className="text-secondary font-semibold">Here’s how we can begin our journey together.</span>
-                                </p>
+                        <Tabs defaultValue="leadership" className="w-full">
+                            <div className="text-center mb-10">
+                                <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Core Coaching Packages</h2>
+                                <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">Focused programs to help you achieve your leadership and career goals.</p>
+                                <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mt-6 h-auto">
+                                    <TabsTrigger value="leadership" className="py-2">Leadership Coaching</TabsTrigger>
+                                    <TabsTrigger value="career" className="py-2">Career Coaching</TabsTrigger>
+                                </TabsList>
                             </div>
-                        </div>
-                        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-3 md:grid-cols-3">
-                            {howItWorksSteps.map((step, index) => (
-                                <div 
-                                    key={step.step} 
-                                    className="flex flex-col items-center space-y-3 text-center"
-                                    style={{ animationDelay: `${index * 200}ms`, animationFillMode: 'backwards' }}
-                                >
-                                    {step.icon}
-                                    <div className="space-y-1">
-                                        <p className="text-sm font-bold uppercase tracking-wider text-secondary">{step.step}</p>
 
-                                        <h3 className="text-xl font-bold font-headline text-primary">{step.title}</h3>
-                                        <p className="text-muted-foreground text-sm">{step.description}</p>
-                                    </div>
+                            <TabsContent value="leadership">
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    {leadershipPackages.map((pkg) => (
+                                        <Card key={pkg.id} className="flex flex-col">
+                                            <CardHeader>
+                                                <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
+                                                <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
+                                                <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
+                                            </CardHeader>
+                                            <CardContent className="flex-grow space-y-4">
+                                                <p className="text-sm italic">{pkg.idealFor}</p>
+                                                <div>
+                                                    <h4 className="font-bold text-primary mb-2">What's Included:</h4>
+                                                    <ul className="space-y-2">
+                                                        {pkg.whatsIncluded.map((item, i) => (
+                                                            <li key={i} className="flex items-start">
+                                                                <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
+                                                                <span className="text-sm text-muted-foreground">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-primary mb-2">Client Outcomes:</h4>
+                                                    <ul className="space-y-2">
+                                                        {pkg.clientOutcomes.map((item, i) => (
+                                                            <li key={i} className="flex items-start">
+                                                                <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-1 flex-shrink-0" />
+                                                                <span className="text-sm text-muted-foreground">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </CardContent>
+                                            <CardFooter>
+                                                <Button asChild className="w-full">
+                                                    <Link href="/contact">Inquire About {pkg.title}</Link>
+                                                </Button>
+                                            </CardFooter>
+                                        </Card>
+                                    ))}
                                 </div>
-                            ))}
-                        </div>
+                            </TabsContent>
+
+                             <TabsContent value="career">
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    {careerPackages.map((pkg) => (
+                                        <Card key={pkg.id} className="flex flex-col">
+                                            <CardHeader>
+                                                <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
+                                                <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
+                                                <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
+                                            </CardHeader>
+                                            <CardContent className="flex-grow space-y-4">
+                                                <p className="text-sm italic">{pkg.idealFor}</p>
+                                                <div>
+                                                    <h4 className="font-bold text-primary mb-2">What's Included:</h4>
+                                                    <ul className="space-y-2">
+                                                        {pkg.whatsIncluded.map((item, i) => (
+                                                            <li key={i} className="flex items-start">
+                                                                <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
+                                                                <span className="text-sm text-muted-foreground">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-primary mb-2">Client Outcomes:</h4>
+                                                    <ul className="space-y-2">
+                                                        {pkg.clientOutcomes.map((item, i) => (
+                                                            <li key={i} className="flex items-start">
+                                                                <CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-1 flex-shrink-0" />
+                                                                <span className="text-sm text-muted-foreground">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </CardContent>
+                                            <CardFooter>
+                                                <Button asChild className="w-full">
+                                                    <Link href="/contact">Inquire About {pkg.title}</Link>
+                                                </Button>
+                                            </CardFooter>
+                                        </Card>
+                                    ))}
+                                </div>
+                            </TabsContent>
+                        </Tabs>
                     </div>
                 </section>
+                
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:300ms]">
                     <div className="container px-4 md:px-6">
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
-                            <div className="space-y-6">
-                                <h2 className="text-3xl font-headline font-bold text-primary text-center md:text-left">Is This For You?</h2>
-                                <ul className="space-y-4">
-                                    {whoIsThisForPoints.map((point, index) => (
-                                        <li key={index} className="flex items-start">
-                                            <CheckCircle2 className="h-6 w-6 text-secondary mr-3 mt-1 flex-shrink-0" />
-                                            <span className="text-muted-foreground text-lg">{point}</span>
+                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-3xl font-headline font-bold text-primary mb-4">Leadership Development Programs</h2>
+                                <h3 className="text-xl font-bold text-secondary mb-2">Custom Group Coaching Cohorts</h3>
+                                <p className="text-muted-foreground mb-4">Ideal for organizations seeking to develop leadership capabilities across multiple leaders simultaneously through cohort-based learning and peer support.</p>
+                                <p className="font-semibold text-primary mb-2">Components include:</p>
+                                <ul className="space-y-2 mb-4">
+                                    {["Needs assessment and program design", "Monthly group coaching sessions (90-120 minutes)", "Individual coaching sessions for each participant", "Leadership curriculum aligned with organizational goals", "Peer learning and accountability partnerships", "Progress tracking and measurable outcomes", "Integration with organizational well-being initiatives"].map((item, i) => (
+                                        <li key={i} className="flex items-start">
+                                            <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
+                                            <span className="text-sm text-muted-foreground">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
+                                <p className="text-lg font-headline text-primary font-bold">Investment: Custom pricing based on cohort size, duration, and scope.</p>
                             </div>
-                            <div className="flex flex-col items-center justify-center text-center">
-                                <ArrowRight className="h-12 w-12 text-primary rotate-90 md:rotate-0 mb-4 md:hidden" />
-                                <p className="text-xl text-muted-foreground max-w-md mb-6">
-                                    If this sounds like you, let's connect. You don't need to have it all figured out.
-                                </p>
-                                <Button asChild size="lg" variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
-                                    <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
-                                </Button>
+                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                {addOnServices.map(service => (
+                                    <Card key={service.title}>
+                                        <CardHeader>
+                                            <CardTitle className="text-xl font-headline text-primary">{service.title}</CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-sm text-muted-foreground">{service.description}</p>
+                                        </CardContent>
+                                    </Card>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section className="py-12 md:py-20 bg-muted animate-glide-up [animation-delay:400ms]">
                     <div className="container mx-auto px-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                            {servicesCards.map((service) => (
-                                <Card 
-                                    key={service.title} 
-                                    className="flex flex-col bg-background overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 text-center"
-                                >
-                                    {service.image && (
-                                        <div className="aspect-[3/2] relative">
-                                            <Image
-                                                src={service.image.imageUrl}
-                                                alt={service.image.description}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                                data-ai-hint={service.image.imageHint}
-                                            />
-                                        </div>
-                                    )}
-                                    <CardHeader className="p-6">
-                                        <CardTitle className="font-headline text-2xl text-primary">{service.title}</CardTitle>
-                                    </CardHeader>
-                                    <CardContent className="flex-grow p-6 pt-0">
-                                        <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
-                                    </CardContent>
-                                    <CardFooter className="p-6 bg-muted/50">
-                                        <Button asChild className="w-full font-bold" variant="secondary">
-                                            <Link href="/contact">Learn More</Link>
-                                        </Button>
-                                    </CardFooter>
-                                </Card>
-                            ))}
+                        <div className="text-center mb-10">
+                            <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Getting Started</h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle className="font-headline text-primary">Discovery Call</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">All potential clients begin with a complimentary 30-minute discovery call to explore fit, discuss goals, and determine the best coaching package for your needs. All coaching packages can be tailored.</p>
+                                </CardContent>
+                            </Card>
+                             <Card>
+                                <CardHeader>
+                                    <CardTitle className="font-headline text-primary">Flexible Formats</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">All coaching packages available in virtual or hybrid format to accommodate your schedule and preferences.</p>
+                                </CardContent>
+                            </Card>
+                             <Card>
+                                <CardHeader>
+                                    <CardTitle className="font-headline text-primary">Satisfaction Commitment</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">If after two sessions you feel the coaching isn't the right fit, receive a full refund minus the completed sessions.</p>
+                                </CardContent>
+                            </Card>
+                        </div>
+                        <div className="text-center mt-12">
+                            <p className="text-muted-foreground mb-4">Monthly payment plans and organizational sponsorship are available.</p>
+                            <Button asChild size="lg">
+                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
+                                    Book Your Free Discovery Call <ArrowRight className="ml-2 h-5 w-5" />
+                                </a>
+                            </Button>
                         </div>
                     </div>
                 </section>
+
                  <section className="py-12 md:py-20 bg-background animate-glide-up [animation-delay:500ms]">
                     <div className="container mx-auto px-4">
                         <div className="max-w-3xl mx-auto text-center">
