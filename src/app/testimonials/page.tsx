@@ -11,6 +11,12 @@ import { ExpandableText } from "@/components/shared/expandable-text";
 
 const testimonials = [
     {
+        quote: "Working with Mrs. Janice Brown-Taylor has been one of the greatest privileges of my career at Pension Benefit Guaranty Corporation (\"PBGC\"), a federal government agency. From her years as a senior executive at PBGC to her rise as Deputy Chief in the Office of Benefit Administration, she has always embodied exceptional leadership, integrity, and strategic vision.\nShe took me under her wing at a pivotal point in my development. While I was completing a leadership program at Graduate School USA, she personally sought a detail assignment for me at the Federal Trade Commission. That opportunity shaped the trajectory of my career and positioned me to contribute meaningfully as part of the management team at the agency.\nThroughout the years, she has been my go-to advisor - someone I trust to help me navigate complex decisions, strengthen my leadership skills, and grow with confidence. Her guidance is grounded in authenticity, empathy, and a deep understanding of organizational dynamics.\nI credit much of my growth as a leader to Janice’s coaching, encouragement, and unwavering commitment to helping others reach their full potential. Any professional who has the opportunity to work with her as a coach will gain not only a thought partner, but a genuine champion for their success.",
+        name: "~ Nega Teshome, MSF, CPA",
+        title: "",
+        long: true,
+    },
+    {
         quote: "I am so grateful to have Janice as my coach. Janice accepted me as a client at a time when I was stressed and overwhelmed and needed a calming voice to help me navigate the troubled waters and valley experiences in my life. Janice has been more than a coach. She has been the voice of reasoning when I needed strength and guidance. She helped me to find my voice and she helped me to realize everything I needed was already within me. I just needed to dig deeper to find the answers and to face new opportunities with courage and resilience.",
         name: "~ Laodecea Seay",
         title: "Assistant Director of Transfer Students",
@@ -58,7 +64,7 @@ export default function TestimonialsPage() {
                   </CardContent>
                   <div className="p-6 pt-0">
                     <p className="font-bold text-primary">{testimonial.name}</p>
-                    <p className="text-sm text-secondary font-semibold">{testimonial.title}</p>
+                    {testimonial.title && <p className="text-sm text-secondary font-semibold">{testimonial.title}</p>}
                   </div>
                 </Card>
               ))}
