@@ -265,7 +265,7 @@ export default function ServicesPage() {
                             <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Getting Started</h2>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                            <Card>
+                            <Card className="text-center">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Discovery Call</CardTitle>
                                 </CardHeader>
@@ -273,7 +273,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All potential clients begin with a complimentary 30-minute discovery call to explore fit, discuss goals, and determine the best coaching package for your needs. All coaching packages can be tailored.</p>
                                 </CardContent>
                             </Card>
-                             <Card>
+                             <Card className="text-center">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Flexible Formats</CardTitle>
                                 </CardHeader>
@@ -281,7 +281,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All coaching packages available in virtual or hybrid format to accommodate your schedule and preferences.</p>
                                 </CardContent>
                             </Card>
-                             <Card>
+                             <Card className="text-center">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Satisfaction Commitment</CardTitle>
                                 </CardHeader>
