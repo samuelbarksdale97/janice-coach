@@ -8,6 +8,7 @@ import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ExpandableList } from "@/components/shared/expandable-list";
 
 const servicesHeroImage = PlaceHolderImages.find(img => img.id === 'contact');
 
@@ -160,17 +161,10 @@ export default function ServicesPage() {
                                                 <p className="text-sm italic">{pkg.idealFor}</p>
                                                 <div>
                                                     <h4 className="font-bold text-primary mb-2">What's Included:</h4>
-                                                    <ul className="space-y-2">
-                                                        {pkg.whatsIncluded.map((item, i) => (
-                                                            <li key={i} className="flex items-start">
-                                                                <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
-                                                                <span className="text-sm text-muted-foreground">{item}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
+                                                    <ExpandableList items={pkg.whatsIncluded} truncateAt={4} />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-primary mb-2">Client Outcomes:</h4>
+                                                    <h4 className="font-bold text-primary mb-2 mt-4">Client Outcomes:</h4>
                                                     <ul className="space-y-2">
                                                         {pkg.clientOutcomes.map((item, i) => (
                                                             <li key={i} className="flex items-start">
@@ -204,17 +198,10 @@ export default function ServicesPage() {
                                                 <p className="text-sm italic">{pkg.idealFor}</p>
                                                 <div>
                                                     <h4 className="font-bold text-primary mb-2">What's Included:</h4>
-                                                    <ul className="space-y-2">
-                                                        {pkg.whatsIncluded.map((item, i) => (
-                                                            <li key={i} className="flex items-start">
-                                                                <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
-                                                                <span className="text-sm text-muted-foreground">{item}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
+                                                    <ExpandableList items={pkg.whatsIncluded} truncateAt={4} />
                                                 </div>
                                                 <div>
-                                                    <h4 className="font-bold text-primary mb-2">Client Outcomes:</h4>
+                                                    <h4 className="font-bold text-primary mb-2 mt-4">Client Outcomes:</h4>
                                                     <ul className="space-y-2">
                                                         {pkg.clientOutcomes.map((item, i) => (
                                                             <li key={i} className="flex items-start">
