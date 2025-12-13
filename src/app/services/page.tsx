@@ -245,7 +245,7 @@ export default function ServicesPage() {
                             </div>
                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {addOnServices.map(service => (
-                                    <Card key={service.title}>
+                                    <Card key={service.title} className="text-center">
                                         <CardHeader>
                                             <CardTitle className="text-xl font-headline text-primary">{service.title}</CardTitle>
                                         </CardHeader>
