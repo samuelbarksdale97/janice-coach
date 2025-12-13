@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { CheckCircle2, Award } from "lucide-react";
+import { CheckCircle2, Award, Eye, Rocket } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
@@ -226,6 +226,31 @@ export default function AboutPage() {
                         </section>
                     ))}
                 </div>
+
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:350ms]">
+                    <div className="container px-4 md:px-6">
+                        <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+                            <Card className="text-center shadow-lg border-primary/20">
+                                <CardHeader className="items-center">
+                                    <Rocket className="h-10 w-10 text-secondary mb-2" />
+                                    <CardTitle className="text-2xl font-headline text-primary">Our Mission</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">"We partner with clients to transform life's obstacles into opportunities for growth, self-discovery, and lasting resilience."</p>
+                                </CardContent>
+                            </Card>
+                            <Card className="text-center shadow-lg border-primary/20">
+                                <CardHeader className="items-center">
+                                    <Eye className="h-10 w-10 text-secondary mb-2" />
+                                    <CardTitle className="text-2xl font-headline text-primary">Our Vision</CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-muted-foreground">"We envision communities where personal transformation is celebrated - where people continually evolve, break through barriers, and live with intentional purpose."</p>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </div>
+                </section>
 
 
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms] mt-20">
