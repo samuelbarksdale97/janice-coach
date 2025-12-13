@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle2, Award } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -135,31 +135,45 @@ export default function AboutPage() {
 
                             {member.details.map((detail, dIndex) => (
                                 <div key={dIndex} className="mt-12 md:mt-16">
-                                     <Card className="bg-muted border-none shadow-none">
-                                        <CardContent className="p-8 md:p-12">
-                                            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                                                <div className="text-center">
-                                                    <h3 className="text-2xl md:text-3xl font-headline text-primary font-bold">{detail.title}</h3>
-                                                    {detail.content && (
-                                                        <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto">
-                                                            {detail.content}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                                <div className="pl-4 text-center md:text-left">
-                                                    {detail.listTitle && <h4 className="text-xl font-bold text-primary mb-4">{detail.listTitle}</h4>}
-                                                    <ul className="space-y-3 inline-block text-left">
-                                                        {detail.list && detail.list.map((point, pIndex) => (
-                                                            <li key={pIndex} className="flex items-start">
-                                                                <CheckCircle2 className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
-                                                                <span className="text-muted-foreground">{point}</span>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                </div>
+                                    {detail.title === "Certifications and Credentials" ? (
+                                        <div className="text-center">
+                                            <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
+                                            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                                {detail.list && detail.list.map((credential, cIndex) => (
+                                                    <Card key={cIndex} className="bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6">
+                                                        <Award className="h-10 w-10 text-secondary mb-4" />
+                                                        <p className="font-semibold text-primary leading-snug">{credential}</p>
+                                                    </Card>
+                                                ))}
                                             </div>
-                                        </CardContent>
-                                    </Card>
+                                        </div>
+                                    ) : (
+                                         <Card className="bg-muted border-none shadow-none">
+                                            <CardContent className="p-8 md:p-12">
+                                                <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+                                                    <div className="text-center">
+                                                        <h3 className="text-2xl md:text-3xl font-headline text-primary font-bold">{detail.title}</h3>
+                                                        {detail.content && (
+                                                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto">
+                                                                {detail.content}
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                    <div className="pl-4 text-center md:text-left">
+                                                        {detail.listTitle && <h4 className="text-xl font-bold text-primary mb-4">{detail.listTitle}</h4>}
+                                                        <ul className="space-y-3 inline-block text-left">
+                                                            {detail.list && detail.list.map((point, pIndex) => (
+                                                                <li key={pIndex} className="flex items-start">
+                                                                    <CheckCircle2 className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
+                                                                    <span className="text-muted-foreground">{point}</span>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    )}
                                 </div>
                             ))}
                             {index < teamMembers.length - 1 && <Separator className="my-12 md:my-20" />}
