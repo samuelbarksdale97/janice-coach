@@ -158,7 +158,7 @@ export default function ServicesPage() {
                                                 <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
                                             </CardHeader>
                                             <CardContent className="flex-grow space-y-4">
-                                                <p className="text-sm italic">{pkg.idealFor}</p>
+                                                <p className="text-sm italic text-center">{pkg.idealFor}</p>
                                                 <div>
                                                     <h4 className="font-bold text-primary mb-2">What's Included:</h4>
                                                     <ExpandableList items={pkg.whatsIncluded} truncateAt={4} />
@@ -195,7 +195,7 @@ export default function ServicesPage() {
                                                 <p className="text-sm text-muted-foreground pt-2">{pkg.duration}</p>
                                             </CardHeader>
                                             <CardContent className="flex-grow space-y-4">
-                                                <p className="text-sm italic">{pkg.idealFor}</p>
+                                                <p className="text-sm italic text-center">{pkg.idealFor}</p>
                                                 <div>
                                                     <h4 className="font-bold text-primary mb-2">What's Included:</h4>
                                                     <ExpandableList items={pkg.whatsIncluded} truncateAt={4} />
