@@ -31,7 +31,7 @@ export function ExpandableList({ items, truncateAt = 3 }: ExpandableListProps) {
     <div>
         <ul className="space-y-2">
             {visibleItems.map((item, i) => (
-                <li key_={i} className="flex items-start">
+                <li key={i} className="flex items-start">
                     <CheckCircle2 className="h-4 w-4 text-secondary mr-2 mt-1 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">{item}</span>
                 </li>
