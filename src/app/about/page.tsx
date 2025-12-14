@@ -238,6 +238,10 @@ export default function AboutPage() {
                     ))}
                 </div>
 
+                <div className="container px-4 md:px-6">
+                    <Separator className="mb-12 md:mb-16 lg:mb-20" />
+                </div>
+
                 <section className="w-full pt-12 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up [animation-delay:350ms]">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
