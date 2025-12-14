@@ -294,20 +294,6 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:450ms]">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-3xl mx-auto">
-                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Why Work With Us?</h2>
-                            <ul className="space-y-6">
-                                {whyWorkWithUs.map(reason => (
-                                    <li key={reason.title} className="text-center">
-                                        <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
-                                        <p className="text-muted-foreground">{reason.description}</p>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        
-                        <Separator className="my-12 md:my-16" />
-
-                        <div className="max-w-3xl mx-auto">
                              <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Client Outcomes</h2>
                              <div className="flex justify-center">
                                 <ul className="space-y-4">
@@ -319,6 +305,20 @@ export default function AboutPage() {
                                     ))}
                                 </ul>
                             </div>
+                        </div>
+
+                        <Separator className="my-12 md:my-16" />
+
+                        <div className="max-w-3xl mx-auto">
+                            <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Why Work With Us?</h2>
+                            <ul className="space-y-6">
+                                {whyWorkWithUs.map(reason => (
+                                    <li key={reason.title} className="text-center">
+                                        <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
+                                        <p className="text-muted-foreground">{reason.description}</p>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -338,6 +338,8 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
 
