@@ -281,7 +281,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All coaching packages available in virtual or hybrid format to accommodate your schedule and preferences.</p>
                                 </CardContent>
                             </Card>
-                             <Card className="text-center">
+                             <Card className="text-center md:col-span-2 lg:col-span-1">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Satisfaction Commitment</CardTitle>
                                 </CardHeader>
