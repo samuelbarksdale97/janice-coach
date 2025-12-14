@@ -26,7 +26,7 @@ const desktopNavItems = [
     { href: "/contact", label: "Contact" },
 ];
 
-const logoUrl = "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1";
+const logoUrl = "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad";
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -51,7 +51,7 @@ export function Header() {
                 alt="Taylor Leadership Coaching Logo"
                 width={300}
                 height={75}
-                className="w-auto h-20"
+                className="w-auto h-24"
               />
             )}
         </Link>
