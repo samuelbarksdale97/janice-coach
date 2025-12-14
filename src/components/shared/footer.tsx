@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -13,6 +12,8 @@ const navItems = [
     { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },
 ];
+
+const credentialBadgeUrl = "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/CredentialBadges_ACC.png?alt=media&token=4d84779a-55e4-417f-b74e-2fc755fdcead";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -29,6 +30,13 @@ export function Footer() {
                     width={400}
                     height={100}
                     className="w-auto h-48 md:h-48"
+                />
+                 <Image 
+                    src={credentialBadgeUrl}
+                    alt="ICF ACC Credential Badge"
+                    width={100}
+                    height={100}
+                    className="w-auto h-24"
                 />
             </div>
             <p className="text-sm text-muted-foreground max-w-sm mx-auto">
