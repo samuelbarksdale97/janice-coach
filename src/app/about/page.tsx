@@ -229,7 +229,7 @@ export default function AboutPage() {
                                                 <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
                                                 {detail.sections?.map(section => (
                                                     <div key={section.subheading} className="mb-8">
-                                                        <h4 className="text-2xl font-bold text-secondary mb-4">{section.subheading}</h4>
+                                                        <h4 className="text-2xl font-bold text-secondary mb-4 text-center">{section.subheading}</h4>
                                                         {section.paragraphs.map((p, i) => (
                                                             <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4">{p}</p>
                                                         ))}
