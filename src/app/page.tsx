@@ -86,7 +86,7 @@ export default function Home() {
                         alt="Taylor Leadership Coaching Horizontal Logo"
                         width={1200}
                         height={300}
-                        className="w-auto h-24 object-contain mx-auto"
+                        className="w-auto h-32 object-contain mx-auto"
                     />
                   </div>
                   <div className="grid md:grid-cols-2 gap-12 items-center">
