@@ -78,7 +78,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="about-intro" className="py-16 md:py-20 bg-background animate-glide-up [animation-delay:100ms]">
+          <section id="about-intro" className="pt-16 md:pt-20 pb-8 md:pb-12 bg-background animate-glide-up [animation-delay:100ms]">
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
