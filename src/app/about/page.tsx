@@ -200,7 +200,7 @@ export default function AboutPage() {
                                     </div>
                                 )}
                                 
-                                <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4">
+                                <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify">
                                     {member.bio.map((paragraph, pIndex) => (
                                          <p key={pIndex}>
                                             {paragraph}
@@ -231,7 +231,7 @@ export default function AboutPage() {
                                                     <div key={section.subheading} className="mb-8">
                                                         <h4 className="text-2xl font-bold text-secondary mb-4 text-center">{section.subheading}</h4>
                                                         {section.paragraphs.map((p, i) => (
-                                                            <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4">{p}</p>
+                                                            <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4 text-justify">{p}</p>
                                                         ))}
                                                     </div>
                                                 ))}
