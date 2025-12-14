@@ -82,20 +82,6 @@ export default function TestimonialsPage() {
                 </div>
             </div>
         </section>
-
-        <section id="cta" className="py-12 md:py-20 bg-primary text-primary-foreground animate-glide-up [animation-delay:300ms]">
-            <div className="container mx-auto px-4 text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold italic">20 years coaching leaders from first-time managers to C-suite executives.</h2>
-                <p className="mt-4 text-lg max-w-3xl mx-auto">
-                Let's <span className="font-bold text-secondary">unlock</span> what's holding you back. Most leadership problems aren't about strategy - <br /> they're about people. Let's fix the real issue.
-                </p>
-                <Button asChild size="lg" className="mt-8 font-bold bg-background text-primary hover:bg-background/90">
-                    <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
-                        Free 30-minute consultation <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                </Button>
-            </div>
-          </section>
       </main>
       <Footer />
     </>
