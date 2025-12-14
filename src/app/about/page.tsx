@@ -184,17 +184,6 @@ export default function AboutPage() {
                                 </div>
                             </div>
                             
-                            {member.name === "Janice Brown-Taylor" && (
-                                <div className="clear-both max-w-4xl mx-auto mt-8">
-                                    <div className="bg-muted p-6 rounded-lg">
-                                        <h3 className="text-2xl font-bold text-primary font-headline mb-4 text-center">My Coaching Philosophy</h3>
-                                        <p className="text-muted-foreground text-center md:text-lg">
-                                            I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
-                                        </p>
-                                    </div>
-                                </div>
-                            )}
-
                             <div className="clear-both">
                                 {member.details.map((detail, dIndex) => (
                                     <div key={dIndex} className="mt-12 md:mt-16">
@@ -336,7 +325,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
-
-    
