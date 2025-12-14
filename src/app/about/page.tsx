@@ -13,7 +13,7 @@ const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
 const jeylaImage = PlaceHolderImages.find(img => img.id === 'jeyla');
 
 const credentials = [
-    "Former Senior Level Executive in Federal Government",
+    "Former Senior Level Executive in Federal Government, Deputy Chief of Benefits Administration, Pension Benefit Guaranty Corporation",
     "BOA Institute for Women’s Entrepreneurship, eCornell University",
     "Associate Certified Coach (ACC), International Coaching Federation",
     "Executive Leadership Coach for Organizational Well-Being (Level 2), George Mason University",
