@@ -151,6 +151,9 @@ export default function AboutPage() {
                         </h1>
                     </div>
                 </section>
+                <div className="container px-4 md:px-6">
+                    <Separator className="mb-12" />
+                </div>
 
                 <div className="container px-4 md:px-6">
                     {teamMembers.map((member, index) => (
