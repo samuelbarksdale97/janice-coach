@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck, Star, Zap } from "lucide-react";
+import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck, Star, Zap, Brain, Target } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
@@ -13,10 +13,22 @@ const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
 const jeylaImage = PlaceHolderImages.find(img => img.id === 'jeyla');
 
 const philosophyPoints = [
-    'Empowerment through self-awareness',
-    'Action-oriented goal setting',
-    'Holistic approach to well-being',
-    'Creating sustainable change'
+    {
+        icon: <Sparkles className="w-8 h-8 text-secondary" />,
+        title: 'Empowerment through self-awareness',
+    },
+    {
+        icon: <Target className="w-8 h-8 text-secondary" />,
+        title: 'Action-oriented goal setting',
+    },
+    {
+        icon: <Brain className="w-8 h-8 text-secondary" />,
+        title: 'Holistic approach to well-being',
+    },
+    {
+        icon: <Zap className="w-8 h-8 text-secondary" />,
+        title: 'Creating sustainable change'
+    }
 ];
 
 const credentials = [
@@ -35,13 +47,14 @@ const teamMembers = [
         image: aboutImage,
         bio: [
             "Hello! I'm Janice Brown-Taylor, a certified leadership coach with a passion for helping individuals navigate the complexities of life with confidence and clarity. With over two decades of experience in professional development and corporate leadership, I blend mindful leadership, emotional intelligence, and well-being strategies with coaching techniques with real-world experience.",
-            "I began my coaching career 25 years ago, marking a pivotal moment in my professional life. That experience taught me the immense value of having someone by your side while navigating change and overcoming challenges. My goal today is to be that person for you - listening to what matters to you, encouraging growth, and celebrating every step forward. The time we spend together gaining clarity, building confidence, and strengthening resilience will yield lasting benefits.",
+            "I began my coaching career 25 years ago, marking a pivotal moment in my personal and professional life. That experience taught me the immense value of having someone by your side while navigating change and overcoming challenges. My goal today is to be that person for you - listening to what matters to you, encouraging growth, and celebrating every step forward. The time we spend together gaining clarity, building confidence, and strengthening resilience will yield lasting benefits.",
+            "On a personal note, I married my high school sweetheart, and I am the proud mother of soon to be three Maryland college graduates and my tuxedo cat, Angus. My well-being activities include meditation, water aerobics, walking and traveling."
         ],
         details: [
             {
                 title: "My Coaching Philosophy",
                 content: "I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.",
-                list: philosophyPoints,
+                list: [],
                 listTitle: "Core Principles:"
             },
             {
@@ -226,34 +239,40 @@ export default function AboutPage() {
                                             ))}
                                         </div>
                                     ) : (
-                                         <Card className="bg-muted border-none shadow-none">
-                                            <CardContent className="p-8 md:p-12">
-                                                <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                                                    <div className="text-center">
-                                                        <h3 className="text-2xl md:text-3xl font-headline text-primary font-bold">{detail.title}</h3>
-                                                        {detail.content && (
-                                                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto">
-                                                                {detail.content}
-                                                            </p>
-                                                        )}
-                                                    </div>
-                                                    <div className="pl-4 text-center md:text-left">
-                                                        {detail.listTitle && <h4 className="text-xl font-bold text-primary mb-4">{detail.listTitle}</h4>}
-                                                        <ul className="space-y-3 inline-block text-left">
-                                                            {detail.list && detail.list.map((point, pIndex) => (
-                                                                <li key={pIndex} className="flex items-start">
-                                                                    <CheckCircle2 className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
-                                                                    <span className="text-muted-foreground">{point}</span>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    </div>
+                                         <Card className="bg-transparent border-none shadow-none">
+                                            <CardContent className="p-0">
+                                                <div className="text-center max-w-3xl mx-auto">
+                                                    <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold">{detail.title}</h3>
+                                                    {detail.content && (
+                                                        <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto md:text-lg">
+                                                            {detail.content}
+                                                        </p>
+                                                    )}
                                                 </div>
                                             </CardContent>
                                         </Card>
                                     )}
                                 </div>
                             ))}
+                             {member.name === "Janice Brown-Taylor" && (
+                                <section className="w-full py-12 md:py-8">
+                                    <div className="container px-4 md:px-6">
+                                        <div className="text-center mb-12">
+                                            <h2 className="text-3xl font-headline font-bold text-primary">Core Principles</h2>
+                                        </div>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                            {philosophyPoints.map((point) => (
+                                                <Card key={point.title} className="bg-muted border-none shadow-lg text-center">
+                                                    <CardHeader className="items-center">
+                                                        {point.icon}
+                                                        <CardTitle className="mt-4 font-headline text-xl text-primary">{point.title}</CardTitle>
+                                                    </CardHeader>
+                                                </Card>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </section>
+                            )}
                             {index < teamMembers.length - 1 && <Separator className="my-12 md:my-20" />}
                         </section>
                     ))}
