@@ -228,7 +228,7 @@ export default function ServicesPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:300ms]">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div>
+                            <div className="text-center md:text-left">
                                 <h2 className="text-3xl font-headline font-bold text-primary mb-4">Leadership Development Programs</h2>
                                 <h3 className="text-xl font-bold text-secondary mb-2">Custom Group Coaching Cohorts</h3>
                                 <p className="text-muted-foreground mb-4">Ideal for organizations seeking to develop leadership capabilities across multiple leaders simultaneously through cohort-based learning and peer support.</p>
