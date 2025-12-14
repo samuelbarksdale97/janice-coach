@@ -159,31 +159,35 @@ export default function AboutPage() {
                     {teamMembers.map((member, index) => (
                         <section key={member.name} className="w-full animate-glide-up py-4" style={{animationDelay: `${200 * (index + 1)}ms`}}>
                             <div className="max-w-4xl mx-auto">
-                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2">
+                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2 text-center md:text-left">
                                     {member.name}
                                 </h2>
-                                <h3 className="text-xl font-semibold text-primary mb-6">{member.title}</h3>
+                                <h3 className="text-xl font-semibold text-primary mb-6 text-center md:text-left">{member.title}</h3>
                                 
-                                {member.image && (
-                                    <div className="relative float-left w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] mr-6 mb-4 shape-outside-rectangle">
-                                        <Image
-                                            src={member.image.imageUrl}
-                                            alt={member.image.description}
-                                            fill
-                                            className={cn("rounded-lg object-cover shadow-2xl", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
-                                            sizes="(max-width: 640px) 250px, 300px"
-                                            data-ai-hint={member.image.imageHint}
-                                            priority={index === 0}
-                                        />
+                                <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-x-8">
+                                    {member.image && (
+                                        <div className="flex justify-center md:justify-start">
+                                            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] mb-4 md:mb-0">
+                                                <Image
+                                                    src={member.image.imageUrl}
+                                                    alt={member.image.description}
+                                                    fill
+                                                    className={cn("rounded-lg object-cover shadow-2xl", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
+                                                    sizes="(max-width: 768px) 250px, 300px"
+                                                    data-ai-hint={member.image.imageHint}
+                                                    priority={index === 0}
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
+                                    
+                                    <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify">
+                                        {member.bio.map((paragraph, pIndex) => (
+                                             <p key={pIndex}>
+                                                {paragraph}
+                                            </p>
+                                        ))}
                                     </div>
-                                )}
-                                
-                                <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify">
-                                    {member.bio.map((paragraph, pIndex) => (
-                                         <p key={pIndex}>
-                                            {paragraph}
-                                        </p>
-                                    ))}
                                 </div>
                                 {member.name === 'Janice Brown-Taylor' && <Separator className="my-8" />}
                             </div>
