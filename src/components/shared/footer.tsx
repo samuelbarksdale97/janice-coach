@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="bg-background border-t">
       <div className="container mx-auto px-4 pt-4 md:pt-8 pb-4 md:pb-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="md:col-span-2 space-y-4 text-center">
+          <div className="md:col-span-2 space-y-4 text-center flex flex-col items-center">
             <div className="flex items-center justify-center space-x-2 -my-8 md:-my-12">
                 <Image 
                     src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=8d820be4-9e68-4e73-b80f-72a50fb16f00"
