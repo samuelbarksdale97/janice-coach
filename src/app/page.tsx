@@ -83,7 +83,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <div className="w-full max-w-2xl h-64 md:h-72">
                   <Image
-                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU_680x680.png?alt=media&token=a5c238ab-026c-4de2-a08d-65308c262a2a"
+                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133"
                     alt="Taylor Leadership Coaching Horizontal Logo"
                     width={1200}
                     height={300}
