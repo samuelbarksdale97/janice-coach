@@ -11,23 +11,27 @@ type ExpandableTextProps = {
 export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  if (text.length <= truncateAt) {
-    return <p className="whitespace-pre-wrap">{text}</p>;
-  }
+  // This regex splits the text by one or more newline characters
+  const paragraphsRaw = text.split(/\n+/);
 
-  const truncatedText = `${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
-
-  const paragraphs = (isExpanded ? text : truncatedText).split('”\n“').map((p, i, arr) => (
-    <p key={i} className={i < arr.length -1 ? "mb-4" : ""}>
-        {i > 0 && '“'}{p.startsWith('“') ? p : p}{!p.endsWith('”') && i < arr.length -1 && '”'}
+  const fullTextContent = paragraphsRaw.map((p, i) => (
+    <p key={i} className={i < paragraphsRaw.length - 1 ? "mb-4" : ""}>
+        {p.trim()}
     </p>
   ));
+
+  if (text.length <= truncateAt) {
+    return <div className="whitespace-pre-wrap italic text-muted-foreground text-left">{fullTextContent}</div>;
+  }
+  
+  const truncatedText = `${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
+  const truncatedTextContent = <p>{truncatedText}</p>;
 
 
   return (
     <div>
-      <div className="italic text-muted-foreground">
-        {paragraphs}
+      <div className="italic text-muted-foreground text-left">
+        {isExpanded ? fullTextContent : truncatedTextContent}
       </div>
       <Button
         variant="link"
