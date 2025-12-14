@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
                     <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                       "Deliberately seek the company of people who influence you to think and act on building the life you desire."
                     </blockquote>
-                    <p className="mt-4 text-lg text-secondary font-semibold italic">— Napoleon Hill</p>
+                    <p className="mt-4 text-lg text-secondary font-semibold italic">~ Napoleon Hill</p>
                 </div>
             </div>
         </section>

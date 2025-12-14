@@ -122,8 +122,8 @@ export default function Home() {
                       </p>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                      {philosophyPoints.map((point) => (
-                          <Card key={point.title} className="bg-muted border-none shadow-lg text-center">
+                      {philosophyPoints.map((point, index) => (
+                          <Card key={point.title} className="bg-muted border-none shadow-lg text-center animate-glide-up" style={{ animationDelay: `${250 + index * 50}ms` }}>
                               <CardHeader className="items-center">
                                   {point.icon}
                                   <CardTitle className="mt-4 font-headline text-2xl text-primary">{point.title}</CardTitle>

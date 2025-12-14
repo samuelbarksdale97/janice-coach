@@ -150,8 +150,8 @@ export default function ServicesPage() {
 
                             <TabsContent value="leadership">
                                 <div className="grid md:grid-cols-2 gap-8">
-                                    {leadershipPackages.map((pkg) => (
-                                        <Card key={pkg.id} className="flex flex-col">
+                                    {leadershipPackages.map((pkg, index) => (
+                                        <Card key={pkg.id} className="flex flex-col animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
                                             <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
@@ -187,8 +187,8 @@ export default function ServicesPage() {
 
                              <TabsContent value="career">
                                 <div className="grid md:grid-cols-2 gap-8">
-                                    {careerPackages.map((pkg) => (
-                                        <Card key={pkg.id} className="flex flex-col">
+                                    {careerPackages.map((pkg, index) => (
+                                        <Card key={pkg.id} className="flex flex-col animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
                                             <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
@@ -244,8 +244,8 @@ export default function ServicesPage() {
                                 <p className="text-lg font-headline text-primary font-bold">Investment: Custom pricing based on cohort size, duration, and scope.</p>
                             </div>
                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                {addOnServices.map(service => (
-                                    <Card key={service.title} className="text-center">
+                                {addOnServices.map((service, index) => (
+                                    <Card key={service.title} className="text-center animate-glide-up" style={{ animationDelay: `${350 + index * 50}ms` }}>
                                         <CardHeader>
                                             <CardTitle className="text-xl font-headline text-primary">{service.title}</CardTitle>
                                         </CardHeader>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
                             <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Getting Started</h2>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                            <Card className="text-center">
+                            <Card className="text-center animate-glide-up" style={{ animationDelay: '450ms' }}>
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Discovery Call</CardTitle>
                                 </CardHeader>
@@ -273,7 +273,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All potential clients begin with a complimentary 30-minute discovery call to explore fit, discuss goals, and determine the best coaching package for your needs. All coaching packages can be tailored.</p>
                                 </CardContent>
                             </Card>
-                             <Card className="text-center">
+                             <Card className="text-center animate-glide-up" style={{ animationDelay: '500ms' }}>
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Flexible Formats</CardTitle>
                                 </CardHeader>
@@ -281,7 +281,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All coaching packages available in virtual or hybrid format to accommodate your schedule and preferences.</p>
                                 </CardContent>
                             </Card>
-                             <Card className="text-center md:col-span-2 lg:col-span-1">
+                             <Card className="text-center md:col-span-2 lg:col-span-1 animate-glide-up" style={{ animationDelay: '550ms' }}>
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Satisfaction Commitment</CardTitle>
                                 </CardHeader>
@@ -307,7 +307,7 @@ export default function ServicesPage() {
                             <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                             "Owning our story and loving ourselves through the process is the bravest thing that we’ll ever do."
                             </blockquote>
-                            <p className="mt-4 text-lg text-secondary font-semibold italic">— Brené Brown</p>
+                            <p className="mt-4 text-lg text-secondary font-semibold italic">~ Brené Brown</p>
                         </div>
                     </div>
                 </section>

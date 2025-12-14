@@ -206,8 +206,8 @@ export default function AboutPage() {
                                         ) : detail.title === "More About Me" ? (
                                             <div className="max-w-4xl mx-auto">
                                                 <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
-                                                {detail.sections?.map(section => (
-                                                    <div key={section.subheading} className="mb-8">
+                                                {detail.sections?.map((section, sIndex) => (
+                                                    <div key={section.subheading} className="mb-8 animate-glide-up" style={{ animationDelay: `${400 + (sIndex * 100)}ms` }}>
                                                         <h4 className="text-2xl font-bold text-secondary mb-4 text-center">{section.subheading}</h4>
                                                         {section.paragraphs.map((p, i) => (
                                                             <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4 text-justify">{p}</p>
@@ -245,7 +245,7 @@ export default function AboutPage() {
                 <section className="w-full pt-8 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up [animation-delay:350ms]">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
-                            <Card className="text-center shadow-lg border-primary/20">
+                            <Card className="text-center shadow-lg border-primary/20 animate-glide-up" style={{ animationDelay: '400ms' }}>
                                 <CardHeader className="items-center">
                                     <Rocket className="h-10 w-10 text-secondary mb-2" />
                                     <CardTitle className="text-2xl font-headline text-primary">Our Mission</CardTitle>
@@ -254,7 +254,7 @@ export default function AboutPage() {
                                     <p className="text-muted-foreground">"We partner with clients to transform life's obstacles into opportunities for growth, self-discovery, and lasting resilience."</p>
                                 </CardContent>
                             </Card>
-                            <Card className="text-center shadow-lg border-primary/20">
+                            <Card className="text-center shadow-lg border-primary/20 animate-glide-up" style={{ animationDelay: '450ms' }}>
                                 <CardHeader className="items-center">
                                     <Eye className="h-10 w-10 text-secondary mb-2" />
                                     <CardTitle className="text-2xl font-headline text-primary">Our Vision</CardTitle>
@@ -275,8 +275,8 @@ export default function AboutPage() {
                         </div>
                         <div className="flex justify-center">
                             <ul className="space-y-6">
-                                {values.map((value) => (
-                                    <li key={value.title} className="flex items-start gap-4">
+                                {values.map((value, index) => (
+                                    <li key={value.title} className="flex items-start gap-4 animate-glide-left" style={{ animationDelay: `${450 + index * 100}ms` }}>
                                         <div className="flex-shrink-0 pt-1">
                                             {value.icon}
                                         </div>
@@ -297,8 +297,8 @@ export default function AboutPage() {
                              <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Client Outcomes</h2>
                              <div className="flex justify-center">
                                 <ul className="space-y-4">
-                                    {clientOutcomes.map(outcome => (
-                                        <li key={outcome} className="flex items-start">
+                                    {clientOutcomes.map((outcome, index) => (
+                                        <li key={outcome} className="flex items-start animate-glide-left" style={{ animationDelay: `${500 + index * 100}ms` }}>
                                             <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
                                             <span className="text-muted-foreground text-left">{outcome}</span>
                                         </li>
@@ -312,8 +312,8 @@ export default function AboutPage() {
                         <div className="max-w-3xl mx-auto">
                             <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Why Work With Us?</h2>
                             <ul className="space-y-6">
-                                {whyWorkWithUs.map(reason => (
-                                    <li key={reason.title} className="text-center">
+                                {whyWorkWithUs.map((reason, index) => (
+                                    <li key={reason.title} className="text-center animate-glide-up" style={{ animationDelay: `${600 + index * 100}ms` }}>
                                         <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
                                         <p className="text-muted-foreground">{reason.description}</p>
                                     </li>
