@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck, Star, Zap, Brain, Target } from "lucide-react";
+import { CheckCircle2, Award, Eye, Rocket, HandHeart, Sparkles, UserRound, ShieldCheck, Star, Zap, Brain, Target, Heart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
@@ -108,7 +108,7 @@ const values = [
         description: "Understanding and responding to the feelings and perspectives of others."
     },
     {
-        icon: <Award className="h-6 w-6 text-secondary" />,
+        icon: <Heart className="h-6 w-6 text-secondary" />,
         title: "Service",
         description: "A focus on helping others and contributing to a greater good."
     },
@@ -338,6 +338,8 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
 
