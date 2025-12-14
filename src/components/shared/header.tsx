@@ -33,7 +33,7 @@ export function Header() {
   const pathname = usePathname();
 
   const isHomePage = pathname === '/';
-  const showLogoPages = ['/about', '/services', '/testimonials'];
+  const showLogoPages = ['/about', '/services', '/testimonials', '/contact'];
   const showLogo = showLogoPages.includes(pathname);
 
   return (
@@ -49,9 +49,9 @@ export function Header() {
               <Image 
                 src={logoUrl}
                 alt="Taylor Leadership Coaching Logo"
-                width={200}
-                height={50}
-                className="w-auto h-12"
+                width={250}
+                height={60}
+                className="w-auto h-16"
               />
             )}
         </Link>
