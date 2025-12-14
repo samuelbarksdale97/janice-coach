@@ -152,12 +152,12 @@ export default function AboutPage() {
                     </div>
                 </section>
                 <div className="container px-4 md:px-6">
-                    <Separator className="mb-8" />
+                    <Separator className="mb-4" />
                 </div>
 
                 <div className="container px-4 md:px-6">
                     {teamMembers.map((member, index) => (
-                        <section key={member.name} className="w-full animate-glide-up py-8" style={{animationDelay: `${200 * (index + 1)}ms`}}>
+                        <section key={member.name} className="w-full animate-glide-up py-4" style={{animationDelay: `${200 * (index + 1)}ms`}}>
                             <div className="max-w-4xl mx-auto">
                                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2">
                                     {member.name}
@@ -233,16 +233,16 @@ export default function AboutPage() {
                                     </div>
                                 ))}
                             </div>
-                            {index < teamMembers.length - 1 && <Separator className="my-8" />}
+                            {index < teamMembers.length - 1 && <Separator className="my-4" />}
                         </section>
                     ))}
                 </div>
 
                 <div className="container px-4 md:px-6">
-                    <Separator className="mb-12 md:mb-16 lg:mb-20" />
+                    <Separator className="mb-8" />
                 </div>
 
-                <section className="w-full pt-12 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up [animation-delay:350ms]">
+                <section className="w-full pt-8 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up [animation-delay:350ms]">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
                             <Card className="text-center shadow-lg border-primary/20">
