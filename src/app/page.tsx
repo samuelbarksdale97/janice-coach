@@ -78,17 +78,8 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="about-intro" className="py-8 bg-background animate-glide-up [animation-delay:100ms]">
+          <section id="about-intro" className="py-16 md:py-20 bg-background animate-glide-up [animation-delay:100ms]">
               <div className="container mx-auto px-4">
-                  <div className="mb-12">
-                    <Image
-                        src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad"
-                        alt="Taylor Leadership Coaching Horizontal Logo"
-                        width={1200}
-                        height={300}
-                        className="w-auto h-48 object-contain mx-auto"
-                    />
-                  </div>
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
                           {aboutImage && (
