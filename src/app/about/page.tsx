@@ -188,16 +188,16 @@ export default function AboutPage() {
                                 {member.details.map((detail, dIndex) => (
                                     <div key={dIndex} className="mt-12 md:mt-16">
                                         {detail.title === "Certifications and Credentials" ? (
-                                            <div className="text-center">
+                                             <div className="text-center max-w-3xl mx-auto">
                                                 <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
-                                                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                                                <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-left">
                                                     {detail.list && detail.list.map((credential, cIndex) => (
-                                                        <Card key={cIndex} className="bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6">
-                                                            <Award className="h-10 w-10 text-secondary mb-4" />
-                                                            <p className="font-semibold text-primary leading-snug">{credential}</p>
-                                                        </Card>
+                                                        <li key={cIndex} className="flex items-start">
+                                                            <Award className="h-6 w-6 text-secondary mr-3 mt-1 flex-shrink-0" />
+                                                            <span className="text-muted-foreground">{credential}</span>
+                                                        </li>
                                                     ))}
-                                                </div>
+                                                </ul>
                                             </div>
                                         ) : detail.title === "More About Me" ? (
                                             <div className="max-w-4xl mx-auto">
