@@ -3,7 +3,7 @@
     {
       "id": "hero",
       "description": "A grand library with rows of books and high ceilings.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash_680x680.jpg?alt=media&token=70bb87f2-a95f-411f-bc2b-69c0c9850d3c",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=eca1ceb6-a100-401b-89ae-38ddc110b725",
       "imageHint": "library books"
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": "blog2",
       "description": "A person meditating at sunrise.",
-      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sunrise meditation"
     },
     {
       "id": "blog3",
       "description": "A path winding through a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "path forest"
     },
     {
