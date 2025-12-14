@@ -217,10 +217,7 @@ export default function AboutPage() {
                                                 <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
                                                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
                                                     {detail.list && detail.list.map((credential, cIndex) => (
-                                                        <Card key={cIndex} className={cn(
-                                                            "bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6",
-                                                            (cIndex === detail.list.length - 1 && detail.list.length % 3 === 1) ? 'lg:col-start-2' : ''
-                                                        )}>
+                                                        <Card key={cIndex} className="bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6">
                                                             <Award className="h-10 w-10 text-secondary mb-4" />
                                                             <p className="font-semibold text-primary leading-snug">{credential}</p>
                                                         </Card>
