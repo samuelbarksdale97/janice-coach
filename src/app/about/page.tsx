@@ -164,10 +164,10 @@ export default function AboutPage() {
                                 </h2>
                                 <h3 className="text-xl font-semibold text-primary mb-6 text-center md:text-left">{member.title}</h3>
                                 
-                                <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-x-8">
+                                <div className="flow-root">
                                     {member.image && (
-                                        <div className="flex justify-center md:justify-start">
-                                            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] mb-4 md:mb-0">
+                                        <div className="float-none md:float-left mb-4 md:mb-0 md:mr-8 flex justify-center">
+                                            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px]">
                                                 <Image
                                                     src={member.image.imageUrl}
                                                     alt={member.image.description}
