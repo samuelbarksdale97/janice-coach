@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -27,12 +26,15 @@ const desktopNavItems = [
     { href: "/contact", label: "Contact" },
 ];
 
+const logoUrl = "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1";
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
 
   const isHomePage = pathname === '/';
+  const showLogoPages = ['/about', '/services', '/testimonials'];
+  const showLogo = showLogoPages.includes(pathname);
 
   return (
     <header className={cn(
@@ -43,7 +45,15 @@ export function Header() {
     )}>
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-            
+            {showLogo && (
+              <Image 
+                src={logoUrl}
+                alt="Taylor Leadership Coaching Logo"
+                width={200}
+                height={50}
+                className="w-auto h-12"
+              />
+            )}
         </Link>
         
         {/* Desktop Navigation */}
