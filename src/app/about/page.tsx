@@ -274,7 +274,7 @@ export default function AboutPage() {
                 <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms] mt-20">
                     <div className="container px-4 md:px-6">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="text-secondary">Values</span></h2>
+                            <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="text-secondary italic">Values</span></h2>
                         </div>
                         <div className="max-w-3xl mx-auto">
                             <ul className="space-y-6">
@@ -336,5 +336,7 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
