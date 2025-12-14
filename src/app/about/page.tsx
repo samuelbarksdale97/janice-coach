@@ -329,7 +329,7 @@ export default function AboutPage() {
                         <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                           "To lead people, walk beside them."
                         </blockquote>
-                        <p className="mt-4 text-lg text-secondary font-semibold italic">— Lao Tzu</p>
+                        <p className="mt-4 text-lg text-secondary font-semibold italic">~ Lao Tzu</p>
                       </div>
                     </div>
                 </section>
@@ -338,6 +338,8 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
 
