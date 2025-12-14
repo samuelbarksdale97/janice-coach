@@ -12,25 +12,6 @@ const aboutImage = PlaceHolderImages.find(img => img.id === 'about');
 const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
 const jeylaImage = PlaceHolderImages.find(img => img.id === 'jeyla');
 
-const philosophyPoints = [
-    {
-        icon: <Sparkles className="w-8 h-8 text-secondary" />,
-        title: 'Empowerment through self-awareness',
-    },
-    {
-        icon: <Target className="w-8 h-8 text-secondary" />,
-        title: 'Action-oriented goal setting',
-    },
-    {
-        icon: <Brain className="w-8 h-8 text-secondary" />,
-        title: 'Holistic approach to well-being',
-    },
-    {
-        icon: <Zap className="w-8 h-8 text-secondary" />,
-        title: 'Creating sustainable change'
-    }
-];
-
 const credentials = [
     "Former Senior Level Executive in Federal Government",
     "BOA Institute for Women’s Entrepreneurship, eCornell University",
@@ -51,12 +32,6 @@ const teamMembers = [
             "On a personal note, I married my high school sweetheart, and I am the proud mother of soon to be three Maryland college graduates and my tuxedo cat, Angus. My well-being activities include meditation, water aerobics, walking and traveling."
         ],
         details: [
-            {
-                title: "My Coaching Philosophy",
-                content: "I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.",
-                list: philosophyPoints,
-                listTitle: "Core Principles:"
-            },
             {
                 title: "More About Me",
                 sections: [
@@ -236,38 +211,6 @@ export default function AboutPage() {
                                                     </div>
                                                 ))}
                                             </div>
-                                        ) : detail.title === "My Coaching Philosophy" ? (
-                                             <Card className="bg-transparent border-none shadow-none">
-                                                <CardContent className="p-0">
-                                                    <div className="max-w-4xl mx-auto">
-                                                        <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold text-center">{detail.title}</h3>
-                                                        <div className="mt-8 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                                                            <div className="text-center md:text-left">
-                                                                {detail.content && (
-                                                                    <p className="text-muted-foreground leading-relaxed md:text-lg">
-                                                                        {detail.content}
-                                                                    </p>
-                                                                )}
-                                                            </div>
-                                                            <div>
-                                                                {detail.list && detail.list.length > 0 && (
-                                                                    <>
-                                                                        <h4 className="font-bold text-xl text-primary mb-4 text-center md:text-left">{detail.listTitle}</h4>
-                                                                        <ul className="space-y-2">
-                                                                            {detail.list.map((item, itemIndex) => (
-                                                                                <li key={itemIndex} className="flex items-center">
-                                                                                    {item.icon}
-                                                                                    <span className="ml-4 text-muted-foreground">{item.title}</span>
-                                                                                </li>
-                                                                            ))}
-                                                                        </ul>
-                                                                    </>
-                                                                )}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </CardContent>
-                                            </Card>
                                         ) : (
                                             <Card className="bg-transparent border-none shadow-none">
                                                 <CardContent className="p-0">
@@ -382,3 +325,5 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
