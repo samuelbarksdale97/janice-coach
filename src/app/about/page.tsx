@@ -182,6 +182,7 @@ export default function AboutPage() {
                                         </p>
                                     ))}
                                 </div>
+                                {member.name === 'Janice Brown-Taylor' && <Separator className="my-8 md:my-12" />}
                             </div>
                             
                             <div className="clear-both">
@@ -229,7 +230,7 @@ export default function AboutPage() {
                                     </div>
                                 ))}
                             </div>
-                            {index < teamMembers.length && <Separator className="my-12 md:my-16" />}
+                            {index < teamMembers.length - 1 && <Separator className="my-12 md:my-16" />}
                         </section>
                     ))}
                 </div>
