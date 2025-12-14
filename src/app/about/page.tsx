@@ -152,12 +152,12 @@ export default function AboutPage() {
                     </div>
                 </section>
                 <div className="container px-4 md:px-6">
-                    <Separator className="mb-12" />
+                    <Separator className="mb-8" />
                 </div>
 
                 <div className="container px-4 md:px-6">
                     {teamMembers.map((member, index) => (
-                        <section key={member.name} className="w-full animate-glide-up py-10 md:py-12" style={{animationDelay: `${200 * (index + 1)}ms`}}>
+                        <section key={member.name} className="w-full animate-glide-up py-8" style={{animationDelay: `${200 * (index + 1)}ms`}}>
                             <div className="max-w-4xl mx-auto">
                                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2">
                                     {member.name}
@@ -185,7 +185,7 @@ export default function AboutPage() {
                                         </p>
                                     ))}
                                 </div>
-                                {member.name === 'Janice Brown-Taylor' && <Separator className="my-8 md:my-12" />}
+                                {member.name === 'Janice Brown-Taylor' && <Separator className="my-8" />}
                             </div>
                             
                             <div className="clear-both">
@@ -233,7 +233,7 @@ export default function AboutPage() {
                                     </div>
                                 ))}
                             </div>
-                            {index < teamMembers.length - 1 && <Separator className="my-12 md:my-16" />}
+                            {index < teamMembers.length - 1 && <Separator className="my-8" />}
                         </section>
                     ))}
                 </div>
@@ -338,5 +338,7 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
