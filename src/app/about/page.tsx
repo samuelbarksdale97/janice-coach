@@ -303,10 +303,11 @@ export default function AboutPage() {
                              <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Client Outcomes</h2>
                              <ul className="space-y-4">
                                 {clientOutcomes.map(outcome => (
-                                    <li key={outcome} className="flex items-start justify-center text-center">
+                                    <li key={outcome} className="flex items-start justify-center">
                                         <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
-                                        <span className="text-muted-foreground">{outcome}</span>
+                                        <span className="text-muted-foreground text-left">{outcome}</span>
                                     </li>
+
                                 ))}
                             </ul>
                         </div>
@@ -328,5 +329,7 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
