@@ -289,7 +289,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Why Work With Us?</h2>
                             <ul className="space-y-6">
                                 {whyWorkWithUs.map(reason => (
-                                    <li key={reason.title}>
+                                    <li key={reason.title} className="text-center">
                                         <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
                                         <p className="text-muted-foreground">{reason.description}</p>
                                     </li>
@@ -303,7 +303,7 @@ export default function AboutPage() {
                              <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Client Outcomes</h2>
                              <ul className="space-y-4">
                                 {clientOutcomes.map(outcome => (
-                                    <li key={outcome} className="flex items-start">
+                                    <li key={outcome} className="flex items-start justify-center text-center">
                                         <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
                                         <span className="text-muted-foreground">{outcome}</span>
                                     </li>
@@ -328,3 +328,5 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
