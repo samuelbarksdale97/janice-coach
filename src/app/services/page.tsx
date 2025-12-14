@@ -142,9 +142,9 @@ export default function ServicesPage() {
                             <div className="text-center mb-10">
                                 <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Core Coaching Packages</h2>
                                 <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">Focused programs to help you achieve your leadership and career goals.</p>
-                                <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mt-6 h-auto">
-                                    <TabsTrigger value="leadership" className="py-2">Leadership Coaching</TabsTrigger>
-                                    <TabsTrigger value="career" className="py-2">Career Coaching</TabsTrigger>
+                                <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mt-6 h-auto p-0 bg-transparent gap-2">
+                                    <TabsTrigger value="leadership" className="py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border">Leadership Coaching</TabsTrigger>
+                                    <TabsTrigger value="career" className="py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border">Career Coaching</TabsTrigger>
                                 </TabsList>
                             </div>
 
