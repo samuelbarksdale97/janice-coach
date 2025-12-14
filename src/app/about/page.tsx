@@ -234,7 +234,7 @@ export default function AboutPage() {
                     ))}
                 </div>
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:350ms]">
+                <section className="w-full pt-12 md:pb-16 lg:pb-20 bg-background animate-glide-up [animation-delay:350ms]">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
                             <Card className="text-center shadow-lg border-primary/20">
@@ -260,7 +260,7 @@ export default function AboutPage() {
                 </section>
 
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms] mt-20">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted animate-glide-up [animation-delay:400ms]">
                     <div className="container px-4 md:px-6">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="italic text-secondary">Values</span></h2>
