@@ -180,80 +180,82 @@ export default function AboutPage() {
                 <div className="container px-4 md:px-6 space-y-20">
                     {teamMembers.map((member, index) => (
                         <section key={member.name} className="w-full animate-glide-up" style={{animationDelay: `${200 * (index + 1)}ms`}}>
-                             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
-                                <div className={`space-y-4 text-center lg:text-left ${index % 2 !== 0 ? 'lg:order-2' : ''}`}>
-                                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline">
-                                        {member.name}
-                                    </h2>
-                                    <h3 className="text-xl font-semibold text-primary">{member.title}</h3>
+                            <div className="max-w-4xl mx-auto">
+                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2">
+                                    {member.name}
+                                </h2>
+                                <h3 className="text-xl font-semibold text-primary mb-6">{member.title}</h3>
+                                
+                                {member.image && (
+                                    <div className="relative float-left w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] mr-6 mb-4 shape-outside-rectangle">
+                                        <Image
+                                            src={member.image.imageUrl}
+                                            alt={member.image.description}
+                                            fill
+                                            className={cn("rounded-lg object-cover shadow-2xl", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
+                                            sizes="(max-width: 640px) 250px, 300px"
+                                            data-ai-hint={member.image.imageHint}
+                                            priority={index === 0}
+                                        />
+                                    </div>
+                                )}
+                                
+                                <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4">
                                     {member.bio.map((paragraph, pIndex) => (
-                                         <p key={pIndex} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mx-auto lg:mx-0">
+                                         <p key={pIndex}>
                                             {paragraph}
                                         </p>
                                     ))}
                                 </div>
-                                 <div className={`flex justify-center ${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                                    {member.image && (
-                                        <div className="aspect-square relative rounded-lg overflow-hidden shadow-2xl w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]">
-                                            <Image
-                                                src={member.image.imageUrl}
-                                                alt={member.image.description}
-                                                fill
-                                                className={cn("object-cover", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
-                                                data-ai-hint={member.image.imageHint}
-                                                priority={index === 0}
-                                            />
-                                        </div>
-                                    )}
-                                </div>
                             </div>
 
-                            {member.details.map((detail, dIndex) => (
-                                <div key={dIndex} className="mt-12 md:mt-16">
-                                    {detail.title === "Certifications and Credentials" ? (
-                                        <div className="text-center">
-                                            <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
-                                            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-                                                {detail.list && detail.list.map((credential, cIndex) => (
-                                                    <Card key={cIndex} className={cn(
-                                                        "bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6",
-                                                        (cIndex === detail.list.length - 1 && detail.list.length % 3 === 1) ? 'lg:col-start-2' : ''
-                                                    )}>
-                                                        <Award className="h-10 w-10 text-secondary mb-4" />
-                                                        <p className="font-semibold text-primary leading-snug">{credential}</p>
-                                                    </Card>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ) : detail.title === "More About Me" ? (
-                                        <div className="max-w-4xl mx-auto">
-                                            <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
-                                            {detail.sections?.map(section => (
-                                                <div key={section.subheading} className="mb-8">
-                                                    <h4 className="text-2xl font-bold text-secondary mb-4">{section.subheading}</h4>
-                                                    {section.paragraphs.map((p, i) => (
-                                                        <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4">{p}</p>
+                            <div className="clear-both">
+                                {member.details.map((detail, dIndex) => (
+                                    <div key={dIndex} className="mt-12 md:mt-16">
+                                        {detail.title === "Certifications and Credentials" ? (
+                                            <div className="text-center">
+                                                <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
+                                                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                                                    {detail.list && detail.list.map((credential, cIndex) => (
+                                                        <Card key={cIndex} className={cn(
+                                                            "bg-muted border-primary/20 shadow-lg text-center flex flex-col items-center justify-center p-6",
+                                                            (cIndex === detail.list.length - 1 && detail.list.length % 3 === 1) ? 'lg:col-start-2' : ''
+                                                        )}>
+                                                            <Award className="h-10 w-10 text-secondary mb-4" />
+                                                            <p className="font-semibold text-primary leading-snug">{credential}</p>
+                                                        </Card>
                                                     ))}
                                                 </div>
-                                            ))}
-                                        </div>
-                                    ) : (
-                                         <Card className="bg-transparent border-none shadow-none">
-                                            <CardContent className="p-0">
-                                                <div className="text-center max-w-3xl mx-auto">
-                                                    <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold">{detail.title}</h3>
-                                                    {detail.content && (
-                                                        <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto md:text-lg">
-                                                            {detail.content}
-                                                        </p>
-                                                    )}
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    )}
-                                </div>
-                            ))}
+                                            </div>
+                                        ) : detail.title === "More About Me" ? (
+                                            <div className="max-w-4xl mx-auto">
+                                                <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
+                                                {detail.sections?.map(section => (
+                                                    <div key={section.subheading} className="mb-8">
+                                                        <h4 className="text-2xl font-bold text-secondary mb-4">{section.subheading}</h4>
+                                                        {section.paragraphs.map((p, i) => (
+                                                            <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4">{p}</p>
+                                                        ))}
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        ) : (
+                                             <Card className="bg-transparent border-none shadow-none">
+                                                <CardContent className="p-0">
+                                                    <div className="text-center max-w-3xl mx-auto">
+                                                        <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold">{detail.title}</h3>
+                                                        {detail.content && (
+                                                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-prose mx-auto md:text-lg">
+                                                                {detail.content}
+                                                            </p>
+                                                        )}
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
                              {member.name === "Janice Brown-Taylor" && (
                                 <section className="w-full py-12 md:py-8">
                                     <div className="container px-4 md:px-6">
