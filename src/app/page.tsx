@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center animate-glide-up">
                         
                         <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
-                            What becomes possible when you stop performing, start leading, and just be <span className="italic text-secondary">yourself</span><span className="ml-2">?</span>
+                            “What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?”
                         </h1>
                         
                         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
