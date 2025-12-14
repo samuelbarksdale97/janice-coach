@@ -73,7 +73,7 @@ export default function TestimonialsPage() {
                     {testimonial.long ? (
                       <ExpandableText text={testimonial.quote} />
                     ) : (
-                      <blockquote className="italic text-muted-foreground">"{testimonial.quote}"</blockquote>
+                      <blockquote className="italic text-muted-foreground text-center">"{testimonial.quote}"</blockquote>
                     )}
                   </CardContent>
                   <div className="p-6 pt-0">

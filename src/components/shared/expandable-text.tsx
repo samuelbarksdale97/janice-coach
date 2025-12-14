@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -21,7 +22,7 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
   ));
 
   if (text.length <= truncateAt) {
-    return <div className="whitespace-pre-wrap italic text-muted-foreground text-left">{fullTextContent}</div>;
+    return <div className="whitespace-pre-wrap italic text-muted-foreground text-center">{fullTextContent}</div>;
   }
   
   const truncatedText = `${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
@@ -30,7 +31,7 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
 
   return (
     <div>
-      <div className="italic text-muted-foreground text-left">
+      <div className="italic text-muted-foreground text-center">
         {isExpanded ? fullTextContent : truncatedTextContent}
       </div>
       <Button
