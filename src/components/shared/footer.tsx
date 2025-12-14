@@ -24,7 +24,7 @@ export function Footer() {
           <div className="md:col-span-2 space-y-4 text-center">
             <div className="flex items-center justify-center space-x-2 -my-8 md:-my-12">
                 <Image 
-                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=8d820be4-9e68-4e73-b80f-72a50fb16f00"
+                    src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU_200x200.png?alt=media&token=a37bc18c-9e80-4e7c-8277-97773e452386"
                     alt="Taylor Leadership Coaching Logo"
                     width={400}
                     height={100}
