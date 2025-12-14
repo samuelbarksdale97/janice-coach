@@ -131,7 +131,7 @@ export default function Home() {
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
                       <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
-                          Guiding you towards self-discovery and empowerment with a process built on trust, action, and holistic well-being.
+                          I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
                       </p>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
