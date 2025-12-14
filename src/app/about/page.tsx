@@ -265,7 +265,7 @@ export default function AboutPage() {
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="italic text-secondary">Values</span></h2>
                         </div>
-                        <div className="max-w-3xl mx-auto">
+                        <div className="flex justify-center">
                             <ul className="space-y-6">
                                 {values.map((value) => (
                                     <li key={value.title} className="flex items-start gap-4">
@@ -330,6 +330,8 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
 
     
 
