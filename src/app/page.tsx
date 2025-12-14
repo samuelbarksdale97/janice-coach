@@ -156,7 +156,7 @@ export default function Home() {
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
                   "Progress is not achieved by luck or accident, but by working on yourself daily."
                 </blockquote>
-                <p className="mt-4 text-lg text-secondary font-semibold italic">— Epictetus</p>
+                <p className="mt-4 text-lg text-secondary font-semibold italic">~ Epictetus</p>
               </div>
             </div>
           </section>
