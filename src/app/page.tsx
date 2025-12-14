@@ -98,7 +98,10 @@ export default function Home() {
                       <div className="text-center md:text-left">
                           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Guide for Your <span className="text-secondary italic">Journey</span></h2>
                           <p className="mt-4 text-lg text-muted-foreground">
-                              I'm Janice Brown-Taylor, a certified leadership coach dedicated to helping you find clarity, purpose, and reach your full potential as an authentic, resilient leader. My mission is to provide a safe, supportive environment where you can break free from your limiting beliefs, overcome obstacles and design a life that truly resonates with you.
+                              I'm Janice Brown-Taylor, a certified leadership coach dedicated to helping you find clarity, purpose, and reach your full potential as an authentic, resilient leader.
+                          </p>
+                          <p className="mt-4 text-lg text-muted-foreground">
+                              My mission is to provide a safe, supportive environment where you can break free from your limiting beliefs, overcome obstacles and design a life that truly resonates with you.
                           </p>
                           <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0">
                               <Link href="/about">
