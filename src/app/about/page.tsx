@@ -54,7 +54,7 @@ const teamMembers = [
             {
                 title: "My Coaching Philosophy",
                 content: "I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.",
-                list: [],
+                list: philosophyPoints,
                 listTitle: "Core Principles:"
             },
             {
@@ -236,8 +236,40 @@ export default function AboutPage() {
                                                     </div>
                                                 ))}
                                             </div>
-                                        ) : (
+                                        ) : detail.title === "My Coaching Philosophy" ? (
                                              <Card className="bg-transparent border-none shadow-none">
+                                                <CardContent className="p-0">
+                                                    <div className="max-w-4xl mx-auto">
+                                                        <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold text-center">{detail.title}</h3>
+                                                        <div className="mt-8 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                                                            <div className="text-center md:text-left">
+                                                                {detail.content && (
+                                                                    <p className="text-muted-foreground leading-relaxed md:text-lg">
+                                                                        {detail.content}
+                                                                    </p>
+                                                                )}
+                                                            </div>
+                                                            <div>
+                                                                {detail.list && detail.list.length > 0 && (
+                                                                    <>
+                                                                        <h4 className="font-bold text-xl text-primary mb-4 text-center md:text-left">{detail.listTitle}</h4>
+                                                                        <ul className="space-y-2">
+                                                                            {detail.list.map((item, itemIndex) => (
+                                                                                <li key={itemIndex} className="flex items-center">
+                                                                                    {item.icon}
+                                                                                    <span className="ml-4 text-muted-foreground">{item.title}</span>
+                                                                                </li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    </>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </CardContent>
+                                            </Card>
+                                        ) : (
+                                            <Card className="bg-transparent border-none shadow-none">
                                                 <CardContent className="p-0">
                                                     <div className="text-center max-w-3xl mx-auto">
                                                         <h3 className="text-3xl md:text-4xl font-headline text-primary font-bold">{detail.title}</h3>
@@ -249,29 +281,11 @@ export default function AboutPage() {
                                                     </div>
                                                 </CardContent>
                                             </Card>
-                                        )}
+                                        )
+                                        }
                                     </div>
                                 ))}
                             </div>
-                             {member.name === "Janice Brown-Taylor" && (
-                                <section className="w-full py-12 md:py-8">
-                                    <div className="container px-4 md:px-6">
-                                        <div className="text-center mb-12">
-                                            <h2 className="text-3xl font-headline font-bold text-primary">Core Principles</h2>
-                                        </div>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                                            {philosophyPoints.map((point) => (
-                                                <Card key={point.title} className="bg-muted border-none shadow-lg text-center">
-                                                    <CardHeader className="items-center">
-                                                        {point.icon}
-                                                        <CardTitle className="mt-4 font-headline text-xl text-primary">{point.title}</CardTitle>
-                                                    </CardHeader>
-                                                </Card>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </section>
-                            )}
                             {index < teamMembers.length - 1 && <Separator className="my-12 md:my-20" />}
                         </section>
                     ))}
