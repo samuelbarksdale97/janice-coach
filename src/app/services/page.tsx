@@ -136,7 +136,7 @@ export default function ServicesPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-muted animate-glide-up [animation-delay:200ms]">
+                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-16 lg:pb-20 bg-muted animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <Tabs defaultValue="leadership" className="w-full">
                             <div className="text-center mb-10">

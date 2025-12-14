@@ -53,8 +53,8 @@ export default function TestimonialsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
-              {testimonials.map((testimonial) => (
-                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg">
+              {testimonials.map((testimonial, index) => (
+                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
                   <CardContent className="p-8 flex-grow">
                     {testimonial.long ? (
                       <ExpandableText text={testimonial.quote} />

@@ -190,7 +190,7 @@ export default function AboutPage() {
                             
                             <div className="clear-both">
                                 {member.details.map((detail, dIndex) => (
-                                    <div key={dIndex} className="mt-12 md:mt-16">
+                                    <div key={dIndex} className="mt-12 md:mt-16 animate-glide-up" style={{animationDelay: `${200 * (dIndex + teamMembers.length + 1)}ms`}}>
                                         {detail.title === "Certifications and Credentials" ? (
                                              <div className="text-center max-w-3xl mx-auto">
                                                 <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
@@ -338,13 +338,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
-
-    
-
-    
-
-    
-
-    
