@@ -9,7 +9,7 @@
     {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/IMG_5398_680x680.jpeg?alt=media&token=b08af8a0-4c0a-4100-a0e2-ffdeb80f36b4",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/IMG_5398.jpeg?alt=media&token=7d7b0559-c888-4eac-b18c-720b53f4da3c",
       "imageHint": "professional woman"
     },
     {
@@ -45,13 +45,13 @@
     {
       "id": "service1",
       "description": "A compass pointing towards a direction, symbolizing guidance.",
-      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "compass direction"
     },
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
