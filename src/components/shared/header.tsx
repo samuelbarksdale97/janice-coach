@@ -49,9 +49,9 @@ export function Header() {
               <Image 
                 src={logoUrl}
                 alt="Taylor Leadership Coaching Logo"
-                width={250}
-                height={60}
-                className="w-auto h-16"
+                width={300}
+                height={75}
+                className="w-auto h-20"
               />
             )}
         </Link>
