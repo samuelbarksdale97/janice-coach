@@ -74,7 +74,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          &copy; {currentYear} Janice Brown-Taylor Coaching. All Rights Reserved.
+          &copy; {currentYear} Taylor Your Leadership Coaching. All Rights Reserved.
         </div>
       </div>
     </footer>
