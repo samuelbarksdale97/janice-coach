@@ -22,7 +22,7 @@ export default function ContactPage() {
                         </div>
                         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
                             <Card className="shadow-lg animate-glide-up" style={{ animationDelay: '150ms' }}>
-                                <CardHeader>
+                                <CardHeader className="text-center">
                                     <CardTitle className="text-3xl font-headline text-primary">Send a Message</CardTitle>
                                     <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
                                 </CardHeader>
