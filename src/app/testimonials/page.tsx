@@ -33,17 +33,17 @@ I credit much of my growth as a leader to Janice’s coaching, encouragement, an
         title: "Management/Program Analyst",
     },
     {
-        quote: `“I have been coached by Janice Brown-Taylor for more than ten years, and her guidance has had a profound and lasting impact on both my professional growth and my personal well-being. Throughout this time, she has consistently helped me gain clarity during pivotal moments, sharpen my thinking, and make decisions that have genuinely shaped the direction of my career.”
+        quote: `I have been coached by Janice Brown-Taylor for more than ten years, and her guidance has had a profound and lasting impact on both my professional growth and my personal well-being. Throughout this time, she has consistently helped me gain clarity during pivotal moments, sharpen my thinking, and make decisions that have genuinely shaped the direction of my career.
 
-“Her coaching played a key role in helping me earn multiple promotions and step confidently into larger leadership roles. She supported me in strengthening my communication, developing a more strategic mindset, and building the presence needed to succeed in high-visibility situations. Many of the breakthroughs I’ve experienced leading to moments that expanded my confidence and helped me see my true capabilities were the direct result of our conversations.”
+Her coaching played a key role in helping me earn multiple promotions and step confidently into larger leadership roles. She supported me in strengthening my communication, developing a more strategic mindset, and building the presence needed to succeed in high-visibility situations. Many of the breakthroughs I’ve experienced leading to moments that expanded my confidence and helped me see my true capabilities were the direct result of our conversations.
 
-“What sets Janice apart is her ability to understand challenges on both a professional and personal level. She listens deeply, asks thoughtful and perceptive questions, and helps me see patterns, options, and solutions that I often could not identify on my own. Her guidance has helped me navigate difficult decisions, challenging workplace dynamics, and periods of uncertainty with far greater clarity and confidence.”
+What sets Janice apart is her ability to understand challenges on both a professional and personal level. She listens deeply, asks thoughtful and perceptive questions, and helps me see patterns, options, and solutions that I often could not identify on my own. Her guidance has helped me navigate difficult decisions, challenging workplace dynamics, and periods of uncertainty with far greater clarity and confidence.
 
-“Janice’s influence reaches beyond my career. Through her coaching, I’ve learned how to manage stress more intentionally, establish healthier boundaries, and cultivate habits that support a more balanced, sustainable life. These shifts have had a lasting impact and continue to shape how I approach each day.”
+Janice’s influence reaches beyond my career. Through her coaching, I’ve learned how to manage stress more intentionally, establish healthier boundaries, and cultivate habits that support a more balanced, sustainable life. These shifts have had a lasting impact and continue to shape how I approach each day.
 
-“What I appreciate most is the combination of insight, honesty, and genuine care she brings to every conversation. She challenges me when I need it, supports me when it matters, and consistently helps me grow in ways that are both meaningful and practical. I strongly recommend her to anyone seeking a coach who can create real, measurable progress. Her ability to support both personal and professional transformation is exceptional, and the impact of her coaching stays with you long after each session ends.”`,
-        name: "~ Shabbir Kundi",
-        title: "Supervisory Management Analyst",
+What I appreciate most is the combination of insight, honesty, and genuine care she brings to every conversation. She challenges me when I need it, supports me when it matters, and consistently helps me grow in ways that are both meaningful and practical. I strongly recommend her to anyone seeking a coach who can create real, measurable progress. Her ability to support both personal and professional transformation is exceptional, and the impact of her coaching stays with you long after each session ends.`,
+        name: "~ Shabbir Kundi, Supervisory Management Analyst",
+        title: "",
         long: true,
     }
 ];
