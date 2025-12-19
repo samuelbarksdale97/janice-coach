@@ -6,6 +6,10 @@ import { ContactForm } from "./contact-form";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
+const contactAvatar = PlaceHolderImages.find(img => img.id === 'contact-avatar');
 
 export default function ContactPage() {
     return (
@@ -14,8 +18,20 @@ export default function ContactPage() {
             <main className="flex-1">
                 <section className="w-full pt-28 md:pt-36 pb-12 md:pb-20 bg-muted animate-glide-up">
                     <div className="container mx-auto px-4">
-                       <div className="text-center mb-12">
+                       <div className="text-center mb-12 flex flex-col items-center">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Get In Touch</h1>
+                            {contactAvatar && (
+                                <div className="relative w-32 h-32 rounded-full overflow-hidden my-6 shadow-lg">
+                                    <Image
+                                        src={contactAvatar.imageUrl}
+                                        alt={contactAvatar.description}
+                                        fill
+                                        className="object-cover"
+                                        sizes="128px"
+                                        data-ai-hint={contactAvatar.imageHint}
+                                    />
+                                </div>
+                            )}
                             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
                                 I'm excited to hear from you. Whether you have a question, want to book a session, or just want to say hello, please feel free to reach out.
                             </p>
