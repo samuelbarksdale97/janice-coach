@@ -169,7 +169,7 @@ export default function AboutPage() {
                                         <div className="float-none md:float-left mb-4 md:mb-0 md:mr-8 flex justify-center">
                                             <div className={cn(
                                                 "relative w-[250px] sm:w-[300px]",
-                                                member.name === 'Janice Brown-Taylor' ? "aspect-[4/5]" : "aspect-square"
+                                                member.name === 'Jeyla' ? "aspect-square" : "aspect-[4/5]"
                                             )}>
                                                 <Image
                                                     src={member.image.imageUrl}
@@ -177,7 +177,7 @@ export default function AboutPage() {
                                                     fill
                                                     className={cn(
                                                         "rounded-lg shadow-2xl object-cover",
-                                                        member.name === 'Paul' 
+                                                        member.name === 'Paul Brown-Taylor' 
                                                                 ? 'object-[center_20%]' 
                                                                 : member.name === 'Janice Brown-Taylor' ? 'object-top' : 'object-center'
                                                     )}
