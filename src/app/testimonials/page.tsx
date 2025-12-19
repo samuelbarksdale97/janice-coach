@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
 import { ExpandableText } from "@/components/shared/expandable-text";
 
 const testimonials = [
@@ -70,6 +70,7 @@ export default function TestimonialsPage() {
               {testimonials.map((testimonial, index) => (
                 <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
                   <CardContent className="p-8 flex-grow">
+                    <Quote className="h-8 w-8 text-secondary/50 mx-auto mb-4" />
                     {testimonial.long ? (
                       <ExpandableText text={testimonial.quote} />
                     ) : (
