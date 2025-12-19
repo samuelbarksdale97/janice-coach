@@ -167,18 +167,19 @@ export default function AboutPage() {
                                 <div className="flow-root">
                                     {member.image && (
                                         <div className="float-none md:float-left mb-4 md:mb-0 md:mr-8 flex justify-center">
-                                            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px]">
+                                            <div className={cn(
+                                                "relative w-[250px] sm:w-[300px]",
+                                                member.name === 'Janice Brown-Taylor' ? "aspect-[4/5]" : "aspect-square"
+                                            )}>
                                                 <Image
                                                     src={member.image.imageUrl}
                                                     alt={member.image.description}
                                                     fill
                                                     className={cn(
-                                                        "rounded-lg shadow-2xl",
-                                                        member.name === 'Janice Brown-Taylor' 
-                                                            ? 'object-cover' 
-                                                            : member.name === 'Paul' 
-                                                                ? 'object-cover object-[center_20%]' 
-                                                                : 'object-cover object-top'
+                                                        "rounded-lg shadow-2xl object-cover",
+                                                        member.name === 'Paul' 
+                                                                ? 'object-[center_20%]' 
+                                                                : 'object-top'
                                                     )}
                                                     sizes="(max-width: 768px) 250px, 300px"
                                                     data-ai-hint={member.image.imageHint}
@@ -351,4 +352,6 @@ export default function AboutPage() {
 }
 
     
+    
+
     
