@@ -83,7 +83,7 @@ const teamMembers = [
         details: []
     },
     {
-        name: "Jeyla",
+        name: "Jeyla Brown",
         title: "Mentor & Coach",
         image: jeylaImage,
         bio: [
@@ -351,6 +351,8 @@ export default function AboutPage() {
 }
 
     
+    
+
     
 
     
