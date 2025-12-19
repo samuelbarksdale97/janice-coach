@@ -12,7 +12,6 @@ type ExpandableTextProps = {
 export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // This regex splits the text by one or more newline characters
   const paragraphsRaw = text.split(/\n+/);
 
   const fullTextContent = paragraphsRaw.map((p, i) => (
@@ -22,18 +21,17 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
   ));
 
   if (text.length <= truncateAt) {
-    return <div className="whitespace-pre-wrap italic text-muted-foreground text-center">"{fullTextContent}"</div>;
+    return <blockquote className="whitespace-pre-wrap italic text-muted-foreground text-center">"{fullTextContent}"</blockquote>;
   }
   
-  const truncatedText = `"${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
-  const truncatedTextContent = <p>{truncatedText}</p>;
+  const truncatedText = `"${text.substring(0, text.lastIndexOf(' ', truncateAt))}..."`;
 
 
   return (
     <div>
-      <div className="italic text-muted-foreground text-center">
-        {isExpanded ? `"${fullTextContent}"` : truncatedTextContent}
-      </div>
+      <blockquote className="italic text-muted-foreground text-center">
+        {isExpanded ? `"${fullTextContent}"` : truncatedText}
+      </blockquote>
       <Button
         variant="link"
         onClick={() => setIsExpanded(!isExpanded)}
