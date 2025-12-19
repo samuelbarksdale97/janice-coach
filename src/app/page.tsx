@@ -89,7 +89,7 @@ export default function Home() {
                                     src={aboutImageHome.imageUrl}
                                     alt={aboutImageHome.description}
                                     fill
-                                    className="object-contain"
+                                    className="object-cover"
                                     sizes="(max-width: 768px) 80vw, 320px"
                                     data-ai-hint={aboutImageHome.imageHint}
                                 />
