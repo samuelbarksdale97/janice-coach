@@ -138,7 +138,7 @@ export default function Home() {
               </div>
           </section>
 
-          <section id="logo-section" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:250ms]">
+          <section id="logo-section" className="py-4 bg-background animate-glide-up [animation-delay:250ms]">
               <div className="container mx-auto px-4 flex justify-center">
                   <Image
                       src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1"
