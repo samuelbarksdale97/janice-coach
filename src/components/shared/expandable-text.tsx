@@ -22,17 +22,17 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
   ));
 
   if (text.length <= truncateAt) {
-    return <div className="whitespace-pre-wrap italic text-muted-foreground text-center">{fullTextContent}</div>;
+    return <div className="whitespace-pre-wrap italic text-muted-foreground text-center">"{fullTextContent}"</div>;
   }
   
-  const truncatedText = `${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
+  const truncatedText = `"${text.substring(0, text.lastIndexOf(' ', truncateAt))}...`;
   const truncatedTextContent = <p>{truncatedText}</p>;
 
 
   return (
     <div>
       <div className="italic text-muted-foreground text-center">
-        {isExpanded ? fullTextContent : truncatedTextContent}
+        {isExpanded ? `"${fullTextContent}"` : truncatedTextContent}
       </div>
       <Button
         variant="link"
