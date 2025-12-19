@@ -71,7 +71,7 @@ const teamMembers = [
         ]
     },
     {
-        name: "Paul",
+        name: "Paul Brown-Taylor",
         title: "Mentor & Coach",
         image: paulImage,
         bio: [
