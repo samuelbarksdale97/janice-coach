@@ -8,9 +8,10 @@ import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
-const aboutImage = PlaceHolderImages.find(img => img.id === 'about');
+const aboutImageHome = PlaceHolderImages.find(img => img.id === 'about-home');
 
 const philosophyPoints = [
     {
@@ -82,15 +83,15 @@ export default function Home() {
               <div className="container mx-auto px-4">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
-                          {aboutImage && (
-                              <div className="relative w-80 h-80 rounded-full overflow-hidden">
+                          {aboutImageHome && (
+                              <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-lg">
                                 <Image
-                                    src={aboutImage.imageUrl}
-                                    alt={aboutImage.description}
+                                    src={aboutImageHome.imageUrl}
+                                    alt={aboutImageHome.description}
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                     sizes="(max-width: 768px) 100vw, 320px"
-                                    data-ai-hint={aboutImage.imageHint}
+                                    data-ai-hint={aboutImageHome.imageHint}
                                 />
                               </div>
                           )}
