@@ -89,7 +89,7 @@ export default function Home() {
                                     src={aboutImageHome.imageUrl}
                                     alt={aboutImageHome.description}
                                     fill
-                                    className="object-cover object-center"
+                                    className="object-cover object-[center_30%]"
                                     sizes="(max-width: 768px) 80vw, 320px"
                                     data-ai-hint={aboutImageHome.imageHint}
                                 />
@@ -135,6 +135,18 @@ export default function Home() {
                           </Card>
                       ))}
                   </div>
+              </div>
+          </section>
+
+          <section id="logo-section" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:250ms]">
+              <div className="container mx-auto px-4 flex justify-center">
+                  <Image
+                      src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1"
+                      alt="Taylor Your Leadership Coaching Logo"
+                      width={500}
+                      height={200}
+                      className="w-auto h-auto max-w-[500px]"
+                  />
               </div>
           </section>
 
