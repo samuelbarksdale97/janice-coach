@@ -21,13 +21,13 @@ export default function ContactPage() {
                        <div className="text-center mb-12 flex flex-col items-center">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Get In Touch</h1>
                             {contactAvatar && (
-                                <div className="relative w-32 h-32 rounded-full overflow-hidden my-6 shadow-lg">
+                                <div className="relative w-36 h-36 rounded-full overflow-hidden my-6 shadow-lg">
                                     <Image
                                         src={contactAvatar.imageUrl}
                                         alt={contactAvatar.description}
                                         fill
                                         className="object-cover"
-                                        sizes="128px"
+                                        sizes="144px"
                                         data-ai-hint={contactAvatar.imageHint}
                                     />
                                 </div>
