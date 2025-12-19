@@ -168,8 +168,7 @@ export default function AboutPage() {
                                     {member.image && (
                                         <div className="float-none md:float-left mb-4 md:mb-0 md:mr-8 flex justify-center">
                                             <div className={cn(
-                                                "relative w-[250px] sm:w-[300px]",
-                                                member.name === 'Jeyla' ? "aspect-square" : "aspect-[4/5]"
+                                                "relative w-[250px] sm:w-[300px] aspect-[4/5]"
                                             )}>
                                                 <Image
                                                     src={member.image.imageUrl}
