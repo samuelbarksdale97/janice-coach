@@ -80,17 +80,17 @@ export default function Home() {
           </section>
 
           <section id="about-intro" className="pt-16 md:pt-20 pb-8 md:pb-12 bg-background animate-glide-up [animation-delay:100ms]">
-              <div className="container mx-auto">
+              <div className="container mx-auto px-4 md:px-6">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
                           {aboutImageHome && (
-                              <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-lg">
+                              <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
                                 <Image
                                     src={aboutImageHome.imageUrl}
                                     alt={aboutImageHome.description}
                                     fill
                                     className="object-contain"
-                                    sizes="(max-width: 768px) 100vw, 320px"
+                                    sizes="(max-width: 768px) 80vw, 320px"
                                     data-ai-hint={aboutImageHome.imageHint}
                                 />
                               </div>
