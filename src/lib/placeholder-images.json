@@ -15,7 +15,7 @@
     {
       "id": "about-home",
       "description": "A warm and professional headshot of a female life coach.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%203.jpeg?alt=media&token=a9f1b744-0e1d-41fa-b48f-8cf810c0e539",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%201.jpeg?alt=media&token=69e7c34c-2244-47ae-9a9a-f1de10af2d93",
       "imageHint": "professional woman"
     },
     {
@@ -39,25 +39,25 @@
     {
       "id": "blog2",
       "description": "A person meditating at sunrise.",
-      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sunrise meditation"
     },
     {
       "id": "blog3",
       "description": "A path winding through a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "path forest"
     },
     {
       "id": "service1",
       "description": "A compass pointing towards a direction, symbolizing guidance.",
-      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "compass direction"
     },
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "testimonial1",
       "description": "Headshot of a smiling man with glasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": "testimonial3",
       "description": "Headshot of a professional man.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     }
   ]
