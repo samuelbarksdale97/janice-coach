@@ -172,7 +172,14 @@ export default function AboutPage() {
                                                     src={member.image.imageUrl}
                                                     alt={member.image.description}
                                                     fill
-                                                    className={cn("rounded-lg object-cover shadow-2xl", member.name === 'Paul' ? 'object-[center_20%]' : member.name === 'Jeyla Brown' ? 'object-top' : 'object-top')}
+                                                    className={cn(
+                                                        "rounded-lg shadow-2xl",
+                                                        member.name === 'Janice Brown-Taylor' 
+                                                            ? 'object-contain' 
+                                                            : member.name === 'Paul' 
+                                                                ? 'object-cover object-[center_20%]' 
+                                                                : 'object-cover object-top'
+                                                    )}
                                                     sizes="(max-width: 768px) 250px, 300px"
                                                     data-ai-hint={member.image.imageHint}
                                                     priority={index === 0}
@@ -342,3 +349,5 @@ export default function AboutPage() {
         </>
     );
 }
+
+    
