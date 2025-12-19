@@ -39,8 +39,8 @@ export default function ContactPage() {
                                     <div className="ml-4">
                                         <h4 className="text-lg font-bold text-primary">Email</h4>
                                         <p className="text-muted-foreground">The best way to reach me for any inquiry.</p>
-                                        <a href="mailto:hello@evolvingdoor.com" className="text-secondary hover:underline font-semibold break-all">
-                                            hello@evolvingdoor.com
+                                        <a href="mailto:TaylorLeadershipCoach@gmail.com" className="text-secondary hover:underline font-semibold break-all">
+                                            TaylorLeadershipCoach@gmail.com
                                         </a>
                                     </div>
                                 </div>
@@ -51,8 +51,8 @@ export default function ContactPage() {
                                     <div className="ml-4">
                                         <h4 className="text-lg font-bold text-primary">Phone</h4>
                                         <p className="text-muted-foreground">Available Mon-Fri, 9am-5pm EST.</p>
-                                        <a href="tel:+1234567890" className="text-secondary hover:underline font-semibold">
-                                            +1 (234) 567-890
+                                        <a href="tel:+17035085476" className="text-secondary hover:underline font-semibold">
+                                            +1 (703) 508-5476
                                         </a>
                                     </div>
                                 </div>
