@@ -83,7 +83,7 @@ const teamMembers = [
         details: []
     },
     {
-        name: "Jeyla Brown",
+        name: "Jeyla",
         title: "Mentor & Coach",
         image: jeylaImage,
         bio: [
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 <section className="w-full pt-28 md:pt-40 pb-12 md:pb-16 lg:pb-20 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6 text-center">
                          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline">
-                            Meet the Mentor, Coaches, and Leadership Consultants
+                            Meet Our Team
                         </h1>
                     </div>
                 </section>
@@ -179,7 +179,7 @@ export default function AboutPage() {
                                                         "rounded-lg shadow-2xl object-cover",
                                                         member.name === 'Paul' 
                                                                 ? 'object-[center_20%]' 
-                                                                : 'object-top'
+                                                                : member.name === 'Janice Brown-Taylor' ? 'object-top' : 'object-center'
                                                     )}
                                                     sizes="(max-width: 768px) 250px, 300px"
                                                     data-ai-hint={member.image.imageHint}
@@ -352,6 +352,8 @@ export default function AboutPage() {
 }
 
     
+    
+
     
 
     
