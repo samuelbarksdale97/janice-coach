@@ -175,7 +175,7 @@ export default function AboutPage() {
                                                     className={cn(
                                                         "rounded-lg shadow-2xl",
                                                         member.name === 'Janice Brown-Taylor' 
-                                                            ? 'object-contain' 
+                                                            ? 'object-cover' 
                                                             : member.name === 'Paul' 
                                                                 ? 'object-cover object-[center_20%]' 
                                                                 : 'object-cover object-top'
@@ -350,4 +350,5 @@ export default function AboutPage() {
     );
 }
 
+    
     
