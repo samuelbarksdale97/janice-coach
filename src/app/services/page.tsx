@@ -9,6 +9,11 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExpandableList } from "@/components/shared/expandable-list";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Services',
+};
 
 const servicesHeroImage = PlaceHolderImages.find(img => img.id === 'contact');
 

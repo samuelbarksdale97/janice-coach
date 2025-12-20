@@ -9,6 +9,11 @@ import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
 const aboutImageHome = PlaceHolderImages.find(img => img.id === 'about-home');

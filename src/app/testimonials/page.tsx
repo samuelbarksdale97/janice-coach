@@ -8,6 +8,11 @@ import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight, Quote } from "lucide-react";
 import { ExpandableText } from "@/components/shared/expandable-text";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Testimonials',
+};
 
 const testimonials = [
     {

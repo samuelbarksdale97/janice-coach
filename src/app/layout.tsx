@@ -20,7 +20,10 @@ const ebGaramond = EB_Garamond({
 const faviconUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133';
 
 export const metadata: Metadata = {
-  title: 'Taylor Leadership Coaching',
+  title: {
+    template: '%s | Taylor Leadership Coaching',
+    default: 'Taylor Leadership Coaching',
+  },
   description: 'Guiding you through life\'s transitions with professional coaching and support.',
   icons: {
     icon: [{ url: faviconUrl, sizes: 'any' }],

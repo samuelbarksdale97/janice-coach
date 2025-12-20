@@ -8,6 +8,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+};
 
 const contactAvatar = PlaceHolderImages.find(img => img.id === 'contact-avatar');
 

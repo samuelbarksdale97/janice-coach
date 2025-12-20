@@ -7,6 +7,11 @@ import { Footer } from "@/components/shared/footer";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About',
+};
 
 const aboutImage = PlaceHolderImages.find(img => img.id === 'about');
 const paulImage = PlaceHolderImages.find(img => img.id === 'paul');
