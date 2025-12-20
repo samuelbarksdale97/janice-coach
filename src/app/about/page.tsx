@@ -317,7 +317,7 @@ export default function AboutPage() {
                                     {clientOutcomes.map((outcome, index) => (
                                         <li key={outcome} className="flex items-start animate-glide-left" style={{ animationDelay: `${500 + index * 100}ms` }}>
                                             <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
-                                            <span className="text-muted-foreground text-left">{outcome}</span>
+                                            <span className="text-muted-foreground text-justify">{outcome}</span>
                                         </li>
                                     ))}
                                 </ul>
