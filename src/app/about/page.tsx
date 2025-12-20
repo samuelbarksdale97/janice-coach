@@ -293,7 +293,7 @@ export default function AboutPage() {
                         <div className="flex justify-center">
                             <ul className="space-y-6">
                                 {values.map((value, index) => (
-                                    <li key={value.title} className="flex items-start gap-4 animate-glide-left" style={{ animationDelay: `${450 + index * 100}ms` }}>
+                                    <li key={value.title} className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4 animate-glide-left" style={{ animationDelay: `${450 + index * 100}ms` }}>
                                         <div className="flex-shrink-0 pt-1">
                                             {value.icon}
                                         </div>
