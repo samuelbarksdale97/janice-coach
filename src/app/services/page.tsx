@@ -150,8 +150,8 @@ export default function ServicesPage() {
 
                             <TabsContent value="leadership">
                                 <div className="grid md:grid-cols-2 gap-8">
-                                    {leadershipPackages.map((pkg, index) => (
-                                        <Card key={pkg.id} className="flex flex-col animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
+                                    {leadershipPackages.map((pkg) => (
+                                        <Card key={pkg.id} className="flex flex-col">
                                             <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
@@ -187,8 +187,8 @@ export default function ServicesPage() {
 
                              <TabsContent value="career">
                                 <div className="grid md:grid-cols-2 gap-8">
-                                    {careerPackages.map((pkg, index) => (
-                                        <Card key={pkg.id} className="flex flex-col animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
+                                    {careerPackages.map((pkg) => (
+                                        <Card key={pkg.id} className="flex flex-col">
                                             <CardHeader className="text-center">
                                                 <CardTitle className="text-primary font-headline text-2xl">{pkg.title}</CardTitle>
                                                 <CardDescription className="font-semibold text-secondary">{pkg.subtitle}</CardDescription>
