@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   description: 'Guiding you through life\'s transitions with professional coaching and support.',
   icons: {
     icon: [{ url: faviconUrl, sizes: 'any' }],
+    shortcut: [{ url: faviconUrl }],
     apple: [{ url: faviconUrl }],
   },
 };
