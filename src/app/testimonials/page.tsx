@@ -18,8 +18,8 @@ She took me under her wing at a pivotal point in my development. While I was com
 Throughout the years, she has been my go-to advisor - someone I trust to help me navigate complex decisions, strengthen my leadership skills, and grow with confidence. Her guidance is grounded in authenticity, empathy, and a deep understanding of organizational dynamics.
 
 I credit much of my growth as a leader to Janice’s coaching, encouragement, and unwavering commitment to helping others reach their full potential. Any professional who has the opportunity to work with her as a coach will gain not only a thought partner, but a genuine champion for their success.`,
-        name: "~ Nega Teshome, MSF, CPA",
-        title: "",
+        name: "~ Nega Teshome",
+        title: "MSF, CPA",
         long: true,
     },
     {
@@ -42,8 +42,8 @@ What sets Janice apart is her ability to understand challenges on both a profess
 Janice’s influence reaches beyond my career. Through her coaching, I’ve learned how to manage stress more intentionally, establish healthier boundaries, and cultivate habits that support a more balanced, sustainable life. These shifts have had a lasting impact and continue to shape how I approach each day.
 
 What I appreciate most is the combination of insight, honesty, and genuine care she brings to every conversation. She challenges me when I need it, supports me when it matters, and consistently helps me grow in ways that are both meaningful and practical. I strongly recommend her to anyone seeking a coach who can create real, measurable progress. Her ability to support both personal and professional transformation is exceptional, and the impact of her coaching stays with you long after each session ends.`,
-        name: "~ Shabbir Kundi, Supervisory Management Analyst",
-        title: "",
+        name: "~ Shabbir Kundi",
+        title: "Supervisory Management Analyst",
         long: true,
     }
 ];
