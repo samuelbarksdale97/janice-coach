@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { EB_Garamond, PT_Sans } from 'next/font/google';
 import { cn } from '@/lib/utils';
@@ -17,7 +18,7 @@ const ebGaramond = EB_Garamond({
   variable: '--font-playfair-display',
 });
 
-const faviconUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_GLD.png?alt=media&token=edf6b10c-4dca-41b8-8e62-9ed961262133';
+const faviconUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_BLU.png?alt=media&token=8d820be4-9e68-4e73-b80f-72a50fb16f00';
 
 export const metadata: Metadata = {
   title: {
