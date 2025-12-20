@@ -22,8 +22,8 @@ const faviconUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-715800454
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Taylor Leadership Coaching',
-    default: 'Taylor Leadership Coaching',
+    template: '%s | Taylor Your Leadership Coaching',
+    default: 'Taylor Your Leadership Coaching',
   },
   description: 'Guiding you through life\'s transitions with professional coaching and support.',
   icons: {
