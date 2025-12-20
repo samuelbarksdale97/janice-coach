@@ -159,14 +159,20 @@ export default function AboutPage() {
                     {teamMembers.map((member, index) => (
                         <section key={member.name} className="w-full animate-glide-up py-4" style={{animationDelay: `${200 * (index + 1)}ms`}}>
                             <div className="max-w-4xl mx-auto">
-                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2 text-center md:text-left">
+                                <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2",
+                                    member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
+                                )}>
                                     {member.name}
                                 </h2>
-                                <h3 className="text-xl font-semibold text-primary mb-6 text-center md:text-left">{member.title}</h3>
+                                <h3 className={cn("text-xl font-semibold text-primary mb-6", 
+                                    member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
+                                )}>{member.title}</h3>
                                 
                                 <div className="flow-root">
                                     {member.image && (
-                                        <div className="float-none md:float-left mb-4 md:mb-0 md:mr-8 flex justify-center">
+                                        <div className={cn("float-none mb-4 md:mb-0 flex justify-center", 
+                                            member.name === 'Paul Brown-Taylor' ? 'md:float-right md:ml-8' : 'md:float-left md:mr-8'
+                                        )}>
                                             <div className={cn(
                                                 "relative w-[250px] sm:w-[300px] aspect-[4/5]"
                                             )}>
