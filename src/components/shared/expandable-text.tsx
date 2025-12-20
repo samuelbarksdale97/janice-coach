@@ -14,14 +14,28 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
 
   const paragraphsRaw = text.split(/\n\s*\n/);
 
-  const fullTextContent = paragraphsRaw.map((p, i) => (
-    <p key={i} className={i < paragraphsRaw.length - 1 ? "mb-4" : ""}>
-        {p.trim()}
-    </p>
-  ));
-  
+  const fullTextContent = (
+    <>
+      {paragraphsRaw.map((p, i) => (
+        <p key={i} className={i < paragraphsRaw.length - 1 ? 'mb-4' : ''}>
+          {i === 0 ? `"${p}` : p}
+          {i === paragraphsRaw.length - 1 && '"'}
+        </p>
+      ))}
+    </>
+  );
+
   if (text.length <= truncateAt) {
-    return <blockquote className="italic text-muted-foreground text-center">"{fullTextContent}"</blockquote>;
+    return (
+        <blockquote className="italic text-muted-foreground text-center">
+            {paragraphsRaw.map((p, i) => (
+                <p key={i} className={i < paragraphsRaw.length - 1 ? 'mb-4' : ''}>
+                    {i === 0 ? `"${p}` : p}
+                    {i === paragraphsRaw.length - 1 && '"'}
+                </p>
+            ))}
+        </blockquote>
+    );
   }
   
   const truncatedText = `"${text.substring(0, text.lastIndexOf(' ', truncateAt))}..."`;
@@ -30,7 +44,7 @@ export function ExpandableText({ text, truncateAt = 350 }: ExpandableTextProps) 
   return (
     <div>
       <blockquote className="italic text-muted-foreground text-center">
-        {isExpanded ? <span>"{fullTextContent}"</span> : truncatedText}
+        {isExpanded ? fullTextContent : truncatedText}
       </blockquote>
       <Button
         variant="link"
