@@ -169,16 +169,16 @@ export function HomePageContent() {
                     </p>
                 </div>
                 <div className="max-w-4xl mx-auto">
-                    <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-black group cursor-pointer">
+                    <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-black group">
                         <Image
                             src="https://picsum.photos/seed/video/1280/720"
                             alt="Video placeholder"
                             fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="object-cover"
                             data-ai-hint="coaching video"
                         />
                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                            <PlayCircle className="h-20 w-20 text-white/80 transform transition-transform duration-300 group-hover:scale-110" />
+                            <PlayCircle className="h-20 w-20 text-white/80" />
                         </div>
                     </div>
                 </div>
@@ -190,3 +190,5 @@ export function HomePageContent() {
     </>
   );
 }
+
+    
