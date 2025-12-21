@@ -21,7 +21,7 @@ export default function ContactPage() {
         <>
             <Header />
             <main className="flex-1">
-                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-20 bg-muted animate-glide-up">
+                <section className="w-full pt-28 md:pt-36 pb-12 md:pb-20 bg-muted">
                     <div className="container mx-auto px-4">
                        <div className="text-center mb-12 flex flex-col items-center">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Get In Touch</h1>
