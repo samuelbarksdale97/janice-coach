@@ -56,13 +56,13 @@ export function HomePageContent() {
                         />
                     )}
                     <div className="absolute inset-0 bg-black/60" />
-                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center animate-glide-up">
+                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
                         
-                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
+                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8 animate-glide-up">
                             “What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?”
                         </h1>
                         
-                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-glide-up" style={{ animationDelay: '200ms' }}>
                             <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
                                 <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                             </Button>
@@ -113,11 +113,11 @@ export function HomePageContent() {
               </div>
           </section>
 
-          <section id="philosophy" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:200ms]">
+          <section id="philosophy" className="py-8 md:py-12 bg-background">
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
-                      <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">My Coaching Philosophy</h2>
-                      <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
+                      <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary animate-glide-up">My Coaching Philosophy</h2>
+                      <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground animate-glide-up [animation-delay:100ms]">
                           I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
                       </p>
                   </div>
@@ -137,8 +137,8 @@ export function HomePageContent() {
               </div>
           </section>
 
-          <section id="logo-section" className="py-4 bg-background animate-glide-up [animation-delay:250ms]">
-              <div className="container mx-auto px-4 flex justify-center">
+          <section id="logo-section" className="py-4 bg-background">
+              <div className="container mx-auto px-4 flex justify-center animate-glide-up [animation-delay:250ms]">
                   <Image
                       src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1"
                       alt="Taylor Your Leadership Coaching Logo"
