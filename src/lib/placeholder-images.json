@@ -39,7 +39,7 @@
     {
       "id": "blog2",
       "description": "A person meditating at sunrise.",
-      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sunrise meditation"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "contact-avatar",
       "description": "A friendly headshot of Janice for the contact page.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%203.jpeg?alt=media&token=a9f1b744-0e1d-41fa-b48f-8cf810c0e539",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%202.jpeg?alt=media&token=93274d77-f97d-4a2e-92e0-0da2715a6ccd",
       "imageHint": "professional woman"
     },
     {
