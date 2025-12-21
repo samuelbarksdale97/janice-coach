@@ -151,7 +151,7 @@ export default function AboutPage() {
             <main className="flex-1">
                 <section className="w-full pt-28 md:pt-40 pb-12 md:pb-16 lg:pb-20 bg-background">
                     <div className="container px-4 md:px-6 text-center">
-                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline">
+                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline animate-glide-up">
                             Meet Our Team
                         </h1>
                     </div>
@@ -162,16 +162,16 @@ export default function AboutPage() {
 
                 <div className="container px-4 md:px-6">
                     {teamMembers.map((member, index) => (
-                        <section key={member.name} className="w-full animate-glide-up py-4" style={{animationDelay: `${200 * (index + 1)}ms`}}>
+                        <section key={member.name} className="w-full py-4">
                             <div className="max-w-4xl mx-auto">
-                                <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2",
+                                <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2 animate-glide-up",
                                     member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
-                                )}>
+                                )} style={{ animationDelay: '100ms' }}>
                                     {member.name}
                                 </h2>
-                                <h3 className={cn("text-xl font-semibold text-primary mb-6", 
+                                <h3 className={cn("text-xl font-semibold text-primary mb-6 animate-glide-up", 
                                     member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
-                                )}>{member.title}</h3>
+                                )} style={{ animationDelay: '200ms' }}>{member.title}</h3>
                                 
                                 <div className="flow-root">
                                     {member.image && (
@@ -199,7 +199,7 @@ export default function AboutPage() {
                                         </div>
                                     )}
                                     
-                                    <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify">
+                                    <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify animate-glide-up" style={{ animationDelay: '300ms' }}>
                                         {member.bio.map((paragraph, pIndex) => (
                                              <p key={pIndex}>
                                                 {paragraph}
@@ -360,14 +360,3 @@ export default function AboutPage() {
         </>
     );
 }
-
-    
-    
-
-    
-
-    
-
-    
-
-    
