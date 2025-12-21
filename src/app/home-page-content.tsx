@@ -96,14 +96,14 @@ export function HomePageContent() {
                           )}
                       </div>
                       <div className="text-center md:text-left">
-                          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Guide for Your <span className="text-secondary italic">Journey</span></h2>
-                          <p className="mt-4 text-lg text-muted-foreground">
+                          <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary animate-glide-up">A Guide for Your <span className="text-secondary italic">Journey</span></h2>
+                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up" style={{ animationDelay: '100ms' }}>
                               I'm Janice Brown-Taylor, a certified leadership coach dedicated to helping you find clarity, purpose, and reach your full potential as an authentic, resilient leader.
                           </p>
-                          <p className="mt-4 text-lg text-muted-foreground">
+                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up" style={{ animationDelay: '200ms' }}>
                               My mission is to provide a safe, supportive environment where you can break free from your limiting beliefs, overcome obstacles and design a life that truly resonates with you.
                           </p>
-                          <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0">
+                          <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0 animate-glide-up" style={{ animationDelay: '300ms' }}>
                               <Link href="/about">
                                   Learn More About Me <ArrowRight className="ml-2 h-5 w-5" />
                               </Link>
@@ -190,5 +190,7 @@ export function HomePageContent() {
     </>
   );
 }
+
+    
 
     
