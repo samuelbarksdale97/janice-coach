@@ -37,7 +37,7 @@ export default function ContactPage() {
                                     />
                                 </div>
                             )}
-                            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto animate-glide-up">
                                 I'm excited to hear from you. Whether you have a question, want to book a session, or just want to say hello, please feel free to reach out.
                             </p>
                         </div>
