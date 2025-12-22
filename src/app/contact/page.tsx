@@ -34,6 +34,7 @@ export default function ContactPage() {
                                         className="object-cover"
                                         sizes="192px"
                                         data-ai-hint={contactAvatar.imageHint}
+                                        priority
                                     />
                                 </div>
                             )}
@@ -114,5 +115,3 @@ export default function ContactPage() {
         </>
     );
 }
-
-    
