@@ -140,7 +140,8 @@ export function HomePageContent() {
                       alt="Taylor Your Leadership Coaching Logo"
                       width={500}
                       height={200}
-                      className="w-auto h-auto max-w-[500px]"
+                      className="max-w-[500px]"
+                      style={{ height: 'auto', width: 'auto' }}
                   />
               </div>
           </section>
@@ -186,14 +187,3 @@ export function HomePageContent() {
     </>
   );
 }
-
-    
-
-    
-
-
-
-
-    
-
-    
