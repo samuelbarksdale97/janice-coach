@@ -7,6 +7,12 @@
       "imageHint": "library books"
     },
     {
+      "id": "hero-mobile",
+      "description": "A vertical shot of a bookshelf in a library.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_m43wsim43wsim43w.jpg?alt=media&token=c193c784-4d23-4416-8f35-6447814b7e1c",
+      "imageHint": "bookshelf library"
+    },
+    {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%201.jpg?alt=media&token=9d5d1540-1224-4d62-8fb1-b247c706f49d",
@@ -33,7 +39,7 @@
     {
       "id": "blog1",
       "description": "A person writing in a journal with a cup of coffee.",
-      "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "journal writing"
     },
     {
