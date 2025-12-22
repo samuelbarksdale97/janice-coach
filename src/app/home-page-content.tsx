@@ -41,42 +41,38 @@ export function HomePageContent() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-        <section id="home-container" className="w-full bg-black flex justify-center">
-            <div className="w-full max-w-7xl">
-                <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-black">
-                    <Header />
-                    {heroImage && (
-                        <Image
-                            src={heroImage.imageUrl}
-                            alt={heroImage.description}
-                            fill
-                            className="object-cover"
-                            priority
-                            data-ai-hint={heroImage.imageHint}
-                        />
-                    )}
-                    <div className="absolute inset-0 bg-black/60" />
-                    <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
-                        
-                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
-                            “What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?”
-                        </h1>
-                        
-                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg.white/10 hover:text-white tracking-wider">
-                                <Link href="/services">
-                                    Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                                </Link>
+        <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-black">
+          <Header />
+          {heroImage && (
+              <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  fill
+                  className="object-cover"
+                  priority
+                  data-ai-hint={heroImage.imageHint}
+              />
+          )}
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
+              
+              <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
+                  “What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?”
+              </h1>
+              
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
+                      <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg.white/10 hover:text-white tracking-wider">
+                      <Link href="/services">
+                          Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                      </Link>
 
-                            </Button>
-                        </div>
-                    </div>
-                </section>
+                  </Button>
               </div>
-          </section>
+          </div>
+        </section>
 
           <section id="about-intro" className="pt-16 md:pt-20 pb-8 md:pb-12 bg-background">
               <div className="container mx-auto px-4 md:px-6">
@@ -194,4 +190,5 @@ export function HomePageContent() {
     
 
     
+
 
