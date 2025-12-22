@@ -41,7 +41,7 @@ export function HomePageContent() {
       
       <div className="flex flex-col min-h-dvh">
         <main className="flex-1">
-        <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-black">
+        <section id="home" className="relative w-full h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-blue-100">
           <Header />
           {heroImage && (
               <Image
@@ -193,5 +193,7 @@ export function HomePageContent() {
 
 
 
+
+    
 
     
