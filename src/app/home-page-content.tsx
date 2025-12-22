@@ -58,11 +58,11 @@ export function HomePageContent() {
                     <div className="absolute inset-0 bg-black/60" />
                     <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
                         
-                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8 animate-glide-up">
+                        <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
                             “What possibilities would open up if you led as <span className="italic text-secondary">yourself</span> - and not as the version others expect?”
                         </h1>
                         
-                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-glide-up" style={{ animationDelay: '200ms' }}>
+                        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
                                 <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                             </Button>
@@ -194,3 +194,4 @@ export function HomePageContent() {
     
 
     
+
