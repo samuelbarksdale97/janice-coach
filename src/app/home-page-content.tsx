@@ -11,7 +11,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'hero');
-const heroImageMobile = PlaceHolderImages.find(img => img.id === 'hero-mobile');
 const aboutImageHome = PlaceHolderImages.find(img => img.id === 'about-home');
 
 const philosophyPoints = [
@@ -50,22 +49,11 @@ export function HomePageContent() {
                   src={heroImage.imageUrl}
                   alt={heroImage.description}
                   fill
-                  className="object-cover hidden md:block"
+                  className="object-cover"
                   priority
                   sizes="100vw"
                   data-ai-hint={heroImage.imageHint}
               />
-          )}
-          {heroImageMobile && (
-            <Image
-                src={heroImageMobile.imageUrl}
-                alt={heroImageMobile.description}
-                fill
-                className="object-cover block md:hidden"
-                priority
-                sizes="100vw"
-                data-ai-hint={heroImageMobile.imageHint}
-            />
           )}
           <div className="absolute inset-0 bg-black/40 md:bg-black/60" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">

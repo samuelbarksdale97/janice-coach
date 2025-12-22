@@ -7,12 +7,6 @@
       "imageHint": "library books"
     },
     {
-      "id": "hero-mobile",
-      "description": "A vertical shot of a bookshelf in a library.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_m43wsim43wsim43w.jpg?alt=media&token=c193c784-4d23-4416-8f35-6447814b7e1c",
-      "imageHint": "bookshelf library"
-    },
-    {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%201.jpg?alt=media&token=9d5d1540-1224-4d62-8fb1-b247c706f49d",
