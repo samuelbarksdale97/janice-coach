@@ -151,7 +151,7 @@ export default function AboutPage() {
             <main className="flex-1">
                 <section className="w-full pt-28 md:pt-40 pb-12 md:pb-16 lg:pb-20 bg-background">
                     <div className="container px-4 md:px-6 text-center">
-                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline md:animate-glide-up">
+                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary font-headline animate-glide-up">
                             Meet Our Team
                         </h1>
                     </div>
