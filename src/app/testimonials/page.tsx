@@ -61,13 +61,13 @@ export default function TestimonialsPage() {
     <>
       <Header />
       <main className="flex-1">
-        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background md:animate-glide-up">
+        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
+              <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary animate-glide-up md:animate-none">
                 What My Clients Say
               </h1>
-              <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
+              <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground animate-glide-up md:animate-none" style={{ animationDelay: '100ms' }}>
                 Real stories of transformation and growth from leaders and professionals I've had the pleasure to work with.
               </p>
             </div>
