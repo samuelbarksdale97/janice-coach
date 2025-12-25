@@ -61,7 +61,7 @@ export default function TestimonialsPage() {
     <>
       <Header />
       <main className="flex-1">
-        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background animate-glide-up">
+        <section className="pt-28 md:pt-36 pb-12 md:pb-20 bg-background md:animate-glide-up">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">
@@ -73,7 +73,7 @@ export default function TestimonialsPage() {
             </div>
             <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
+                <Card key={testimonial.name} className="flex flex-col text-center bg-muted border-none shadow-lg md:animate-glide-up" style={{ animationDelay: `${150 * (index + 1)}ms` }}>
                   <CardContent className="p-8 flex-grow">
                     <Quote className="h-8 w-8 text-secondary/50 mx-auto mb-4" />
                     {testimonial.long ? (
@@ -92,7 +92,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-muted animate-glide-up [animation-delay:200ms]">
+        <section className="py-12 md:py-20 bg-muted md:animate-glide-up [animation-delay:200ms]">
             <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto text-center">
                     <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
