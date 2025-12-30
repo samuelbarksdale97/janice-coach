@@ -26,7 +26,7 @@ export default function ContactPage() {
                        <div className="text-center mb-12 flex flex-col items-center">
                             <h1 className="text-4xl md:text-5xl font-headline font-bold text-primary">Get In Touch</h1>
                             {contactAvatar && (
-                                <div className="relative w-48 h-56 rounded-lg overflow-hidden my-6 shadow-lg bg-white">
+                                <div className="relative w-48 h-56 rounded-lg overflow-hidden my-6 shadow-lg bg-white border border-primary">
                                     <Image
                                         src={contactAvatar.imageUrl}
                                         alt={contactAvatar.description}
