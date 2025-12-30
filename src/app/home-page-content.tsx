@@ -78,7 +78,7 @@ export function HomePageContent() {
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                       <div className="flex justify-center">
                           {aboutImageHome && (
-                              <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
+                              <div className="relative w-full max-w-[320px] aspect-[4/5] rounded-lg overflow-hidden shadow-lg border border-secondary">
                                 <Image
                                     src={aboutImageHome.imageUrl}
                                     alt={aboutImageHome.description}
