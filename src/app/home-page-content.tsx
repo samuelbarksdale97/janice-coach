@@ -93,13 +93,13 @@ export function HomePageContent() {
                       </div>
                       <div className="text-center md:text-left">
                           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary animate-glide-up">A Guide for Your <span className="text-secondary italic">Journey</span></h2>
-                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up" style={{ animationDelay: '100ms' }}>
+                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up">
                               I'm Janice Brown-Taylor, a certified leadership coach dedicated to helping you find clarity, purpose, and reach your full potential as an authentic, resilient leader.
                           </p>
-                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up" style={{ animationDelay: '200ms' }}>
+                          <p className="mt-4 text-lg text-muted-foreground animate-glide-up">
                               My mission is to provide a safe, supportive environment where you can break free from your limiting beliefs, overcome obstacles and design a life that truly resonates with you.
                           </p>
-                          <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0 animate-glide-up" style={{ animationDelay: '300ms' }}>
+                          <Button asChild variant="link" className="mt-4 text-primary font-bold text-lg p-0 animate-glide-up">
                               <Link href="/about">
                                   Learn More About Me <ArrowRight className="ml-2 h-5 w-5" />
                               </Link>
@@ -113,13 +113,13 @@ export function HomePageContent() {
               <div className="container mx-auto px-4">
                   <div className="text-center mb-12">
                       <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary animate-glide-up">My Coaching Philosophy</h2>
-                      <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground animate-glide-up [animation-delay:100ms]">
+                      <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground animate-glide-up">
                           I believe coaching is a collaborative partnership built on trust and authenticity. My approach is not to give you the answers, but to empower you to find your own. Together, we'll uncover your strengths, clarify your values, and design an actionable roadmap to achieve your goals.
                       </p>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                       {philosophyPoints.map((point, index) => (
-                          <Card key={point.title} className="bg-muted border-none shadow-lg text-center animate-glide-up" style={{ animationDelay: `${250 + index * 50}ms` }}>
+                          <Card key={point.title} className="bg-muted border-none shadow-lg text-center animate-glide-up">
                               <CardHeader className="items-center">
                                   {point.icon}
                                   <CardTitle className="mt-4 font-headline text-2xl text-primary">{point.title}</CardTitle>
@@ -134,7 +134,7 @@ export function HomePageContent() {
           </section>
 
           <section id="logo-section" className="py-4 bg-background">
-              <div className="container mx-auto px-4 flex justify-center animate-glide-up [animation-delay:250ms]">
+              <div className="container mx-auto px-4 flex justify-center animate-glide-up">
                   <Image
                       src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo%20(1).PNG?alt=media&token=1a0c4dff-d545-4d90-bcf4-46de8b4d0ef1"
                       alt="Taylor Your Leadership Coaching Logo"
@@ -146,7 +146,7 @@ export function HomePageContent() {
               </div>
           </section>
 
-          <section id="quote" className="py-8 md:py-12 bg-muted animate-glide-up [animation-delay:300ms]">
+          <section id="quote" className="py-8 md:py-12 bg-muted animate-glide-up">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
@@ -157,7 +157,7 @@ export function HomePageContent() {
             </div>
           </section>
           
-          <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up [animation-delay:400ms]">
+          <section id="video-feature" className="py-8 md:py-12 bg-background animate-glide-up">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">A Glimpse Into Coaching</h2>

@@ -166,12 +166,12 @@ export default function AboutPage() {
                             <div className="max-w-4xl mx-auto">
                                 <h2 className={cn("text-3xl font-bold tracking-tight sm:text-4xl text-secondary font-headline mb-2 md:animate-glide-up",
                                     member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
-                                )} style={{ animationDelay: '100ms' }}>
+                                )}>
                                     {member.name}
                                 </h2>
                                 <h3 className={cn("text-xl font-semibold text-primary mb-6 md:animate-glide-up", 
                                     member.name === 'Paul Brown-Taylor' ? "text-center md:text-right" : "text-center md:text-left"
-                                )} style={{ animationDelay: '200ms' }}>{member.title}</h3>
+                                )}>{member.title}</h3>
                                 
                                 <div className="flow-root">
                                     {member.image && (
@@ -199,7 +199,7 @@ export default function AboutPage() {
                                         </div>
                                     )}
                                     
-                                    <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify md:animate-glide-up" style={{ animationDelay: '300ms' }}>
+                                    <div className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed space-y-4 text-justify md:animate-glide-up">
                                         {member.bio.map((paragraph, pIndex) => (
                                              <p key={pIndex}>
                                                 {paragraph}
@@ -212,7 +212,7 @@ export default function AboutPage() {
                             
                             <div className="clear-both">
                                 {member.details.map((detail, dIndex) => (
-                                    <div key={dIndex} className="mt-12 md:mt-16 md:animate-glide-up" style={{animationDelay: `${200 * (dIndex + teamMembers.length + 1)}ms`}}>
+                                    <div key={dIndex} className="mt-12 md:mt-16 md:animate-glide-up">
                                         {detail.title === "Certifications and Credentials" ? (
                                              <div className="text-center max-w-3xl mx-auto">
                                                 <h3 className="text-3xl font-headline text-primary font-bold">{detail.title}</h3>
@@ -229,7 +229,7 @@ export default function AboutPage() {
                                             <div className="max-w-4xl mx-auto">
                                                 <h3 className="text-3xl font-headline text-primary font-bold text-center mb-8">{detail.title}</h3>
                                                 {detail.sections?.map((section, sIndex) => (
-                                                    <div key={section.subheading} className="mb-8 md:animate-glide-up" style={{ animationDelay: `${400 + (sIndex * 100)}ms` }}>
+                                                    <div key={section.subheading} className="mb-8 md:animate-glide-up">
                                                         <h4 className="text-2xl font-bold text-secondary mb-4 text-center">{section.subheading}</h4>
                                                         {section.paragraphs.map((p, i) => (
                                                             <p key={i} className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mb-4 text-justify">{p}</p>
@@ -264,10 +264,10 @@ export default function AboutPage() {
                     <Separator className="mb-8" />
                 </div>
 
-                <section className="w-full pt-8 pb-12 md:pb-16 lg:pb-20 bg-background md:animate-glide-up [animation-delay:350ms]">
+                <section className="w-full pt-8 pb-12 md:pb-16 lg:pb-20 bg-background md:animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
-                            <Card className="text-center shadow-lg border-primary/20 md:animate-glide-up" style={{ animationDelay: '400ms' }}>
+                            <Card className="text-center shadow-lg border-primary/20 md:animate-glide-up">
                                 <CardHeader className="items-center">
                                     <Rocket className="h-10 w-10 text-secondary mb-2" />
                                     <CardTitle className="text-2xl font-headline text-primary">Our Mission</CardTitle>
@@ -276,7 +276,7 @@ export default function AboutPage() {
                                     <p className="text-muted-foreground">"We partner with clients to transform life's obstacles into opportunities for growth, self-discovery, and lasting resilience."</p>
                                 </CardContent>
                             </Card>
-                            <Card className="text-center shadow-lg border-primary/20 md:animate-glide-up" style={{ animationDelay: '450ms' }}>
+                            <Card className="text-center shadow-lg border-primary/20 md:animate-glide-up">
                                 <CardHeader className="items-center">
                                     <Eye className="h-10 w-10 text-secondary mb-2" />
                                     <CardTitle className="text-2xl font-headline text-primary">Our Vision</CardTitle>
@@ -290,7 +290,7 @@ export default function AboutPage() {
                 </section>
 
 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted md:animate-glide-up [animation-delay:400ms]">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-muted md:animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-headline font-bold text-primary">Our <span className="italic text-secondary">Values</span></h2>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                         <div className="flex justify-center">
                             <ul className="space-y-6">
                                 {values.map((value, index) => (
-                                    <li key={value.title} className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4 md:animate-glide-left" style={{ animationDelay: `${450 + index * 100}ms` }}>
+                                    <li key={value.title} className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-4 md:animate-glide-left">
                                         <div className="flex-shrink-0 pt-1">
                                             {value.icon}
                                         </div>
@@ -313,14 +313,14 @@ export default function AboutPage() {
                     </div>
                 </section>
                 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-background md:animate-glide-up [animation-delay:450ms]">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background md:animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-3xl mx-auto">
                              <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Client Outcomes</h2>
                              <div className="flex justify-center">
                                 <ul className="space-y-4">
                                     {clientOutcomes.map((outcome, index) => (
-                                        <li key={outcome} className="flex items-start md:animate-glide-left" style={{ animationDelay: `${500 + index * 100}ms` }}>
+                                        <li key={outcome} className="flex items-start md:animate-glide-left">
                                             <Star className="h-5 w-5 text-secondary mr-3 mt-1 flex-shrink-0" />
                                             <span className="text-muted-foreground text-justify">{outcome}</span>
                                         </li>
@@ -335,7 +335,7 @@ export default function AboutPage() {
                             <h2 className="text-3xl font-headline font-bold text-primary mb-6 text-center">Why Work With Us?</h2>
                             <ul className="space-y-6">
                                 {whyWorkWithUs.map((reason, index) => (
-                                    <li key={reason.title} className="text-center md:animate-glide-up" style={{ animationDelay: `${600 + index * 100}ms` }}>
+                                    <li key={reason.title} className="text-center md:animate-glide-up">
                                         <h4 className="font-bold text-secondary text-lg">{reason.title}</h4>
                                         <p className="text-muted-foreground">{reason.description}</p>
                                     </li>
@@ -345,7 +345,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className="py-12 md:py-20 bg-muted md:animate-glide-up [animation-delay:500ms]">
+                <section className="py-12 md:py-20 bg-muted md:animate-glide-up">
                     <div className="container mx-auto px-4">
                       <div className="max-w-3xl mx-auto text-center">
                         <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">

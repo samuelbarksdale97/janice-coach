@@ -43,7 +43,7 @@ export default function ContactPage() {
                             </p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
-                            <Card className="shadow-lg animate-glide-up" style={{ animationDelay: '150ms' }}>
+                            <Card className="shadow-lg animate-glide-up">
                                 <CardHeader className="text-center">
                                     <CardTitle className="text-3xl font-headline text-primary">Send a Message</CardTitle>
                                     <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                                 </CardContent>
                             </Card>
 
-                            <div className="space-y-8 pt-4 animate-glide-up" style={{ animationDelay: '300ms' }}>
+                            <div className="space-y-8 pt-4 animate-glide-up">
                                 <div className="flex items-start">
                                     <div className="flex-shrink-0 bg-primary text-primary-foreground p-3 rounded-full">
                                         <Mail className="h-6 w-6" />
@@ -92,7 +92,7 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </section>
-                <section id="cta-contact" className="w-full py-16 flex items-center justify-center text-center bg-primary text-primary-foreground animate-glide-up [animation-delay:200ms]">
+                <section id="cta-contact" className="w-full py-16 flex items-center justify-center text-center bg-primary text-primary-foreground animate-glide-up">
                     <div className="z-10 p-4 md:px-6">
                         <h2 className="text-3xl md:text-4xl font-headline font-bold tracking-tight italic">
                             Ready to Start Now?

@@ -230,7 +230,7 @@ export default function ServicesPage() {
                     </div>
                 </section>
                 
-                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up [animation-delay:300ms]">
+                <section className="w-full py-12 md:py-16 lg:py-20 bg-background animate-glide-up">
                     <div className="container px-4 md:px-6">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="text-center md:text-left">
@@ -250,7 +250,7 @@ export default function ServicesPage() {
                             </div>
                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {addOnServices.map((service, index) => (
-                                    <Card key={service.title} className="text-center animate-glide-up" style={{ animationDelay: `${350 + index * 50}ms` }}>
+                                    <Card key={service.title} className="text-center animate-glide-up">
                                         <CardHeader>
                                             <CardTitle className="text-xl font-headline text-primary">{service.title}</CardTitle>
                                         </CardHeader>
@@ -264,13 +264,13 @@ export default function ServicesPage() {
                     </div>
                 </section>
 
-                <section className="py-12 md:py-20 bg-muted animate-glide-up [animation-delay:400ms]">
+                <section className="py-12 md:py-20 bg-muted animate-glide-up">
                     <div className="container mx-auto px-4">
                         <div className="text-center mb-10">
                             <h2 className="text-3xl sm:text-4xl font-headline font-bold text-primary">Getting Started</h2>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                            <Card className="text-center animate-glide-up" style={{ animationDelay: '450ms' }}>
+                            <Card className="text-center animate-glide-up">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Discovery Call</CardTitle>
                                 </CardHeader>
@@ -278,7 +278,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All potential clients begin with a complimentary 30-minute discovery call to explore fit, discuss goals, and determine the best coaching package for your needs. All coaching packages can be tailored.</p>
                                 </CardContent>
                             </Card>
-                             <Card className="text-center animate-glide-up" style={{ animationDelay: '500ms' }}>
+                             <Card className="text-center animate-glide-up">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Flexible Formats</CardTitle>
                                 </CardHeader>
@@ -286,7 +286,7 @@ export default function ServicesPage() {
                                     <p className="text-muted-foreground">All coaching packages available in virtual or hybrid format to accommodate your schedule and preferences.</p>
                                 </CardContent>
                             </Card>
-                             <Card className="text-center md:col-span-2 lg:col-span-1 animate-glide-up" style={{ animationDelay: '550ms' }}>
+                             <Card className="text-center md:col-span-2 lg:col-span-1 animate-glide-up">
                                 <CardHeader>
                                     <CardTitle className="font-headline text-primary">Satisfaction Commitment</CardTitle>
                                 </CardHeader>
@@ -306,7 +306,7 @@ export default function ServicesPage() {
                     </div>
                 </section>
 
-                 <section className="py-12 md:py-20 bg-background animate-glide-up [animation-delay:500ms]">
+                 <section className="py-12 md:py-20 bg-background animate-glide-up">
                     <div className="container mx-auto px-4">
                         <div className="max-w-3xl mx-auto text-center">
                             <blockquote className="text-2xl md:text-3xl font-headline font-medium text-primary">
