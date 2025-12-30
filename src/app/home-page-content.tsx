@@ -56,7 +56,7 @@ export function HomePageContent() {
           <div className="absolute inset-0 bg-black/40 md:bg-black/60" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
               
-              <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
+              <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8 leading-snug px-4">
                   “What <span className="italic text-secondary">possibilities</span> would open up if you led as the person God created you to be - rather than the <span className="italic text-secondary">expectations</span> others have placed on you?”
               </h1>
               
