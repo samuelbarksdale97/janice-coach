@@ -179,14 +179,14 @@ export default function AboutPage() {
                                             member.name === 'Paul Brown-Taylor' ? 'md:float-right md:ml-8' : 'md:float-left md:mr-8'
                                         )}>
                                             <div className={cn(
-                                                "relative w-[250px] sm:w-[300px] aspect-[4/5]"
+                                                "relative w-[250px] sm:w-[300px] aspect-[4/5] rounded-lg overflow-hidden border border-secondary"
                                             )}>
                                                 <Image
                                                     src={member.image.imageUrl}
                                                     alt={member.image.description}
                                                     fill
                                                     className={cn(
-                                                        "rounded-lg shadow-2xl object-cover",
+                                                        "shadow-2xl object-cover",
                                                         member.name === 'Paul Brown-Taylor' 
                                                                 ? 'object-[center_20%]' 
                                                                 : member.name === 'Janice Brown-Taylor' ? 'object-top' : 'object-center'
