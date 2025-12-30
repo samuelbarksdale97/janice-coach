@@ -50,14 +50,14 @@ export function HomePageContent() {
               fill
               className="object-cover"
               priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="100vw"
               data-ai-hint={heroImage!.imageHint}
           />
           <div className="absolute inset-0 bg-black/40 md:bg-black/60" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto flex flex-col items-center">
               
               <h1 className="text-3xl md:text-5xl font-headline font-bold tracking-normal text-shadow-lg mt-8">
-                  “What possibilities would open up if you led as the person <span className="italic text-secondary">God</span> created you to be - rather than the expectations others have placed on you?”
+                  “What <span className="italic text-secondary">possibilities</span> would open up if you led as the person God created you to be - rather than the expectations others have placed on you?”
               </h1>
               
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
