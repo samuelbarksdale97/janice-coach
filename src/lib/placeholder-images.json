@@ -2,74 +2,98 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Professional headshot of a smiling woman with blonde hair and glasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjIwMDc5NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional headshot woman"
+      "description": "A grand library with rows of books and high ceilings.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/library-of-congress-yNANhWCZG9c-unsplash.jpg?alt=media&token=eca1ceb6-a100-401b-89ae-38ddc110b725",
+      "imageHint": "library books"
     },
     {
       "id": "about",
       "description": "A warm and professional headshot of a female life coach.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjIwMDczOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%201.jpg?alt=media&token=9d5d1540-1224-4d62-8fb1-b247c706f49d",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "about-home",
+      "description": "A warm and professional headshot of a female life coach.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%204.jpeg?alt=media&token=0e26413e-9893-435f-b205-78f5cbd5b5af",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "paul",
+      "description": "Headshot of Paul, a civil and environmental engineer.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Paul%20Headshot.jpeg?alt=media&token=7802fe8b-57c7-463d-b275-aee8f04bfca8",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "jeyla",
+      "description": "Headshot of Jeyla, a mentor and coach.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Jeyla%20Headshot.jpg?alt=media&token=17b9163e-b086-4381-ae9e-14640c651ace",
       "imageHint": "professional woman"
     },
     {
       "id": "blog1",
       "description": "A person writing in a journal with a cup of coffee.",
-      "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578941838877-141265f3a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqb3VybmFsJTIwd3JpdGluZ3xlbnwwfHx8fDE3NjIwMTAyOTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "journal writing"
     },
     {
       "id": "blog2",
       "description": "A person meditating at sunrise.",
-      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbWVkaXRhdGlvbnxlbnwwfHx8fDE3NjIwMTU5MjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sunrise meditation"
     },
     {
       "id": "blog3",
       "description": "A path winding through a lush green forest.",
-      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1625749670846-8d5629e85a01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aCUyMGZvcmVzdHxlbnwwfHx8fDE3NjE5OTc2NjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "path forest"
     },
     {
       "id": "service1",
       "description": "A compass pointing towards a direction, symbolizing guidance.",
-      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581684226333-5b0f318f412b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYXNzJTIwZGlyZWN0aW9ufGVufDB8fHx8MTc2MTkyMzc1N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "compass direction"
     },
     {
       "id": "service2",
       "description": "A person standing on a mountain peak, symbolizing achievement.",
-      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533130061792-64b345e4a833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb3VudGFpbiUyMHBlYWt8ZW58MHx8fHwxNzYyMDExNjE2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mountain peak"
     },
     {
       "id": "service3",
       "description": "Two people having a supportive conversation.",
-      "imageUrl": "https://images.unsplash.com/photo-1604882733856-b8f8ae4f80fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc2MjAwNjcyNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604882733856-b8f8ae4f80fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXBwb3J0aXZlJTIwY29udmVyc2F0aW9ufGVufDB8fHx8MTc2MjAwNjcyNXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "supportive conversation"
     },
     {
       "id": "contact",
       "description": "An elegant desk setup with a laptop and notebook.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm.png?alt=media&token=62a919a5-c64a-484f-b91f-d23982068cb1",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Gemini_Generated_Image_n1xmuen1xmuen1xm_680x680.png?alt=media&token=35fc71f3-6f66-41b3-8b1f-5b77cfbd5961",
       "imageHint": "desk setup"
+    },
+    {
+      "id": "contact-avatar",
+      "description": "A friendly headshot of Janice for the contact page.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%202.jpeg?alt=media&token=93274d77-f97d-4a2e-92e0-0da2715a6ccd",
+      "imageHint": "professional woman"
     },
     {
       "id": "testimonial1",
       "description": "Headshot of a smiling man with glasses.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2MjAyNzMzOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
       "id": "testimonial2",
       "description": "Headshot of a woman smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzYyMDA3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzYyMDA3Mzk0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional woman"
     },
     {
       "id": "testimonial3",
       "description": "Headshot of a professional man.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzYyMDI3MzM5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     }
   ]

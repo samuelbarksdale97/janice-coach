@@ -8,48 +8,53 @@ import { Dialog, DialogTrigger, DialogContent, DialogClose, DialogDescription, D
 import { cn } from '@/lib/utils';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Button } from '@/components/ui/button';
-import { X } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import Image from 'next/image';
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/testimonials", label: "Testimonials" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
-const desktopNavItems = navItems.filter(item => !["/blog"].includes(item.href));
+const desktopNavItems = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/testimonials", label: "Testimonials" },
+    { href: "/contact", label: "Contact" },
+];
 
-
-const CustomMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <line x1="3" y1="9" x2="21" y2="9"></line>
-      <line x1="3" y1="15" x2="21" y2="15"></line>
-    </svg>
-  );
+const logoUrl = "https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/TYL-FinalLogo_HRZ%20OG.png?alt=media&token=16336bba-a715-4140-8631-4067db3359ad";
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
 
   const isHomePage = pathname === '/';
+  const showLogoPages = ['/about', '/services', '/testimonials', '/contact'];
+  const showLogo = showLogoPages.includes(pathname);
 
   return (
-    <header className={cn("absolute top-0 z-50 w-full", isHomePage ? "" : "bg-white/80 backdrop-blur-sm shadow-sm")}>
+    <header className={cn(
+      "absolute top-0 z-50 w-full", 
+      isHomePage 
+        ? "" 
+        : "bg-white"
+    )}>
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-            
+            {showLogo && (
+              <Image 
+                src={logoUrl}
+                alt="Taylor Leadership Coaching Logo"
+                width={300}
+                height={75}
+                className="w-auto h-24"
+              />
+            )}
         </Link>
         
         {/* Desktop Navigation */}
@@ -79,21 +84,12 @@ export function Header() {
         <div className="md:hidden">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-              <button className={cn("p-2", isHomePage ? "text-white" : "text-primary")}>
-                  <CustomMenuIcon className="h-6 w-6"/>
+              <button className={cn("p-2", isHomePage ? "text-white" : "text-secondary")}>
+                  <Menu className="h-6 w-6"/>
                   <span className="sr-only">Open menu</span>
               </button>
             </DialogTrigger>
-            <DialogContent className="mobile-menu-overlay p-0">
-                <div className="flex h-24 items-center justify-end px-4 border-b">
-                  <DialogClose asChild>
-                    <button className="p-2">
-                      <X className="h-6 w-6" />
-                      <span className="sr-only">Close menu</span>
-                    </button>
-                  </DialogClose>
-                </div>
-                
+            <DialogContent className="mobile-menu-overlay p-0 pt-16">
                 <div className="flex flex-1 flex-col items-center justify-center">
                    <VisuallyHidden>
                     <DialogTitle>Mobile Navigation Menu</DialogTitle>
@@ -128,3 +124,5 @@ export function Header() {
     </header>
   );
 }
+
+    

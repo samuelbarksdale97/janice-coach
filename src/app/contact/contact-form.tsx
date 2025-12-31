@@ -1,136 +1,120 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import { useFormState, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { useToast } from "@/hooks/use-toast";
-import { submitContactForm, type FormState } from "./actions";
-import { Loader2 } from "lucide-react";
+import { useState, useRef, FormEvent } from 'react';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { Loader2 } from 'lucide-react';
+import { z } from 'zod';
 
 const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Please enter a valid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
+  name: z.string().min(2, 'Name must be at least 2 characters.'),
+  email: z.string().email('Please enter a valid email address.'),
+  message: z.string().min(10, 'Message must be at least 10 characters.'),
 });
 
-type FormData = z.infer<typeof contactSchema>;
+type FormErrors = {
+  name?: string[];
+  email?: string[];
+  message?: string[];
+} | null;
 
 export function ContactForm() {
+  const [pending, setPending] = useState(false);
+  const [errors, setErrors] = useState<FormErrors>(null);
   const { toast } = useToast();
-  
-  const form = useForm<FormData>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const { formState, handleSubmit, reset } = form;
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setPending(true);
+    setErrors(null);
 
-  const onSubmit = async (data: FormData) => {
-    const formData = new FormData();
-    formData.append("name", data.name);
-    formData.append("email", data.email);
-    formData.append("message", data.message);
+    const formData = new FormData(e.currentTarget);
+    const validatedFields = contactSchema.safeParse({
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    });
 
-    // Dummy prev state
-    const prevState: FormState = { success: false, message: '', errors: null };
-
-    const result = await submitContactForm(prevState, formData);
-    
-    if (result.success) {
-      toast({
-        title: "Success!",
-        description: result.message,
-      });
-      reset();
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: result.message,
-      });
-      // Set form errors manually if they exist
-      if (result.errors) {
-        if(result.errors.name) form.setError("name", { type: 'server', message: result.errors.name[0] });
-        if(result.errors.email) form.setError("email", { type: 'server', message: result.errors.email[0] });
-        if(result.errors.message) form.setError("message", { type: 'server', message: result.errors.message[0] });
-      }
+    if (!validatedFields.success) {
+      setErrors(validatedFields.error.flatten().fieldErrors);
+      setPending(false);
+      return;
     }
+
+    try {
+      const { name, email, message } = validatedFields.data;
+      console.log('New contact form submission:', { name, email, message });
+
+      toast({
+        title: 'Success!',
+        description: 'Thank you for your message! I will get back to you soon.',
+      });
+      
+      formRef.current?.reset();
+    } catch (error) {
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'An unexpected error occurred. Please try again.',
+      });
+    }
+    
+    setPending(false);
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Full Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Jane Doe" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+      <div className="space-y-2">
+        <Label htmlFor="name">Full Name</Label>
+        <Input id="name" name="name" placeholder="Jane Doe" />
+        {errors?.name && (
+          <p className="text-sm font-medium text-destructive">
+            {errors.name[0]}
+          </p>
+        )}
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="email">Email Address</Label>
+        <Input
+          id="email"
           name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email Address</FormLabel>
-              <FormControl>
-                <Input type="email" placeholder="jane.doe@example.com" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          type="email"
+          placeholder="jane.doe@example.com"
         />
-        <FormField
-          control={form.control}
+         {errors?.email && (
+          <p className="text-sm font-medium text-destructive">
+            {errors.email[0]}
+          </p>
+        )}
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="message">Message</Label>
+        <Textarea
+          id="message"
           name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message</FormLabel>
-              <FormControl>
-                <Textarea
-                  placeholder="Tell me a little bit about what you're looking to achieve..."
-                  className="min-h-[120px]"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+          placeholder="Tell me a little bit about what you're looking to achieve..."
+          className="min-h-[120px]"
         />
-        <Button type="submit" disabled={formState.isSubmitting} className="w-full">
-          {formState.isSubmitting ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            "Send Message"
-          )}
-        </Button>
-      </form>
-    </Form>
+         {errors?.message && (
+          <p className="text-sm font-medium text-destructive">
+            {errors.message[0]}
+          </p>
+        )}
+      </div>
+      <Button type="submit" disabled={pending} className="w-full">
+        {pending ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Sending...
+          </>
+        ) : (
+          'Send Message'
+        )}
+      </Button>
+    </form>
   );
 }
