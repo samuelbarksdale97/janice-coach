@@ -54,3 +54,4 @@ token.json
 
 # Content folder (videos and other large media files)
 /content/
+public/videos/*.mov
