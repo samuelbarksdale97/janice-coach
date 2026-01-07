@@ -298,7 +298,7 @@ export default function ServicesPage() {
                         <div className="text-center mt-12">
                             <p className="text-muted-foreground mb-4">Monthly payment plans and organizational sponsorship are available.</p>
                             <Button asChild size="lg">
-                                <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://cal.com/janice-brown-taylor-x55xle/30min" target="_blank" rel="noopener noreferrer">
                                     Book Your Free Discovery Call <ArrowRight className="ml-2 h-5 w-5" />
                                 </a>
                             </Button>

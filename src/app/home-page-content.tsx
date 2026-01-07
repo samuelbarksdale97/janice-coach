@@ -67,7 +67,7 @@ export function HomePageContent() {
                       </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="font-bold border-white text-white bg-transparent hover:bg-white/10 hover:text-white">
-                      <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
+                      <a href="https://cal.com/janice-brown-taylor-x55xle/30min" target="_blank" rel="noopener noreferrer">Book A Consultation</a>
                   </Button>
               </div>
           </div>
@@ -165,17 +165,16 @@ export function HomePageContent() {
                     </p>
                 </div>
                 <div className="max-w-4xl mx-auto">
-                    <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-black group">
-                        <Image
-                            src="https://picsum.photos/seed/video/1280/720"
-                            alt="Video placeholder"
-                            fill
-                            className="object-cover"
-                            data-ai-hint="coaching video"
-                        />
-                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                            <PlayCircle className="h-20 w-20 text-white/80" />
-                        </div>
+                    <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl bg-black">
+                        <video
+                            className="w-full h-full"
+                            controls
+                            preload="metadata"
+                            playsInline
+                        >
+                            <source src="/videos/coaching-sales-letter.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>

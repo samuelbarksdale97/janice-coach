@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Loader2 } from 'lucide-react';
 import { z } from 'zod';
+import { submitContactForm } from '@/app/actions/submit-contact-form';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -47,22 +48,32 @@ export function ContactForm() {
 
     try {
       const { name, email, message } = validatedFields.data;
-      console.log('New contact form submission:', { name, email, message });
 
-      toast({
-        title: 'Success!',
-        description: 'Thank you for your message! I will get back to you soon.',
-      });
-      
-      formRef.current?.reset();
+      // Call Server Action
+      const result = await submitContactForm({ name, email, message });
+
+      if (result.success) {
+        toast({
+          title: 'Success!',
+          description: result.message,
+        });
+        formRef.current?.reset();
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Error',
+          description: result.message,
+        });
+      }
     } catch (error) {
+      console.error('Form submission error:', error);
       toast({
         variant: 'destructive',
         title: 'Error',
         description: 'An unexpected error occurred. Please try again.',
       });
     }
-    
+
     setPending(false);
   };
 
