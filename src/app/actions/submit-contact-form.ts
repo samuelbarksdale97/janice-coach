@@ -72,8 +72,19 @@ export async function submitContactForm(
     const sheet = doc.sheetsByIndex[0]; // Use first sheet
 
     // Add row with timestamp
+    const now = new Date();
+    const readableTimestamp = now.toLocaleString('en-US', {
+      month: 'numeric',
+      day: 'numeric',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+    });
+
     await sheet.addRow({
-      Timestamp: new Date().toISOString(),
+      Timestamp: readableTimestamp,
       Name: formData.name,
       Email: formData.email,
       'Phone Number': formData.phoneNumber,
