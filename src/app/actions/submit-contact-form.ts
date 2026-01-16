@@ -13,6 +13,8 @@ import { Resend } from 'resend';
 interface ContactFormData {
   name: string;
   email: string;
+  phoneNumber: string;
+  preferredContactMethod: string;
   message: string;
 }
 
@@ -74,6 +76,8 @@ export async function submitContactForm(
       Timestamp: new Date().toISOString(),
       Name: formData.name,
       Email: formData.email,
+      'Phone Number': formData.phoneNumber,
+      'Preferred Contact Method': formData.preferredContactMethod,
       Message: formData.message,
     });
 
@@ -89,13 +93,15 @@ export async function submitContactForm(
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const { data, error } = await resend.emails.send({
-      from: 'Taylor Your Leadership Coaching <noreply@yourdomain.com>', // Update with your verified domain
+      from: 'Taylor Your Leadership Coaching <hello@nexark.ai>',
       to: [process.env.COACH_EMAIL!],
       subject: `New Contact Form Inquiry from ${formData.name}`,
       html: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${formData.name}</p>
         <p><strong>Email:</strong> ${formData.email}</p>
+        <p><strong>Phone Number:</strong> ${formData.phoneNumber}</p>
+        <p><strong>Preferred Contact Method:</strong> ${formData.preferredContactMethod}</p>
         <p><strong>Message:</strong></p>
         <p>${formData.message.replace(/\n/g, '<br>')}</p>
         <hr>
