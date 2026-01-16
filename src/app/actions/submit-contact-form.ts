@@ -74,6 +74,7 @@ export async function submitContactForm(
     // Add row with timestamp
     const now = new Date();
     const readableTimestamp = now.toLocaleString('en-US', {
+      timeZone: 'America/New_York',
       month: 'numeric',
       day: 'numeric',
       year: 'numeric',
@@ -116,7 +117,7 @@ export async function submitContactForm(
         <p><strong>Message:</strong></p>
         <p>${formData.message.replace(/\n/g, '<br>')}</p>
         <hr>
-        <p><small>Submitted at ${new Date().toLocaleString()}</small></p>
+        <p><small>Submitted at ${readableTimestamp} EST</small></p>
       `,
     });
 
