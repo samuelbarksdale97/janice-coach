@@ -172,7 +172,7 @@ export function HomePageContent() {
                             preload="metadata"
                             playsInline
                         >
-                            <source src="/videos/coaching-sales-letter-new.MOV" type="video/mp4" />
+                            <source src="/videos/coaching-sales-letter-final.MOV" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
