@@ -246,7 +246,6 @@ export default function ServicesPage() {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className="text-lg font-headline text-primary font-bold">Investment: Custom pricing based on cohort size, duration, and scope.</p>
                             </div>
                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {addOnServices.map((service, index) => (
