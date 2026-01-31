@@ -1,7 +1,5 @@
 import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
-
 export const alt = 'Taylor Your Leadership Coaching - Guiding you through life\'s transitions';
 export const size = {
   width: 1200,
@@ -10,6 +8,9 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
+  // Use the direct Firebase URL
+  const imageUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%204.jpeg?alt=media&token=0e26413e-9893-435f-b205-78f5cbd5b5af';
+
   return new ImageResponse(
     (
       <div
@@ -17,8 +18,7 @@ export default async function Image() {
           width: '100%',
           height: '100%',
           display: 'flex',
-          backgroundColor: '#1e3a5f', // Primary blue color
-          position: 'relative',
+          backgroundColor: '#1e3a5f',
         }}
       >
         {/* Left side - Photo */}
@@ -27,22 +27,18 @@ export default async function Image() {
             width: '45%',
             height: '100%',
             display: 'flex',
-            alignItems: 'flex-start', // Align to top to show face
-            justifyContent: 'center',
             overflow: 'hidden',
-            position: 'relative',
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%204.jpeg?alt=media&token=0e26413e-9893-435f-b205-78f5cbd5b5af"
+            src={imageUrl}
             alt="Janice Brown-Taylor"
             style={{
               width: '100%',
-              height: '140%', // Larger than container to allow positioning
+              height: '100%',
               objectFit: 'cover',
-              objectPosition: 'center 15%', // Position face higher in frame
-              marginTop: '-50px', // Shift image up
+              objectPosition: 'center 20%',
             }}
           />
         </div>
@@ -70,12 +66,11 @@ export default async function Image() {
               style={{
                 fontSize: '28px',
                 fontWeight: 'bold',
-                color: '#c9a227', // Gold/secondary color
+                color: '#c9a227',
                 letterSpacing: '2px',
-                textTransform: 'uppercase',
               }}
             >
-              Taylor Your Leadership
+              TAYLOR YOUR LEADERSHIP
             </span>
             <span
               style={{
@@ -110,7 +105,6 @@ export default async function Image() {
               padding: '12px 24px',
               backgroundColor: '#c9a227',
               borderRadius: '8px',
-              width: 'fit-content',
             }}
           >
             <span
