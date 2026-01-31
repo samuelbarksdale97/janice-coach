@@ -100,21 +100,20 @@ export default async function Image() {
           <div
             style={{
               display: 'flex',
-              alignItems: 'center',
               marginTop: '30px',
-              padding: '12px 24px',
-              backgroundColor: '#c9a227',
-              borderRadius: '8px',
             }}
           >
             <span
               style={{
+                padding: '12px 20px',
+                backgroundColor: '#c9a227',
+                borderRadius: '8px',
                 fontSize: '18px',
                 fontWeight: 'bold',
                 color: '#1e3a5f',
               }}
             >
-              Book Your Free Discovery Call
+              Book a Free Consultation
             </span>
           </div>
         </div>
