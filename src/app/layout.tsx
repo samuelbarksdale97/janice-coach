@@ -32,6 +32,18 @@ export const metadata: Metadata = {
     shortcut: [{ url: faviconUrl }],
     apple: [{ url: faviconUrl }],
   },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Taylor Your Leadership Coaching',
+    title: 'Taylor Your Leadership Coaching',
+    description: 'Guiding you through life\'s transitions with professional coaching and support.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Taylor Your Leadership Coaching',
+    description: 'Guiding you through life\'s transitions with professional coaching and support.',
+  },
 };
 
 export default function RootLayout({
