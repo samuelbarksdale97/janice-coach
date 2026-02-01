@@ -8,8 +8,8 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
-  // Use the direct Firebase URL
-  const imageUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%204.jpeg?alt=media&token=0e26413e-9893-435f-b205-78f5cbd5b5af';
+  // Use higher quality headshot image
+  const imageUrl = 'https://firebasestorage.googleapis.com/v0/b/studio-7158004547-ae16d.firebasestorage.app/o/Janice%20Headshot%202.jpeg?alt=media&token=93274d77-f97d-4a2e-92e0-0da2715a6ccd';
 
   return new ImageResponse(
     (
